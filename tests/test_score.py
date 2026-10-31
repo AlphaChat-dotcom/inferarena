@@ -104,12 +104,15 @@ off = ranking("offload_35b_27b")
 # 2026-10-29: the 4070 laptop 35B re-run (newer backend, residency reset) repeats 4/4, so the offload board has no badge.
 check("35B/27B offload: AlphaLlama ranked 1st, every exact run reproducible across starts",
       off["alphallama"]["rank"] == 1 and off["alphallama"]["reproducible"] is True
-      and abs(off["alphallama"]["index"] - 2.25) < 0.01, off.get("alphallama"))
+      and abs(off["alphallama"]["index"] - 2.265) < 0.01, off.get("alphallama"))
 # The 4080 protocol rerun reproduces plain decoding 4/4; the badge now comes from the 4070 laptop row alone.
 r4080 = [r for r in ed["runs"] if r["gpu"] == "rtx4080" and r["engine"] == "alphallama" and r["class"] == "exact"
          and r["status"] == "ran" and r["model"] != "qwen3.8-flash-next"]
-check("4080: our 35B and 27B exact-class runs (both plain decoding) reproduce across starts",
-      sorted(r["model"] for r in r4080) == ["qwen3.6-35b-a3b", "qwen3.8-27b"] and all(r["reproducible"] for r in r4080), r4080)
+check("4080: our 35B and 27B exact-class runs are plain decoding; 27B reproduces across starts, the 35B re-run on 8e9e192 "
+      "says it wasn't re-checked (no claim either way)",
+      sorted(r["model"] for r in r4080) == ["qwen3.6-35b-a3b", "qwen3.8-27b"]
+      and next(r for r in r4080 if r["model"] == "qwen3.8-27b")["reproducible"] is True
+      and "not re-checked" in next(r for r in r4080 if r["model"] == "qwen3.6-35b-a3b")["note"], r4080)
 check("35B/27B offload: Ollama ranked on all three cells (4080 35B + 27B, 4070 laptop)",
       cats["offload_35b_27b"]["plain"]["min_cells"] == 2 and off["ollama"]["rank"] == 2 and off["ollama"]["cells"] == 3, off)
 check("35B/27B offload: freetoken provisional (finished one GPU only)", off["freetoken"]["provisional"], off["freetoken"])

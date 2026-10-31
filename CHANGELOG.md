@@ -1,5 +1,9 @@
 # Changelog
 
+## 2026-11-01
+- RTX 4080 Qwen3.6-35B-A3B: AlphaLlama re-run on commit 8e9e192 (built from source, not yet packaged), fast and
+  plain. Restart reproducibility of the plain row was not re-checked on this build and is not claimed.
+
 ## 2026-10-31: open source
 - The harness, scoring code, edition data and per-prompt results are published under the MIT license.
 

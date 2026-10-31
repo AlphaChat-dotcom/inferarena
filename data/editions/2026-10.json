@@ -87,7 +87,8 @@
     "3090_ai2_v2": "RTX 3090 AlphaLlama 35B/27B re-run on its newer engine backend, 2026-10-28 (per-prompt token file, both passes; speed and identity from one configuration per model)",
     "4080_27b_ai2": "RTX 4080 AlphaLlama 27B on its newer engine backend, 2026-10-29: plain, verified-MTP and speed modes in one configuration (per-prompt token file, both passes, token check clean)",
     "4070_ai2": "RTX 4070 laptop AlphaLlama 35B on its newer engine backend, 2026-10-29 (per-prompt token file, both passes; identical across 2 fresh starts 4/4)",
-    "4080_flashnext_0271": "RTX 4080 Flash-Next run, 2026-10-29 16:26-16:49 UTC: AlphaLlama v2 release build (bare -m), Strata 0.2.7.1 and Strata 0.1.47 in one window, 2 passes in reversed order (per-prompt token file; 10 Strata rows whose streamed token count was under 90% of the reported count left out)."
+    "4080_flashnext_0271": "RTX 4080 Flash-Next run, 2026-10-29 16:26-16:49 UTC: AlphaLlama v2 release build (bare -m), Strata 0.2.7.1 and Strata 0.1.47 in one window, 2 passes in reversed order (per-prompt token file; 10 Strata rows whose streamed token count was under 90% of the reported count left out).",
+    "4080_35b_8e9e192": "RTX 4080 Qwen3.6-35B-A3B re-run on AlphaLlama 8e9e192, 2026-11-01: fast (auto) and plain, 2 passes with the second reversed, a fresh server per arm after one warm-up start (per-prompt token file; every row streamed its full token count)"
   },
   "cells": [
     {
@@ -584,14 +585,12 @@
       "engine": "alphallama",
       "class": "exact",
       "status": "ran",
-      "A": 133.8,
-      "V": 131.2,
-      "R": 134.6,
-      "identity": "4/4",
-      "reproducible": true,
-      "version": "build 836bb08",
+      "A": 136.9,
+      "V": 136.1,
+      "R": 135.6,
+      "version": "AlphaLlama v2 (2.0.0), commit 8e9e192 (built from source; not yet packaged)",
       "format": "UD-Q4_K_M GGUF",
-      "note": "drafting off"
+      "note": "drafting off (plain decoding), expert offload with 146 slots in VRAM; 2026-11-01 run; reproducibility across restarts not re-checked on this build"
     },
     {
       "gpu": "rtx4080",
@@ -599,13 +598,12 @@
       "engine": "alphallama",
       "class": "fast",
       "status": "ran",
-      "A": 218.0,
-      "V": 232.4,
-      "R": 470.0,
-      "identity": "0/4",
-      "version": "build 836bb08",
+      "A": 242.3,
+      "V": 256.1,
+      "R": 500.5,
+      "version": "AlphaLlama v2 (2.0.0), commit 8e9e192 (built from source; not yet packaged)",
       "format": "UD-Q4_K_M GGUF",
-      "note": "its default (auto) configuration"
+      "note": "its default (auto) configuration: MTP drafts plus n-gram drafts, expert offload with 138 slots in VRAM, prefill slot lending; 2026-11-01 run"
     },
     {
       "gpu": "rtx4080",
@@ -1123,9 +1121,9 @@
         "model": "qwen3.6-35b-a3b",
         "set": "R",
         "task": "rename across a C header",
-        "tok_s": 579.6,
+        "tok_s": 597.2,
         "passes": 2,
-        "spread_pct": 6.5
+        "spread_pct": 0.8
       },
       {
         "engine": "alphallama",
@@ -1301,11 +1299,11 @@
         "variant": null,
         "gpu": "rtx4080",
         "model": "qwen3.6-35b-a3b",
-        "set": "A",
-        "task": "chat: write a Python class",
-        "tok_s": 140.7,
+        "set": "V",
+        "task": "port code to C++",
+        "tok_s": 142.1,
         "passes": 2,
-        "spread_pct": 0.9
+        "spread_pct": 0.2
       },
       {
         "engine": "freetoken",
@@ -2291,15 +2289,15 @@
       },
       {
         "engine": "alphallama",
-        "class": "fast",
+        "class": "exact",
         "variant": null,
         "gpu": "rtx4080",
         "model": "qwen3.6-35b-a3b",
         "set": "A",
         "task": "chat: generate JSON data",
-        "tok_s": 240.1,
+        "tok_s": 137.2,
         "passes": 2,
-        "spread_pct": 1.5,
+        "spread_pct": 0.4,
         "task_type": "chat"
       },
       {
@@ -2349,9 +2347,9 @@
         "model": "qwen3.6-35b-a3b",
         "set": "R",
         "task": "rename across a C header",
-        "tok_s": 579.6,
+        "tok_s": 597.2,
         "passes": 2,
-        "spread_pct": 6.5,
+        "spread_pct": 0.8,
         "task_type": "code_edit"
       },
       {
@@ -2400,10 +2398,10 @@
         "gpu": "rtx4080",
         "model": "qwen3.6-35b-a3b",
         "set": "V",
-        "task": "list a file's functions",
-        "tok_s": 207.1,
+        "task": "explain a piece of code",
+        "tok_s": 252.8,
         "passes": 2,
-        "spread_pct": 1.8,
+        "spread_pct": 5.7,
         "task_type": "code_read"
       },
       {
@@ -2453,9 +2451,9 @@
         "model": "qwen3.6-35b-a3b",
         "set": "V",
         "task": "port code to C++",
-        "tok_s": 226.7,
+        "tok_s": 257.8,
         "passes": 2,
-        "spread_pct": 1.1,
+        "spread_pct": 2.9,
         "task_type": "code_write"
       },
       {
@@ -2505,9 +2503,9 @@
         "model": "qwen3.6-35b-a3b",
         "set": "R",
         "task": "triage a log",
-        "tok_s": 313.2,
+        "tok_s": 327.5,
         "passes": 2,
-        "spread_pct": 5.8,
+        "spread_pct": 2.8,
         "task_type": "data_logs"
       },
       {
@@ -2556,10 +2554,10 @@
         "gpu": "rtx4080",
         "model": "qwen3.6-35b-a3b",
         "set": "V",
-        "task": "quote passages from a document",
-        "tok_s": 256.9,
+        "task": "turn a policy into a table",
+        "tok_s": 238.2,
         "passes": 2,
-        "spread_pct": 2.3,
+        "spread_pct": 7.5,
         "task_type": "documents"
       },
       {
@@ -3862,7 +3860,7 @@
       }
     ]
   },
-  "results_as_of": "2026-10-29",
+  "results_as_of": "2026-11-01",
   "cutoff": {
     "date": "2026-10-22",
     "about": "Competitor engines were tested at their latest public release up to this date; newer releases are measured when they're submitted or re-run."
