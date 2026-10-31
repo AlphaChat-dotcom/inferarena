@@ -1,0 +1,4 @@
+__pycache__/
+*.pyc
+arena_result.json
+tests/_tmp_*.json

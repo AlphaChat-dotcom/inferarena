@@ -1,0 +1,1201 @@
+gpu,model,engine,class,variant,set,task,timing,passes,decode_tok_s
+rtx3090,qwen3.6-35b-a3b,alphallama,exact,,A,chat: explain a networking topic,shared_client,2,345.8;343.9
+rtx3090,qwen3.6-35b-a3b,alphallama,exact,,A,chat: explain an algorithm,shared_client,2,361.2;356.6
+rtx3090,qwen3.6-35b-a3b,alphallama,exact,,A,chat: generate JSON data,shared_client,2,424.3;418.6
+rtx3090,qwen3.6-35b-a3b,alphallama,exact,,A,chat: write a Python class,shared_client,2,372.7;373.4
+rtx3090,qwen3.6-35b-a3b,alphallama,exact,,R,edit a C++ source file,shared_client,2,409.4;414.6
+rtx3090,qwen3.6-35b-a3b,alphallama,exact,,R,edit a CUDA source file,shared_client,2,392.9;395.9
+rtx3090,qwen3.6-35b-a3b,alphallama,exact,,R,rename across a C header,shared_client,2,413.9;414.8
+rtx3090,qwen3.6-35b-a3b,alphallama,exact,,R,rename across a Python file,shared_client,2,409.6;413.8
+rtx3090,qwen3.6-35b-a3b,alphallama,exact,,R,rewrite a C++ file,shared_client,2,412.2;415.9
+rtx3090,qwen3.6-35b-a3b,alphallama,exact,,R,rewrite a Python file,shared_client,2,409.0;411.9
+rtx3090,qwen3.6-35b-a3b,alphallama,exact,,R,triage a log,shared_client,2,407.6;411.5
+rtx3090,qwen3.6-35b-a3b,alphallama,exact,,V,add Doxygen docs to a C++ file,shared_client,2,399.6;396.8
+rtx3090,qwen3.6-35b-a3b,alphallama,exact,,V,add docstrings to a file,shared_client,2,393.6;390.0
+rtx3090,qwen3.6-35b-a3b,alphallama,exact,,V,answer a question from a document,shared_client,2,341.1;336.3
+rtx3090,qwen3.6-35b-a3b,alphallama,exact,,V,edit a flag across code,shared_client,2,414.3;414.0
+rtx3090,qwen3.6-35b-a3b,alphallama,exact,,V,explain a piece of code,shared_client,2,344.8;341.2
+rtx3090,qwen3.6-35b-a3b,alphallama,exact,,V,find bugs in code,shared_client,2,330.1;327.2
+rtx3090,qwen3.6-35b-a3b,alphallama,exact,,V,list a file's functions,shared_client,2,292.2;290.8
+rtx3090,qwen3.6-35b-a3b,alphallama,exact,,V,port code to C++,shared_client,2,366.1;362.8
+rtx3090,qwen3.6-35b-a3b,alphallama,exact,,V,quote passages from a document,shared_client,2,419.9;408.8
+rtx3090,qwen3.6-35b-a3b,alphallama,exact,,V,rename across a file,shared_client,2,417.4;416.0
+rtx3090,qwen3.6-35b-a3b,alphallama,exact,,V,summarise a document,shared_client,2,308.4;307.9
+rtx3090,qwen3.6-35b-a3b,alphallama,exact,,V,turn a policy into a table,shared_client,2,357.5;347.8
+rtx3090,qwen3.6-35b-a3b,alphallama,exact,,V,work through a CSV table,shared_client,2,407.8;404.3
+rtx3090,qwen3.6-35b-a3b,alphallama,exact,,V,write unit tests,shared_client,2,308.0;305.4
+rtx3090,qwen3.6-35b-a3b,alphallama,fast,,A,chat: explain a networking topic,shared_client,2,316.5;323.6
+rtx3090,qwen3.6-35b-a3b,alphallama,fast,,A,chat: explain an algorithm,shared_client,2,366.2;362.3
+rtx3090,qwen3.6-35b-a3b,alphallama,fast,,A,chat: generate JSON data,shared_client,2,437.5;430.5
+rtx3090,qwen3.6-35b-a3b,alphallama,fast,,A,chat: write a Python class,shared_client,2,418.0;426.6
+rtx3090,qwen3.6-35b-a3b,alphallama,fast,,R,edit a C++ source file,shared_client,2,1024.4;1189.7
+rtx3090,qwen3.6-35b-a3b,alphallama,fast,,R,edit a CUDA source file,shared_client,2,1063.0;1032.3
+rtx3090,qwen3.6-35b-a3b,alphallama,fast,,R,rename across a C header,shared_client,2,1167.1;1183.3
+rtx3090,qwen3.6-35b-a3b,alphallama,fast,,R,rename across a Python file,shared_client,2,767.8;758.7
+rtx3090,qwen3.6-35b-a3b,alphallama,fast,,R,rewrite a C++ file,shared_client,2,1135.9;1063.4
+rtx3090,qwen3.6-35b-a3b,alphallama,fast,,R,rewrite a Python file,shared_client,2,863.4;1181.3
+rtx3090,qwen3.6-35b-a3b,alphallama,fast,,R,triage a log,shared_client,2,434.9;471.1
+rtx3090,qwen3.6-35b-a3b,alphallama,fast,,V,add Doxygen docs to a C++ file,shared_client,2,389.7;400.8
+rtx3090,qwen3.6-35b-a3b,alphallama,fast,,V,add docstrings to a file,shared_client,2,490.4;510.2
+rtx3090,qwen3.6-35b-a3b,alphallama,fast,,V,answer a question from a document,shared_client,2,352.7;357.8
+rtx3090,qwen3.6-35b-a3b,alphallama,fast,,V,edit a flag across code,shared_client,2,383.8;387.9
+rtx3090,qwen3.6-35b-a3b,alphallama,fast,,V,explain a piece of code,shared_client,2,369.9;369.8
+rtx3090,qwen3.6-35b-a3b,alphallama,fast,,V,find bugs in code,shared_client,2,294.7;298.1
+rtx3090,qwen3.6-35b-a3b,alphallama,fast,,V,list a file's functions,shared_client,2,303.9;303.6
+rtx3090,qwen3.6-35b-a3b,alphallama,fast,,V,port code to C++,shared_client,2,383.4;383.6
+rtx3090,qwen3.6-35b-a3b,alphallama,fast,,V,quote passages from a document,shared_client,2,491.1;443.7
+rtx3090,qwen3.6-35b-a3b,alphallama,fast,,V,rename across a file,shared_client,2,837.7;768.8
+rtx3090,qwen3.6-35b-a3b,alphallama,fast,,V,summarise a document,shared_client,2,303.1;299.5
+rtx3090,qwen3.6-35b-a3b,alphallama,fast,,V,turn a policy into a table,shared_client,2,363.3;374.8
+rtx3090,qwen3.6-35b-a3b,alphallama,fast,,V,work through a CSV table,shared_client,2,392.7;381.0
+rtx3090,qwen3.6-35b-a3b,alphallama,fast,,V,write unit tests,shared_client,2,311.6;309.0
+rtx3090,qwen3.6-35b-a3b,freetoken,exact,,A,chat: explain a networking topic,shared_client,2,164.2;170.7
+rtx3090,qwen3.6-35b-a3b,freetoken,exact,,A,chat: explain an algorithm,shared_client,2,171.9;160.7
+rtx3090,qwen3.6-35b-a3b,freetoken,exact,,A,chat: generate JSON data,shared_client,2,168.5;137.3
+rtx3090,qwen3.6-35b-a3b,freetoken,exact,,A,chat: write a Python class,shared_client,2,137.3;172.1
+rtx3090,qwen3.6-35b-a3b,freetoken,exact,,R,edit a C++ source file,shared_client,2,168.6;172.5
+rtx3090,qwen3.6-35b-a3b,freetoken,exact,,R,edit a CUDA source file,shared_client,2,143.0;171.0
+rtx3090,qwen3.6-35b-a3b,freetoken,exact,,R,rename across a C header,shared_client,2,173.4;172.5
+rtx3090,qwen3.6-35b-a3b,freetoken,exact,,R,rename across a Python file,shared_client,2,172.8;172.0
+rtx3090,qwen3.6-35b-a3b,freetoken,exact,,R,rewrite a C++ file,shared_client,2,173.1;170.6
+rtx3090,qwen3.6-35b-a3b,freetoken,exact,,R,rewrite a Python file,shared_client,2,173.1;143.5
+rtx3090,qwen3.6-35b-a3b,freetoken,exact,,R,triage a log,shared_client,2,172.1;172.7
+rtx3090,qwen3.6-35b-a3b,freetoken,exact,,V,add Doxygen docs to a C++ file,shared_client,2,173.1;172.7
+rtx3090,qwen3.6-35b-a3b,freetoken,exact,,V,add docstrings to a file,shared_client,2,172.3;173.0
+rtx3090,qwen3.6-35b-a3b,freetoken,exact,,V,answer a question from a document,shared_client,2,171.4;171.5
+rtx3090,qwen3.6-35b-a3b,freetoken,exact,,V,edit a flag across code,shared_client,2,173.8;173.3
+rtx3090,qwen3.6-35b-a3b,freetoken,exact,,V,explain a piece of code,shared_client,2,174.2;173.6
+rtx3090,qwen3.6-35b-a3b,freetoken,exact,,V,find bugs in code,shared_client,2,171.9;172.7
+rtx3090,qwen3.6-35b-a3b,freetoken,exact,,V,list a file's functions,shared_client,2,172.8;172.6
+rtx3090,qwen3.6-35b-a3b,freetoken,exact,,V,port code to C++,shared_client,2,173.1;173.1
+rtx3090,qwen3.6-35b-a3b,freetoken,exact,,V,quote passages from a document,shared_client,2,173.1;173.4
+rtx3090,qwen3.6-35b-a3b,freetoken,exact,,V,rename across a file,shared_client,2,173.1;172.7
+rtx3090,qwen3.6-35b-a3b,freetoken,exact,,V,summarise a document,shared_client,2,172.5;172.4
+rtx3090,qwen3.6-35b-a3b,freetoken,exact,,V,turn a policy into a table,shared_client,2,171.7;170.1
+rtx3090,qwen3.6-35b-a3b,freetoken,exact,,V,work through a CSV table,shared_client,2,172.9;173.5
+rtx3090,qwen3.6-35b-a3b,freetoken,exact,,V,write unit tests,shared_client,2,173.6;172.7
+rtx3090,qwen3.6-35b-a3b,ollama,exact,,A,chat: explain a networking topic,shared_client,2,157.5;158.6
+rtx3090,qwen3.6-35b-a3b,ollama,exact,,A,chat: explain an algorithm,shared_client,2,155.6;156.9
+rtx3090,qwen3.6-35b-a3b,ollama,exact,,A,chat: generate JSON data,shared_client,2,157.8;159.5
+rtx3090,qwen3.6-35b-a3b,ollama,exact,,A,chat: write a Python class,shared_client,2,156.4;158.6
+rtx3090,qwen3.6-35b-a3b,ollama,exact,,R,edit a C++ source file,shared_client,2,154.5;153.4
+rtx3090,qwen3.6-35b-a3b,ollama,exact,,R,edit a CUDA source file,shared_client,2,156.3;152.6
+rtx3090,qwen3.6-35b-a3b,ollama,exact,,R,rename across a C header,shared_client,2,154.1;154.8
+rtx3090,qwen3.6-35b-a3b,ollama,exact,,R,rename across a Python file,shared_client,2,156.1;157.4
+rtx3090,qwen3.6-35b-a3b,ollama,exact,,R,rewrite a C++ file,shared_client,2,156.0;159.0
+rtx3090,qwen3.6-35b-a3b,ollama,exact,,R,rewrite a Python file,shared_client,2,149.9;154.7
+rtx3090,qwen3.6-35b-a3b,ollama,exact,,R,triage a log,shared_client,2,155.6;155.9
+rtx3090,qwen3.6-35b-a3b,ollama,exact,,V,add Doxygen docs to a C++ file,shared_client,2,158.0;157.8
+rtx3090,qwen3.6-35b-a3b,ollama,exact,,V,add docstrings to a file,shared_client,2,153.9;153.2
+rtx3090,qwen3.6-35b-a3b,ollama,exact,,V,answer a question from a document,shared_client,2,159.8;155.0
+rtx3090,qwen3.6-35b-a3b,ollama,exact,,V,edit a flag across code,shared_client,2,153.8;155.4
+rtx3090,qwen3.6-35b-a3b,ollama,exact,,V,explain a piece of code,shared_client,2,152.8;156.4
+rtx3090,qwen3.6-35b-a3b,ollama,exact,,V,find bugs in code,shared_client,2,157.5;155.2
+rtx3090,qwen3.6-35b-a3b,ollama,exact,,V,list a file's functions,shared_client,2,154.2;156.8
+rtx3090,qwen3.6-35b-a3b,ollama,exact,,V,port code to C++,shared_client,2,156.4;151.0
+rtx3090,qwen3.6-35b-a3b,ollama,exact,,V,quote passages from a document,shared_client,2,156.9;155.2
+rtx3090,qwen3.6-35b-a3b,ollama,exact,,V,rename across a file,shared_client,2,153.7;153.9
+rtx3090,qwen3.6-35b-a3b,ollama,exact,,V,summarise a document,shared_client,2,153.5;156.2
+rtx3090,qwen3.6-35b-a3b,ollama,exact,,V,turn a policy into a table,shared_client,2,159.4;161.5
+rtx3090,qwen3.6-35b-a3b,ollama,exact,,V,work through a CSV table,shared_client,2,161.4;160.3
+rtx3090,qwen3.6-35b-a3b,ollama,exact,,V,write unit tests,shared_client,2,150.9;155.1
+rtx3090,qwen3.6-35b-a3b,ollama,fast,MTP,A,chat: explain a networking topic,shared_client,2,194.1;194.3
+rtx3090,qwen3.6-35b-a3b,ollama,fast,MTP,A,chat: explain an algorithm,shared_client,2,218.2;215.5
+rtx3090,qwen3.6-35b-a3b,ollama,fast,MTP,A,chat: generate JSON data,shared_client,2,235.4;232.6
+rtx3090,qwen3.6-35b-a3b,ollama,fast,MTP,A,chat: write a Python class,shared_client,2,226.9;227.9
+rtx3090,qwen3.6-35b-a3b,ollama,fast,MTP,R,edit a C++ source file,shared_client,2,235.0;228.3
+rtx3090,qwen3.6-35b-a3b,ollama,fast,MTP,R,edit a CUDA source file,shared_client,2,238.0;231.2
+rtx3090,qwen3.6-35b-a3b,ollama,fast,MTP,R,rename across a C header,shared_client,2,232.2;229.9
+rtx3090,qwen3.6-35b-a3b,ollama,fast,MTP,R,rename across a Python file,shared_client,2,242.9;241.4
+rtx3090,qwen3.6-35b-a3b,ollama,fast,MTP,R,rewrite a C++ file,shared_client,2,241.1;244.5
+rtx3090,qwen3.6-35b-a3b,ollama,fast,MTP,R,rewrite a Python file,shared_client,2,228.5;231.7
+rtx3090,qwen3.6-35b-a3b,ollama,fast,MTP,R,triage a log,shared_client,2,217.9;214.0
+rtx3090,qwen3.6-35b-a3b,ollama,fast,MTP,V,add Doxygen docs to a C++ file,shared_client,2,238.1;239.9
+rtx3090,qwen3.6-35b-a3b,ollama,fast,MTP,V,add docstrings to a file,shared_client,2,227.1;230.7
+rtx3090,qwen3.6-35b-a3b,ollama,fast,MTP,V,answer a question from a document,shared_client,2,234.3;239.3
+rtx3090,qwen3.6-35b-a3b,ollama,fast,MTP,V,edit a flag across code,shared_client,2,235.1;223.9
+rtx3090,qwen3.6-35b-a3b,ollama,fast,MTP,V,explain a piece of code,shared_client,2,218.0;208.3
+rtx3090,qwen3.6-35b-a3b,ollama,fast,MTP,V,find bugs in code,shared_client,2,208.4;205.5
+rtx3090,qwen3.6-35b-a3b,ollama,fast,MTP,V,list a file's functions,shared_client,2,196.4;196.7
+rtx3090,qwen3.6-35b-a3b,ollama,fast,MTP,V,port code to C++,shared_client,2,214.7;223.6
+rtx3090,qwen3.6-35b-a3b,ollama,fast,MTP,V,quote passages from a document,shared_client,2,236.0;239.8
+rtx3090,qwen3.6-35b-a3b,ollama,fast,MTP,V,rename across a file,shared_client,2,233.4;232.5
+rtx3090,qwen3.6-35b-a3b,ollama,fast,MTP,V,summarise a document,shared_client,2,196.9;197.6
+rtx3090,qwen3.6-35b-a3b,ollama,fast,MTP,V,turn a policy into a table,shared_client,2,232.3;231.4
+rtx3090,qwen3.6-35b-a3b,ollama,fast,MTP,V,work through a CSV table,shared_client,2,249.6;249.6
+rtx3090,qwen3.6-35b-a3b,ollama,fast,MTP,V,write unit tests,shared_client,2,192.6;193.1
+rtx3090,qwen3.8-27b,alphallama,exact,,A,chat: explain a networking topic,shared_client,2,73.8;73.5
+rtx3090,qwen3.8-27b,alphallama,exact,,A,chat: explain an algorithm,shared_client,2,91.2;91.5
+rtx3090,qwen3.8-27b,alphallama,exact,,A,chat: generate JSON data,shared_client,2,127.5;126.5
+rtx3090,qwen3.8-27b,alphallama,exact,,A,chat: write a Python class,shared_client,2,103.3;102.9
+rtx3090,qwen3.8-27b,alphallama,exact,,R,edit a C++ source file,shared_client,2,161.1;158.3
+rtx3090,qwen3.8-27b,alphallama,exact,,R,edit a CUDA source file,shared_client,2,159.3;160.9
+rtx3090,qwen3.8-27b,alphallama,exact,,R,rename across a C header,shared_client,2,168.2;166.5
+rtx3090,qwen3.8-27b,alphallama,exact,,R,rename across a Python file,shared_client,2,156.5;155.0
+rtx3090,qwen3.8-27b,alphallama,exact,,R,rewrite a C++ file,shared_client,2,159.9;163.3
+rtx3090,qwen3.8-27b,alphallama,exact,,R,rewrite a Python file,shared_client,2,168.5;168.8
+rtx3090,qwen3.8-27b,alphallama,exact,,R,triage a log,shared_client,2,141.6;144.1
+rtx3090,qwen3.8-27b,alphallama,exact,,V,add Doxygen docs to a C++ file,shared_client,2,128.2;127.7
+rtx3090,qwen3.8-27b,alphallama,exact,,V,add docstrings to a file,shared_client,2,133.9;134.4
+rtx3090,qwen3.8-27b,alphallama,exact,,V,answer a question from a document,shared_client,2,130.0;130.7
+rtx3090,qwen3.8-27b,alphallama,exact,,V,edit a flag across code,shared_client,2,136.5;133.8
+rtx3090,qwen3.8-27b,alphallama,exact,,V,explain a piece of code,shared_client,2,100.1;98.7
+rtx3090,qwen3.8-27b,alphallama,exact,,V,find bugs in code,shared_client,2,79.9;79.1
+rtx3090,qwen3.8-27b,alphallama,exact,,V,list a file's functions,shared_client,2,90.3;90.0
+rtx3090,qwen3.8-27b,alphallama,exact,,V,port code to C++,shared_client,2,117.5;118.5
+rtx3090,qwen3.8-27b,alphallama,exact,,V,quote passages from a document,shared_client,2,151.6;151.5
+rtx3090,qwen3.8-27b,alphallama,exact,,V,rename across a file,shared_client,2,164.7;162.6
+rtx3090,qwen3.8-27b,alphallama,exact,,V,summarise a document,shared_client,2,77.3;77.2
+rtx3090,qwen3.8-27b,alphallama,exact,,V,turn a policy into a table,shared_client,2,101.0;100.2
+rtx3090,qwen3.8-27b,alphallama,exact,,V,work through a CSV table,shared_client,2,114.5;118.7
+rtx3090,qwen3.8-27b,alphallama,exact,,V,write unit tests,shared_client,2,72.5;72.7
+rtx3090,qwen3.8-27b,alphallama,fast,,A,chat: explain a networking topic,shared_client,2,96.6;96.4
+rtx3090,qwen3.8-27b,alphallama,fast,,A,chat: explain an algorithm,shared_client,2,147.4;149.7
+rtx3090,qwen3.8-27b,alphallama,fast,,A,chat: generate JSON data,shared_client,2,186.1;185.3
+rtx3090,qwen3.8-27b,alphallama,fast,,A,chat: write a Python class,shared_client,2,163.6;163.8
+rtx3090,qwen3.8-27b,alphallama,fast,,R,edit a C++ source file,shared_client,2,529.4;545.9
+rtx3090,qwen3.8-27b,alphallama,fast,,R,edit a CUDA source file,shared_client,2,482.8;481.6
+rtx3090,qwen3.8-27b,alphallama,fast,,R,rename across a C header,shared_client,2,632.8;673.3
+rtx3090,qwen3.8-27b,alphallama,fast,,R,rename across a Python file,shared_client,2,326.8;317.9
+rtx3090,qwen3.8-27b,alphallama,fast,,R,rewrite a C++ file,shared_client,2,615.8;573.0
+rtx3090,qwen3.8-27b,alphallama,fast,,R,rewrite a Python file,shared_client,2,653.6;663.3
+rtx3090,qwen3.8-27b,alphallama,fast,,R,triage a log,shared_client,2,282.5;290.2
+rtx3090,qwen3.8-27b,alphallama,fast,,V,add Doxygen docs to a C++ file,shared_client,2,216.2;213.9
+rtx3090,qwen3.8-27b,alphallama,fast,,V,add docstrings to a file,shared_client,2,235.0;236.0
+rtx3090,qwen3.8-27b,alphallama,fast,,V,answer a question from a document,shared_client,2,160.7;173.4
+rtx3090,qwen3.8-27b,alphallama,fast,,V,edit a flag across code,shared_client,2,209.3;211.4
+rtx3090,qwen3.8-27b,alphallama,fast,,V,explain a piece of code,shared_client,2,141.1;139.2
+rtx3090,qwen3.8-27b,alphallama,fast,,V,find bugs in code,shared_client,2,131.5;131.6
+rtx3090,qwen3.8-27b,alphallama,fast,,V,list a file's functions,shared_client,2,131.5;131.4
+rtx3090,qwen3.8-27b,alphallama,fast,,V,port code to C++,shared_client,2,167.7;167.7
+rtx3090,qwen3.8-27b,alphallama,fast,,V,quote passages from a document,shared_client,2,190.1;190.9
+rtx3090,qwen3.8-27b,alphallama,fast,,V,rename across a file,shared_client,2,396.0;385.2
+rtx3090,qwen3.8-27b,alphallama,fast,,V,summarise a document,shared_client,2,94.5;94.4
+rtx3090,qwen3.8-27b,alphallama,fast,,V,turn a policy into a table,shared_client,2,168.2;168.7
+rtx3090,qwen3.8-27b,alphallama,fast,,V,work through a CSV table,shared_client,2,217.5;218.3
+rtx3090,qwen3.8-27b,alphallama,fast,,V,write unit tests,shared_client,2,102.2;103.2
+rtx3090,qwen3.8-27b,ollama,exact,,A,chat: explain a networking topic,shared_client,2,43.4;43.4
+rtx3090,qwen3.8-27b,ollama,exact,,A,chat: explain an algorithm,shared_client,2,43.4;43.4
+rtx3090,qwen3.8-27b,ollama,exact,,A,chat: generate JSON data,shared_client,2,43.4;43.5
+rtx3090,qwen3.8-27b,ollama,exact,,A,chat: write a Python class,shared_client,2,43.5;43.4
+rtx3090,qwen3.8-27b,ollama,exact,,R,edit a C++ source file,shared_client,2,42.9;42.8
+rtx3090,qwen3.8-27b,ollama,exact,,R,edit a CUDA source file,shared_client,2,42.8;42.6
+rtx3090,qwen3.8-27b,ollama,exact,,R,rename across a C header,shared_client,2,43.2;43.1
+rtx3090,qwen3.8-27b,ollama,exact,,R,rename across a Python file,shared_client,2,42.9;43.0
+rtx3090,qwen3.8-27b,ollama,exact,,R,rewrite a C++ file,shared_client,2,42.9;43.1
+rtx3090,qwen3.8-27b,ollama,exact,,R,rewrite a Python file,shared_client,2,43.1;43.2
+rtx3090,qwen3.8-27b,ollama,exact,,R,triage a log,shared_client,2,43.4;43.3
+rtx3090,qwen3.8-27b,ollama,exact,,V,add Doxygen docs to a C++ file,shared_client,2,43.1;43.1
+rtx3090,qwen3.8-27b,ollama,exact,,V,add docstrings to a file,shared_client,2,43.1;43.2
+rtx3090,qwen3.8-27b,ollama,exact,,V,answer a question from a document,shared_client,2,43.2;43.3
+rtx3090,qwen3.8-27b,ollama,exact,,V,edit a flag across code,shared_client,2,43.4;43.3
+rtx3090,qwen3.8-27b,ollama,exact,,V,explain a piece of code,shared_client,2,43.3;43.3
+rtx3090,qwen3.8-27b,ollama,exact,,V,find bugs in code,shared_client,2,43.0;42.9
+rtx3090,qwen3.8-27b,ollama,exact,,V,list a file's functions,shared_client,2,42.8;42.9
+rtx3090,qwen3.8-27b,ollama,exact,,V,port code to C++,shared_client,2,43.1;43.1
+rtx3090,qwen3.8-27b,ollama,exact,,V,quote passages from a document,shared_client,2,43.4;43.4
+rtx3090,qwen3.8-27b,ollama,exact,,V,rename across a file,shared_client,2,43.2;43.3
+rtx3090,qwen3.8-27b,ollama,exact,,V,summarise a document,shared_client,2,42.9;42.9
+rtx3090,qwen3.8-27b,ollama,exact,,V,turn a policy into a table,shared_client,2,43.5;43.7
+rtx3090,qwen3.8-27b,ollama,exact,,V,work through a CSV table,shared_client,2,43.4;43.3
+rtx3090,qwen3.8-27b,ollama,exact,,V,write unit tests,shared_client,2,43.3;43.4
+rtx3090,qwen3.8-27b,ollama,fast,MTP,A,chat: explain a networking topic,shared_client,2,71.9;72.3
+rtx3090,qwen3.8-27b,ollama,fast,MTP,A,chat: explain an algorithm,shared_client,2,84.9;84.6
+rtx3090,qwen3.8-27b,ollama,fast,MTP,A,chat: generate JSON data,shared_client,2,103.8;104.3
+rtx3090,qwen3.8-27b,ollama,fast,MTP,A,chat: write a Python class,shared_client,2,96.7;98.6
+rtx3090,qwen3.8-27b,ollama,fast,MTP,R,edit a C++ source file,shared_client,2,111.9;111.8
+rtx3090,qwen3.8-27b,ollama,fast,MTP,R,edit a CUDA source file,shared_client,2,110.7;110.7
+rtx3090,qwen3.8-27b,ollama,fast,MTP,R,rename across a C header,shared_client,2,111.6;112.1
+rtx3090,qwen3.8-27b,ollama,fast,MTP,R,rename across a Python file,shared_client,2,111.8;112.6
+rtx3090,qwen3.8-27b,ollama,fast,MTP,R,rewrite a C++ file,shared_client,2,112.1;113.4
+rtx3090,qwen3.8-27b,ollama,fast,MTP,R,rewrite a Python file,shared_client,2,112.3;113.2
+rtx3090,qwen3.8-27b,ollama,fast,MTP,R,triage a log,shared_client,2,110.4;110.7
+rtx3090,qwen3.8-27b,ollama,fast,MTP,V,add Doxygen docs to a C++ file,shared_client,2,104.1;102.3
+rtx3090,qwen3.8-27b,ollama,fast,MTP,V,add docstrings to a file,shared_client,2,104.4;104.2
+rtx3090,qwen3.8-27b,ollama,fast,MTP,V,answer a question from a document,shared_client,2,104.4;105.0
+rtx3090,qwen3.8-27b,ollama,fast,MTP,V,edit a flag across code,shared_client,2,109.0;109.1
+rtx3090,qwen3.8-27b,ollama,fast,MTP,V,explain a piece of code,shared_client,2,85.7;86.0
+rtx3090,qwen3.8-27b,ollama,fast,MTP,V,find bugs in code,shared_client,2,80.2;80.2
+rtx3090,qwen3.8-27b,ollama,fast,MTP,V,list a file's functions,shared_client,2,77.1;77.5
+rtx3090,qwen3.8-27b,ollama,fast,MTP,V,port code to C++,shared_client,2,96.5;97.7
+rtx3090,qwen3.8-27b,ollama,fast,MTP,V,quote passages from a document,shared_client,2,113.5;114.2
+rtx3090,qwen3.8-27b,ollama,fast,MTP,V,rename across a file,shared_client,2,110.3;111.0
+rtx3090,qwen3.8-27b,ollama,fast,MTP,V,summarise a document,shared_client,2,65.9;66.9
+rtx3090,qwen3.8-27b,ollama,fast,MTP,V,turn a policy into a table,shared_client,2,91.8;92.5
+rtx3090,qwen3.8-27b,ollama,fast,MTP,V,work through a CSV table,shared_client,2,108.6;108.7
+rtx3090,qwen3.8-27b,ollama,fast,MTP,V,write unit tests,shared_client,2,73.6;73.9
+rtx3090,qwen3.8-flash-next,alphallama,exact,,A,chat: explain a networking topic,shared_client,2,71.5;73.1
+rtx3090,qwen3.8-flash-next,alphallama,exact,,A,chat: explain an algorithm,shared_client,2,74.0;71.9
+rtx3090,qwen3.8-flash-next,alphallama,exact,,A,chat: generate JSON data,shared_client,2,70.7;73.3
+rtx3090,qwen3.8-flash-next,alphallama,exact,,A,chat: write a Python class,shared_client,2,73.8;71.9
+rtx3090,qwen3.8-flash-next,alphallama,exact,,R,edit a C++ source file,shared_client,2,72.1;71.7
+rtx3090,qwen3.8-flash-next,alphallama,exact,,R,edit a CUDA source file,shared_client,2,69.2;69.5
+rtx3090,qwen3.8-flash-next,alphallama,exact,,R,rename across a C header,shared_client,2,70.8;71.1
+rtx3090,qwen3.8-flash-next,alphallama,exact,,R,rename across a Python file,shared_client,2,72.6;71.0
+rtx3090,qwen3.8-flash-next,alphallama,exact,,R,rewrite a C++ file,shared_client,2,72.0;70.7
+rtx3090,qwen3.8-flash-next,alphallama,exact,,R,rewrite a Python file,shared_client,2,69.7;70.0
+rtx3090,qwen3.8-flash-next,alphallama,exact,,R,triage a log,shared_client,2,70.4;70.7
+rtx3090,qwen3.8-flash-next,alphallama,exact,,V,add Doxygen docs to a C++ file,shared_client,2,71.3;70.3
+rtx3090,qwen3.8-flash-next,alphallama,exact,,V,add docstrings to a file,shared_client,2,70.3;71.1
+rtx3090,qwen3.8-flash-next,alphallama,exact,,V,answer a question from a document,shared_client,2,67.1;68.2
+rtx3090,qwen3.8-flash-next,alphallama,exact,,V,edit a flag across code,shared_client,2,71.2;71.2
+rtx3090,qwen3.8-flash-next,alphallama,exact,,V,explain a piece of code,shared_client,2,69.0;71.4
+rtx3090,qwen3.8-flash-next,alphallama,exact,,V,find bugs in code,shared_client,2,70.8;70.6
+rtx3090,qwen3.8-flash-next,alphallama,exact,,V,list a file's functions,shared_client,2,73.8;71.4
+rtx3090,qwen3.8-flash-next,alphallama,exact,,V,port code to C++,shared_client,2,72.8;72.2
+rtx3090,qwen3.8-flash-next,alphallama,exact,,V,quote passages from a document,shared_client,2,73.8;71.2
+rtx3090,qwen3.8-flash-next,alphallama,exact,,V,rename across a file,shared_client,2,70.2;70.3
+rtx3090,qwen3.8-flash-next,alphallama,exact,,V,summarise a document,shared_client,2,67.8;70.4
+rtx3090,qwen3.8-flash-next,alphallama,exact,,V,turn a policy into a table,shared_client,2,67.9;70.3
+rtx3090,qwen3.8-flash-next,alphallama,exact,,V,work through a CSV table,shared_client,2,71.9;71.9
+rtx3090,qwen3.8-flash-next,alphallama,exact,,V,write unit tests,shared_client,2,71.0;71.6
+rtx3090,qwen3.8-flash-next,alphallama,fast,,A,chat: explain a networking topic,shared_client,2,109.5;114.6
+rtx3090,qwen3.8-flash-next,alphallama,fast,,A,chat: explain an algorithm,shared_client,2,125.7;121.8
+rtx3090,qwen3.8-flash-next,alphallama,fast,,A,chat: generate JSON data,shared_client,2,119.4;120.3
+rtx3090,qwen3.8-flash-next,alphallama,fast,,A,chat: write a Python class,shared_client,2,135.5;127.6
+rtx3090,qwen3.8-flash-next,alphallama,fast,,R,edit a C++ source file,shared_client,2,278.2;245.6
+rtx3090,qwen3.8-flash-next,alphallama,fast,,R,edit a CUDA source file,shared_client,2,220.2;224.0
+rtx3090,qwen3.8-flash-next,alphallama,fast,,R,rename across a C header,shared_client,2,262.8;261.9
+rtx3090,qwen3.8-flash-next,alphallama,fast,,R,rename across a Python file,shared_client,2,243.5;236.6
+rtx3090,qwen3.8-flash-next,alphallama,fast,,R,rewrite a C++ file,shared_client,2,261.0;235.8
+rtx3090,qwen3.8-flash-next,alphallama,fast,,R,rewrite a Python file,shared_client,2,206.3;207.4
+rtx3090,qwen3.8-flash-next,alphallama,fast,,R,triage a log,shared_client,2,185.0;175.4
+rtx3090,qwen3.8-flash-next,alphallama,fast,,V,add Doxygen docs to a C++ file,shared_client,2,178.3;185.4
+rtx3090,qwen3.8-flash-next,alphallama,fast,,V,add docstrings to a file,shared_client,2,142.4;176.1
+rtx3090,qwen3.8-flash-next,alphallama,fast,,V,answer a question from a document,shared_client,2,108.8;113.3
+rtx3090,qwen3.8-flash-next,alphallama,fast,,V,edit a flag across code,shared_client,2,162.7;161.4
+rtx3090,qwen3.8-flash-next,alphallama,fast,,V,explain a piece of code,shared_client,2,124.6;132.2
+rtx3090,qwen3.8-flash-next,alphallama,fast,,V,find bugs in code,shared_client,2,117.1;117.2
+rtx3090,qwen3.8-flash-next,alphallama,fast,,V,list a file's functions,shared_client,2,116.7;115.1
+rtx3090,qwen3.8-flash-next,alphallama,fast,,V,port code to C++,shared_client,2,129.4;128.7
+rtx3090,qwen3.8-flash-next,alphallama,fast,,V,quote passages from a document,shared_client,2,217.3;179.1
+rtx3090,qwen3.8-flash-next,alphallama,fast,,V,rename across a file,shared_client,2,230.7;186.3
+rtx3090,qwen3.8-flash-next,alphallama,fast,,V,summarise a document,shared_client,2,108.2;108.7
+rtx3090,qwen3.8-flash-next,alphallama,fast,,V,turn a policy into a table,shared_client,2,112.3;119.0
+rtx3090,qwen3.8-flash-next,alphallama,fast,,V,work through a CSV table,shared_client,2,136.6;143.9
+rtx3090,qwen3.8-flash-next,alphallama,fast,,V,write unit tests,shared_client,2,109.5;142.9
+rtx3090,qwen3.8-flash-next,strata,fast,,A,chat: explain a networking topic,shared_client,2,136.3;141.7
+rtx3090,qwen3.8-flash-next,strata,fast,,A,chat: explain an algorithm,shared_client,2,163.7;145.7
+rtx3090,qwen3.8-flash-next,strata,fast,,R,edit a C++ source file,shared_client,2,198.4;193.9
+rtx3090,qwen3.8-flash-next,strata,fast,,R,edit a CUDA source file,shared_client,2,165.6;176.7
+rtx3090,qwen3.8-flash-next,strata,fast,,R,rename across a C header,shared_client,2,203.1;210.9
+rtx3090,qwen3.8-flash-next,strata,fast,,R,rename across a Python file,shared_client,2,208.1;210.0
+rtx3090,qwen3.8-flash-next,strata,fast,,R,rewrite a C++ file,shared_client,2,211.1;206.4
+rtx3090,qwen3.8-flash-next,strata,fast,,R,rewrite a Python file,shared_client,2,202.5;176.9
+rtx3090,qwen3.8-flash-next,strata,fast,,R,triage a log,shared_client,2,166.3;161.8
+rtx3090,qwen3.8-flash-next,strata,fast,,V,add Doxygen docs to a C++ file,shared_client,2,186.6;182.7
+rtx3090,qwen3.8-flash-next,strata,fast,,V,add docstrings to a file,shared_client,2,166.6;167.8
+rtx3090,qwen3.8-flash-next,strata,fast,,V,answer a question from a document,shared_client,2,103.9;125.3
+rtx3090,qwen3.8-flash-next,strata,fast,,V,edit a flag across code,shared_client,2,195.0;177.1
+rtx3090,qwen3.8-flash-next,strata,fast,,V,explain a piece of code,shared_client,2,146.0;163.2
+rtx3090,qwen3.8-flash-next,strata,fast,,V,find bugs in code,shared_client,2,140.6;126.5
+rtx3090,qwen3.8-flash-next,strata,fast,,V,list a file's functions,shared_client,2,149.4;141.5
+rtx3090,qwen3.8-flash-next,strata,fast,,V,port code to C++,shared_client,2,183.1;162.4
+rtx3090,qwen3.8-flash-next,strata,fast,,V,quote passages from a document,shared_client,2,187.4;165.5
+rtx3090,qwen3.8-flash-next,strata,fast,,V,rename across a file,shared_client,2,193.2;160.6
+rtx3090,qwen3.8-flash-next,strata,fast,,V,summarise a document,shared_client,2,125.4;126.8
+rtx3090,qwen3.8-flash-next,strata,fast,,V,turn a policy into a table,shared_client,2,148.4;148.6
+rtx3090,qwen3.8-flash-next,strata,fast,,V,work through a CSV table,shared_client,2,162.9;173.9
+rtx3090,qwen3.8-flash-next,strata,fast,,V,write unit tests,shared_client,1,158.7
+rtx4070l,qwen3.6-35b-a3b,alphallama,exact,,A,chat: explain a networking topic,shared_client,2,38.2;38.4
+rtx4070l,qwen3.6-35b-a3b,alphallama,exact,,A,chat: explain an algorithm,shared_client,2,37.3;37.5
+rtx4070l,qwen3.6-35b-a3b,alphallama,exact,,A,chat: generate JSON data,shared_client,2,36.5;36.5
+rtx4070l,qwen3.6-35b-a3b,alphallama,exact,,A,chat: write a Python class,shared_client,2,37.9;38.4
+rtx4070l,qwen3.6-35b-a3b,alphallama,exact,,R,edit a C++ source file,shared_client,2,35.9;37.2
+rtx4070l,qwen3.6-35b-a3b,alphallama,exact,,R,edit a CUDA source file,shared_client,2,35.9;33.7
+rtx4070l,qwen3.6-35b-a3b,alphallama,exact,,R,rename across a C header,shared_client,2,34.7;34.4
+rtx4070l,qwen3.6-35b-a3b,alphallama,exact,,R,rename across a Python file,shared_client,2,36.4;35.9
+rtx4070l,qwen3.6-35b-a3b,alphallama,exact,,R,rewrite a C++ file,shared_client,2,37.7;36.8
+rtx4070l,qwen3.6-35b-a3b,alphallama,exact,,R,rewrite a Python file,shared_client,2,35.9;36.1
+rtx4070l,qwen3.6-35b-a3b,alphallama,exact,,R,triage a log,shared_client,2,35.5;36.4
+rtx4070l,qwen3.6-35b-a3b,alphallama,exact,,V,add Doxygen docs to a C++ file,shared_client,2,37.4;36.5
+rtx4070l,qwen3.6-35b-a3b,alphallama,exact,,V,add docstrings to a file,shared_client,2,36.3;34.9
+rtx4070l,qwen3.6-35b-a3b,alphallama,exact,,V,answer a question from a document,shared_client,2,34.3;34.5
+rtx4070l,qwen3.6-35b-a3b,alphallama,exact,,V,edit a flag across code,shared_client,2,36.5;36.3
+rtx4070l,qwen3.6-35b-a3b,alphallama,exact,,V,explain a piece of code,shared_client,2,36.8;36.3
+rtx4070l,qwen3.6-35b-a3b,alphallama,exact,,V,find bugs in code,shared_client,2,38.1;36.3
+rtx4070l,qwen3.6-35b-a3b,alphallama,exact,,V,list a file's functions,shared_client,2,39.8;38.6
+rtx4070l,qwen3.6-35b-a3b,alphallama,exact,,V,port code to C++,shared_client,2,39.4;39.7
+rtx4070l,qwen3.6-35b-a3b,alphallama,exact,,V,quote passages from a document,shared_client,2,35.4;35.1
+rtx4070l,qwen3.6-35b-a3b,alphallama,exact,,V,rename across a file,shared_client,2,36.5;36.4
+rtx4070l,qwen3.6-35b-a3b,alphallama,exact,,V,summarise a document,shared_client,2,36.8;36.1
+rtx4070l,qwen3.6-35b-a3b,alphallama,exact,,V,turn a policy into a table,shared_client,2,35.1;33.8
+rtx4070l,qwen3.6-35b-a3b,alphallama,exact,,V,work through a CSV table,shared_client,2,40.7;36.7
+rtx4070l,qwen3.6-35b-a3b,alphallama,exact,,V,write unit tests,shared_client,2,39.0;39.0
+rtx4070l,qwen3.6-35b-a3b,alphallama,fast,,A,chat: explain a networking topic,shared_client,2,42.4;38.7
+rtx4070l,qwen3.6-35b-a3b,alphallama,fast,,A,chat: explain an algorithm,shared_client,2,49.6;44.1
+rtx4070l,qwen3.6-35b-a3b,alphallama,fast,,A,chat: generate JSON data,shared_client,2,39.2;36.2
+rtx4070l,qwen3.6-35b-a3b,alphallama,fast,,A,chat: write a Python class,shared_client,2,55.8;52.0
+rtx4070l,qwen3.6-35b-a3b,alphallama,fast,,R,edit a C++ source file,shared_client,3,44.9;45.7;47.2
+rtx4070l,qwen3.6-35b-a3b,alphallama,fast,,R,edit a CUDA source file,shared_client,3,39.5;44.7;42.9
+rtx4070l,qwen3.6-35b-a3b,alphallama,fast,,R,rename across a C header,shared_client,3,47.9;46.8;46.5
+rtx4070l,qwen3.6-35b-a3b,alphallama,fast,,R,rename across a Python file,shared_client,3,48.0;48.7;46.8
+rtx4070l,qwen3.6-35b-a3b,alphallama,fast,,R,rewrite a C++ file,shared_client,3,51.8;53.0;49.8
+rtx4070l,qwen3.6-35b-a3b,alphallama,fast,,R,rewrite a Python file,shared_client,3,48.1;47.6;49.2
+rtx4070l,qwen3.6-35b-a3b,alphallama,fast,,R,triage a log,shared_client,3,49.5;40.8;39.4
+rtx4070l,qwen3.6-35b-a3b,alphallama,fast,,V,add Doxygen docs to a C++ file,shared_client,2,43.4;43.4
+rtx4070l,qwen3.6-35b-a3b,alphallama,fast,,V,add docstrings to a file,shared_client,2,38.5;38.4
+rtx4070l,qwen3.6-35b-a3b,alphallama,fast,,V,answer a question from a document,shared_client,2,33.2;30.9
+rtx4070l,qwen3.6-35b-a3b,alphallama,fast,,V,edit a flag across code,shared_client,2,45.8;45.8
+rtx4070l,qwen3.6-35b-a3b,alphallama,fast,,V,explain a piece of code,shared_client,2,42.2;36.7
+rtx4070l,qwen3.6-35b-a3b,alphallama,fast,,V,find bugs in code,shared_client,2,37.2;34.6
+rtx4070l,qwen3.6-35b-a3b,alphallama,fast,,V,list a file's functions,shared_client,2,45.7;43.8
+rtx4070l,qwen3.6-35b-a3b,alphallama,fast,,V,port code to C++,shared_client,2,47.4;46.4
+rtx4070l,qwen3.6-35b-a3b,alphallama,fast,,V,quote passages from a document,shared_client,2,35.7;36.5
+rtx4070l,qwen3.6-35b-a3b,alphallama,fast,,V,rename across a file,shared_client,2,42.0;39.7
+rtx4070l,qwen3.6-35b-a3b,alphallama,fast,,V,summarise a document,shared_client,2,31.6;30.2
+rtx4070l,qwen3.6-35b-a3b,alphallama,fast,,V,turn a policy into a table,shared_client,2,46.4;41.1
+rtx4070l,qwen3.6-35b-a3b,alphallama,fast,,V,work through a CSV table,shared_client,2,33.4;32.9
+rtx4070l,qwen3.6-35b-a3b,alphallama,fast,,V,write unit tests,shared_client,2,43.3;40.9
+rtx4070l,qwen3.6-35b-a3b,freetoken,exact,,A,chat: explain a networking topic,shared_client,2,35.4;35.1
+rtx4070l,qwen3.6-35b-a3b,freetoken,exact,,A,chat: explain an algorithm,shared_client,2,33.8;34.6
+rtx4070l,qwen3.6-35b-a3b,freetoken,exact,,A,chat: generate JSON data,shared_client,2,31.6;32.0
+rtx4070l,qwen3.6-35b-a3b,freetoken,exact,,A,chat: write a Python class,shared_client,2,32.7;32.5
+rtx4070l,qwen3.6-35b-a3b,ollama,exact,,A,chat: explain a networking topic,shared_client,2,6.2;6.3
+rtx4070l,qwen3.6-35b-a3b,ollama,exact,,A,chat: explain an algorithm,shared_client,2,6.6;6.7
+rtx4070l,qwen3.6-35b-a3b,ollama,exact,,A,chat: generate JSON data,shared_client,2,5.3;5.4
+rtx4070l,qwen3.6-35b-a3b,ollama,exact,,A,chat: write a Python class,shared_client,2,5.2;5.5
+rtx4070l,qwen3.6-35b-a3b,ollama,exact,,R,edit a C++ source file,shared_client,3,5.5;5.5;5.5
+rtx4070l,qwen3.6-35b-a3b,ollama,exact,,R,edit a CUDA source file,shared_client,3,4.1;4.7;4.7
+rtx4070l,qwen3.6-35b-a3b,ollama,exact,,R,rename across a C header,shared_client,3,6.1;6.1;6.1
+rtx4070l,qwen3.6-35b-a3b,ollama,exact,,R,rename across a Python file,shared_client,3,6.1;6.2;6.2
+rtx4070l,qwen3.6-35b-a3b,ollama,exact,,R,rewrite a C++ file,shared_client,3,5.9;5.9;5.8
+rtx4070l,qwen3.6-35b-a3b,ollama,exact,,R,rewrite a Python file,shared_client,3,5.9;5.9;5.7
+rtx4070l,qwen3.6-35b-a3b,ollama,exact,,R,triage a log,shared_client,3,6.5;6.5;6.5
+rtx4070l,qwen3.6-35b-a3b,ollama,exact,,V,add Doxygen docs to a C++ file,shared_client,2,6.0;5.9
+rtx4070l,qwen3.6-35b-a3b,ollama,exact,,V,add docstrings to a file,shared_client,2,5.7;5.8
+rtx4070l,qwen3.6-35b-a3b,ollama,exact,,V,answer a question from a document,shared_client,2,6.2;6.1
+rtx4070l,qwen3.6-35b-a3b,ollama,exact,,V,edit a flag across code,shared_client,2,6.1;6.0
+rtx4070l,qwen3.6-35b-a3b,ollama,exact,,V,explain a piece of code,shared_client,2,6.3;6.0
+rtx4070l,qwen3.6-35b-a3b,ollama,exact,,V,find bugs in code,shared_client,2,6.2;6.4
+rtx4070l,qwen3.6-35b-a3b,ollama,exact,,V,list a file's functions,shared_client,2,6.4;6.3
+rtx4070l,qwen3.6-35b-a3b,ollama,exact,,V,port code to C++,shared_client,2,5.3;5.2
+rtx4070l,qwen3.6-35b-a3b,ollama,exact,,V,quote passages from a document,shared_client,2,6.3;6.3
+rtx4070l,qwen3.6-35b-a3b,ollama,exact,,V,rename across a file,shared_client,2,5.8;5.7
+rtx4070l,qwen3.6-35b-a3b,ollama,exact,,V,summarise a document,shared_client,2,6.2;6.1
+rtx4070l,qwen3.6-35b-a3b,ollama,exact,,V,turn a policy into a table,shared_client,2,6.8;6.6
+rtx4070l,qwen3.6-35b-a3b,ollama,exact,,V,work through a CSV table,shared_client,2,6.8;6.6
+rtx4070l,qwen3.6-35b-a3b,ollama,exact,,V,write unit tests,shared_client,2,6.2;6.0
+rtx4080,qwen3.6-35b-a3b,alphallama,exact,,A,chat: explain a networking topic,shared_client,2,135.8;142.3
+rtx4080,qwen3.6-35b-a3b,alphallama,exact,,A,chat: explain an algorithm,shared_client,2,137.4;123.7
+rtx4080,qwen3.6-35b-a3b,alphallama,exact,,A,chat: generate JSON data,shared_client,2,131.7;119.6
+rtx4080,qwen3.6-35b-a3b,alphallama,exact,,A,chat: write a Python class,shared_client,2,141.3;140.0
+rtx4080,qwen3.6-35b-a3b,alphallama,exact,,R,edit a C++ source file,shared_client,2,136.8;137.2
+rtx4080,qwen3.6-35b-a3b,alphallama,exact,,R,edit a CUDA source file,shared_client,2,128.6;133.5
+rtx4080,qwen3.6-35b-a3b,alphallama,exact,,R,rename across a C header,shared_client,2,134.5;136.8
+rtx4080,qwen3.6-35b-a3b,alphallama,exact,,R,rename across a Python file,shared_client,2,136.0;137.7
+rtx4080,qwen3.6-35b-a3b,alphallama,exact,,R,rewrite a C++ file,shared_client,2,138.5;132.9
+rtx4080,qwen3.6-35b-a3b,alphallama,exact,,R,rewrite a Python file,shared_client,2,133.8;129.1
+rtx4080,qwen3.6-35b-a3b,alphallama,exact,,R,triage a log,shared_client,2,135.8;133.9
+rtx4080,qwen3.6-35b-a3b,alphallama,exact,,V,add Doxygen docs to a C++ file,shared_client,2,132.9;132.2
+rtx4080,qwen3.6-35b-a3b,alphallama,exact,,V,add docstrings to a file,shared_client,2,126.6;134.1
+rtx4080,qwen3.6-35b-a3b,alphallama,exact,,V,answer a question from a document,shared_client,2,124.0;130.8
+rtx4080,qwen3.6-35b-a3b,alphallama,exact,,V,edit a flag across code,shared_client,2,135.9;129.5
+rtx4080,qwen3.6-35b-a3b,alphallama,exact,,V,explain a piece of code,shared_client,2,133.1;137.8
+rtx4080,qwen3.6-35b-a3b,alphallama,exact,,V,find bugs in code,shared_client,2,130.6;131.2
+rtx4080,qwen3.6-35b-a3b,alphallama,exact,,V,list a file's functions,shared_client,2,141.6;135.7
+rtx4080,qwen3.6-35b-a3b,alphallama,exact,,V,port code to C++,shared_client,2,137.5;134.2
+rtx4080,qwen3.6-35b-a3b,alphallama,exact,,V,quote passages from a document,shared_client,2,139.9;130.7
+rtx4080,qwen3.6-35b-a3b,alphallama,exact,,V,rename across a file,shared_client,2,128.9;125.9
+rtx4080,qwen3.6-35b-a3b,alphallama,exact,,V,summarise a document,shared_client,2,127.9;134.7
+rtx4080,qwen3.6-35b-a3b,alphallama,exact,,V,turn a policy into a table,shared_client,2,121.0;118.1
+rtx4080,qwen3.6-35b-a3b,alphallama,exact,,V,work through a CSV table,shared_client,2,129.4;119.9
+rtx4080,qwen3.6-35b-a3b,alphallama,exact,,V,write unit tests,shared_client,2,138.7;133.2
+rtx4080,qwen3.6-35b-a3b,alphallama,fast,,A,chat: explain a networking topic,shared_client,2,201.3;201.9
+rtx4080,qwen3.6-35b-a3b,alphallama,fast,,A,chat: explain an algorithm,shared_client,2,231.1;173.2
+rtx4080,qwen3.6-35b-a3b,alphallama,fast,,A,chat: generate JSON data,shared_client,2,238.3;241.8
+rtx4080,qwen3.6-35b-a3b,alphallama,fast,,A,chat: write a Python class,shared_client,2,212.2;249.6
+rtx4080,qwen3.6-35b-a3b,alphallama,fast,,R,edit a C++ source file,shared_client,2,482.8;518.9
+rtx4080,qwen3.6-35b-a3b,alphallama,fast,,R,edit a CUDA source file,shared_client,2,370.6;477.2
+rtx4080,qwen3.6-35b-a3b,alphallama,fast,,R,rename across a C header,shared_client,2,561.3;597.9
+rtx4080,qwen3.6-35b-a3b,alphallama,fast,,R,rename across a Python file,shared_client,2,471.5;402.7
+rtx4080,qwen3.6-35b-a3b,alphallama,fast,,R,rewrite a C++ file,shared_client,2,655.6;541.1
+rtx4080,qwen3.6-35b-a3b,alphallama,fast,,R,rewrite a Python file,shared_client,2,599.6;405.9
+rtx4080,qwen3.6-35b-a3b,alphallama,fast,,R,triage a log,shared_client,2,304.4;322.1
+rtx4080,qwen3.6-35b-a3b,alphallama,fast,,V,add Doxygen docs to a C++ file,shared_client,2,279.9;252.7
+rtx4080,qwen3.6-35b-a3b,alphallama,fast,,V,add docstrings to a file,shared_client,2,277.5;315.3
+rtx4080,qwen3.6-35b-a3b,alphallama,fast,,V,answer a question from a document,shared_client,2,181.8;171.6
+rtx4080,qwen3.6-35b-a3b,alphallama,fast,,V,edit a flag across code,shared_client,2,269.7;267.4
+rtx4080,qwen3.6-35b-a3b,alphallama,fast,,V,explain a piece of code,shared_client,2,221.7;246.3
+rtx4080,qwen3.6-35b-a3b,alphallama,fast,,V,find bugs in code,shared_client,2,192.6;199.8
+rtx4080,qwen3.6-35b-a3b,alphallama,fast,,V,list a file's functions,shared_client,2,208.9;205.2
+rtx4080,qwen3.6-35b-a3b,alphallama,fast,,V,port code to C++,shared_client,2,225.5;227.9
+rtx4080,qwen3.6-35b-a3b,alphallama,fast,,V,quote passages from a document,shared_client,2,254.0;259.8
+rtx4080,qwen3.6-35b-a3b,alphallama,fast,,V,rename across a file,shared_client,2,375.6;339.5
+rtx4080,qwen3.6-35b-a3b,alphallama,fast,,V,summarise a document,shared_client,2,175.7;197.1
+rtx4080,qwen3.6-35b-a3b,alphallama,fast,,V,turn a policy into a table,shared_client,2,193.1;237.8
+rtx4080,qwen3.6-35b-a3b,alphallama,fast,,V,work through a CSV table,shared_client,2,208.2;225.9
+rtx4080,qwen3.6-35b-a3b,alphallama,fast,,V,write unit tests,shared_client,2,204.9;209.5
+rtx4080,qwen3.6-35b-a3b,freetoken,exact,,A,chat: explain a networking topic,shared_client,2,128.9;136.1
+rtx4080,qwen3.6-35b-a3b,freetoken,exact,,A,chat: explain an algorithm,shared_client,2,133.0;121.6
+rtx4080,qwen3.6-35b-a3b,freetoken,exact,,A,chat: generate JSON data,shared_client,2,118.9;106.7
+rtx4080,qwen3.6-35b-a3b,freetoken,exact,,A,chat: write a Python class,shared_client,2,103.0;119.7
+rtx4080,qwen3.6-35b-a3b,freetoken,exact,,R,edit a C++ source file,shared_client,2,108.7;108.9
+rtx4080,qwen3.6-35b-a3b,freetoken,exact,,R,edit a CUDA source file,shared_client,2,92.6;98.4
+rtx4080,qwen3.6-35b-a3b,freetoken,exact,,R,rename across a C header,shared_client,2,103.2;103.7
+rtx4080,qwen3.6-35b-a3b,freetoken,exact,,R,rename across a Python file,shared_client,2,108.3;109.1
+rtx4080,qwen3.6-35b-a3b,freetoken,exact,,R,rewrite a C++ file,shared_client,2,113.1;110.9
+rtx4080,qwen3.6-35b-a3b,freetoken,exact,,R,rewrite a Python file,shared_client,2,108.7;99.8
+rtx4080,qwen3.6-35b-a3b,freetoken,exact,,R,triage a log,shared_client,2,103.9;105.4
+rtx4080,qwen3.6-35b-a3b,freetoken,exact,,V,add Doxygen docs to a C++ file,shared_client,2,106.4;106.7
+rtx4080,qwen3.6-35b-a3b,freetoken,exact,,V,add docstrings to a file,shared_client,2,101.1;102.4
+rtx4080,qwen3.6-35b-a3b,freetoken,exact,,V,answer a question from a document,shared_client,2,109.1;110.6
+rtx4080,qwen3.6-35b-a3b,freetoken,exact,,V,edit a flag across code,shared_client,2,104.3;103.9
+rtx4080,qwen3.6-35b-a3b,freetoken,exact,,V,explain a piece of code,shared_client,2,113.8;118.4
+rtx4080,qwen3.6-35b-a3b,freetoken,exact,,V,find bugs in code,shared_client,2,120.6;120.7
+rtx4080,qwen3.6-35b-a3b,freetoken,exact,,V,list a file's functions,shared_client,2,135.7;130.4
+rtx4080,qwen3.6-35b-a3b,freetoken,exact,,V,port code to C++,shared_client,2,115.6;115.3
+rtx4080,qwen3.6-35b-a3b,freetoken,exact,,V,quote passages from a document,shared_client,2,120.6;122.9
+rtx4080,qwen3.6-35b-a3b,freetoken,exact,,V,rename across a file,shared_client,2,108.3;108.1
+rtx4080,qwen3.6-35b-a3b,freetoken,exact,,V,summarise a document,shared_client,2,113.3;118.3
+rtx4080,qwen3.6-35b-a3b,freetoken,exact,,V,turn a policy into a table,shared_client,2,103.3;107.1
+rtx4080,qwen3.6-35b-a3b,freetoken,exact,,V,work through a CSV table,shared_client,2,121.0;129.4
+rtx4080,qwen3.6-35b-a3b,freetoken,exact,,V,write unit tests,shared_client,2,109.9;134.0
+rtx4080,qwen3.6-35b-a3b,ollama,exact,,A,chat: explain a networking topic,shared_client,2,86.1;81.3
+rtx4080,qwen3.6-35b-a3b,ollama,exact,,A,chat: explain an algorithm,shared_client,2,84.8;81.8
+rtx4080,qwen3.6-35b-a3b,ollama,exact,,A,chat: generate JSON data,shared_client,2,84.5;83.8
+rtx4080,qwen3.6-35b-a3b,ollama,exact,,A,chat: write a Python class,shared_client,2,85.4;80.0
+rtx4080,qwen3.6-35b-a3b,ollama,exact,,R,edit a C++ source file,shared_client,2,81.6;75.3
+rtx4080,qwen3.6-35b-a3b,ollama,exact,,R,edit a CUDA source file,shared_client,2,86.6;77.0
+rtx4080,qwen3.6-35b-a3b,ollama,exact,,R,rename across a C header,shared_client,2,81.1;78.6
+rtx4080,qwen3.6-35b-a3b,ollama,exact,,R,rename across a Python file,shared_client,2,85.1;83.4
+rtx4080,qwen3.6-35b-a3b,ollama,exact,,R,rewrite a C++ file,shared_client,2,82.9;85.5
+rtx4080,qwen3.6-35b-a3b,ollama,exact,,R,rewrite a Python file,shared_client,2,83.2;84.4
+rtx4080,qwen3.6-35b-a3b,ollama,exact,,R,triage a log,shared_client,2,84.8;79.9
+rtx4080,qwen3.6-35b-a3b,ollama,exact,,V,add Doxygen docs to a C++ file,shared_client,2,85.4;83.9
+rtx4080,qwen3.6-35b-a3b,ollama,exact,,V,add docstrings to a file,shared_client,2,82.8;84.5
+rtx4080,qwen3.6-35b-a3b,ollama,exact,,V,answer a question from a document,shared_client,2,83.3;83.1
+rtx4080,qwen3.6-35b-a3b,ollama,exact,,V,edit a flag across code,shared_client,2,82.3;84.9
+rtx4080,qwen3.6-35b-a3b,ollama,exact,,V,explain a piece of code,shared_client,2,85.5;83.6
+rtx4080,qwen3.6-35b-a3b,ollama,exact,,V,find bugs in code,shared_client,2,84.8;83.9
+rtx4080,qwen3.6-35b-a3b,ollama,exact,,V,list a file's functions,shared_client,2,81.9;86.8
+rtx4080,qwen3.6-35b-a3b,ollama,exact,,V,port code to C++,shared_client,2,83.0;83.6
+rtx4080,qwen3.6-35b-a3b,ollama,exact,,V,quote passages from a document,shared_client,2,82.1;83.3
+rtx4080,qwen3.6-35b-a3b,ollama,exact,,V,rename across a file,shared_client,2,81.9;85.3
+rtx4080,qwen3.6-35b-a3b,ollama,exact,,V,summarise a document,shared_client,2,78.2;81.9
+rtx4080,qwen3.6-35b-a3b,ollama,exact,,V,turn a policy into a table,shared_client,2,81.5;81.3
+rtx4080,qwen3.6-35b-a3b,ollama,exact,,V,work through a CSV table,shared_client,2,77.2;83.3
+rtx4080,qwen3.6-35b-a3b,ollama,exact,,V,write unit tests,shared_client,2,82.7;82.7
+rtx4080,qwen3.6-35b-a3b,ollama,fast,MTP,A,chat: explain a networking topic,shared_client,2,89.5;92.0
+rtx4080,qwen3.6-35b-a3b,ollama,fast,MTP,A,chat: explain an algorithm,shared_client,2,100.7;101.0
+rtx4080,qwen3.6-35b-a3b,ollama,fast,MTP,A,chat: generate JSON data,shared_client,2,111.3;109.7
+rtx4080,qwen3.6-35b-a3b,ollama,fast,MTP,A,chat: write a Python class,shared_client,2,111.4;107.9
+rtx4080,qwen3.6-35b-a3b,ollama,fast,MTP,R,edit a C++ source file,shared_client,2,108.7;108.4
+rtx4080,qwen3.6-35b-a3b,ollama,fast,MTP,R,edit a CUDA source file,shared_client,2,112.2;110.8
+rtx4080,qwen3.6-35b-a3b,ollama,fast,MTP,R,rename across a C header,shared_client,2,109.3;108.8
+rtx4080,qwen3.6-35b-a3b,ollama,fast,MTP,R,rename across a Python file,shared_client,2,111.6;110.3
+rtx4080,qwen3.6-35b-a3b,ollama,fast,MTP,R,rewrite a C++ file,shared_client,2,113.8;112.5
+rtx4080,qwen3.6-35b-a3b,ollama,fast,MTP,R,rewrite a Python file,shared_client,2,108.8;109.3
+rtx4080,qwen3.6-35b-a3b,ollama,fast,MTP,R,triage a log,shared_client,2,103.9;102.9
+rtx4080,qwen3.6-35b-a3b,ollama,fast,MTP,V,add Doxygen docs to a C++ file,shared_client,2,112.1;114.6
+rtx4080,qwen3.6-35b-a3b,ollama,fast,MTP,V,add docstrings to a file,shared_client,2,106.2;108.6
+rtx4080,qwen3.6-35b-a3b,ollama,fast,MTP,V,answer a question from a document,shared_client,2,114.6;112.8
+rtx4080,qwen3.6-35b-a3b,ollama,fast,MTP,V,edit a flag across code,shared_client,2,106.2;107.2
+rtx4080,qwen3.6-35b-a3b,ollama,fast,MTP,V,explain a piece of code,shared_client,2,105.6;105.2
+rtx4080,qwen3.6-35b-a3b,ollama,fast,MTP,V,find bugs in code,shared_client,2,97.5;97.4
+rtx4080,qwen3.6-35b-a3b,ollama,fast,MTP,V,list a file's functions,shared_client,2,98.5;97.5
+rtx4080,qwen3.6-35b-a3b,ollama,fast,MTP,V,port code to C++,shared_client,2,104.9;104.2
+rtx4080,qwen3.6-35b-a3b,ollama,fast,MTP,V,quote passages from a document,shared_client,2,111.3;111.3
+rtx4080,qwen3.6-35b-a3b,ollama,fast,MTP,V,rename across a file,shared_client,2,109.4;109.4
+rtx4080,qwen3.6-35b-a3b,ollama,fast,MTP,V,summarise a document,shared_client,2,95.4;95.5
+rtx4080,qwen3.6-35b-a3b,ollama,fast,MTP,V,turn a policy into a table,shared_client,2,98.9;106.4
+rtx4080,qwen3.6-35b-a3b,ollama,fast,MTP,V,work through a CSV table,shared_client,2,111.5;112.0
+rtx4080,qwen3.6-35b-a3b,ollama,fast,MTP,V,write unit tests,shared_client,2,88.6;87.5
+rtx4080,qwen3.6-35b-a3b,vllm,exact,,A,chat: explain a networking topic,shared_client,2,10.7;10.7
+rtx4080,qwen3.6-35b-a3b,vllm,exact,,A,chat: explain an algorithm,shared_client,2,10.7;10.7
+rtx4080,qwen3.6-35b-a3b,vllm,exact,,A,chat: generate JSON data,shared_client,2,10.7;10.7
+rtx4080,qwen3.6-35b-a3b,vllm,exact,,A,chat: write a Python class,shared_client,2,10.7;10.7
+rtx4080,qwen3.6-35b-a3b,vllm,exact,,R,edit a C++ source file,shared_client,2,10.7;10.7
+rtx4080,qwen3.6-35b-a3b,vllm,exact,,R,edit a CUDA source file,shared_client,2,10.7;10.7
+rtx4080,qwen3.6-35b-a3b,vllm,exact,,R,rename across a C header,shared_client,2,10.7;10.7
+rtx4080,qwen3.6-35b-a3b,vllm,exact,,R,rename across a Python file,shared_client,2,10.7;10.7
+rtx4080,qwen3.6-35b-a3b,vllm,exact,,R,rewrite a C++ file,shared_client,2,10.7;10.7
+rtx4080,qwen3.6-35b-a3b,vllm,exact,,R,rewrite a Python file,shared_client,2,10.7;10.7
+rtx4080,qwen3.6-35b-a3b,vllm,exact,,R,triage a log,shared_client,2,10.7;10.7
+rtx4080,qwen3.6-35b-a3b,vllm,exact,,V,add Doxygen docs to a C++ file,shared_client,2,10.7;10.7
+rtx4080,qwen3.6-35b-a3b,vllm,exact,,V,add docstrings to a file,shared_client,2,10.7;10.7
+rtx4080,qwen3.6-35b-a3b,vllm,exact,,V,answer a question from a document,shared_client,2,10.8;10.7
+rtx4080,qwen3.6-35b-a3b,vllm,exact,,V,edit a flag across code,shared_client,2,10.7;10.7
+rtx4080,qwen3.6-35b-a3b,vllm,exact,,V,explain a piece of code,shared_client,2,10.7;10.7
+rtx4080,qwen3.6-35b-a3b,vllm,exact,,V,find bugs in code,shared_client,2,10.7;10.7
+rtx4080,qwen3.6-35b-a3b,vllm,exact,,V,list a file's functions,shared_client,2,10.7;10.7
+rtx4080,qwen3.6-35b-a3b,vllm,exact,,V,port code to C++,shared_client,2,10.7;10.7
+rtx4080,qwen3.6-35b-a3b,vllm,exact,,V,quote passages from a document,shared_client,2,10.9;10.8
+rtx4080,qwen3.6-35b-a3b,vllm,exact,,V,rename across a file,shared_client,2,10.7;10.7
+rtx4080,qwen3.6-35b-a3b,vllm,exact,,V,summarise a document,shared_client,2,10.7;10.7
+rtx4080,qwen3.6-35b-a3b,vllm,exact,,V,turn a policy into a table,shared_client,2,10.8;10.8
+rtx4080,qwen3.6-35b-a3b,vllm,exact,,V,work through a CSV table,shared_client,2,10.8;10.8
+rtx4080,qwen3.6-35b-a3b,vllm,exact,,V,write unit tests,shared_client,2,10.7;10.7
+rtx4080,qwen3.8-27b,alphallama,exact,,A,chat: explain a networking topic,shared_client,2,22.9;23.0
+rtx4080,qwen3.8-27b,alphallama,exact,,A,chat: explain an algorithm,shared_client,2,22.8;23.0
+rtx4080,qwen3.8-27b,alphallama,exact,,A,chat: generate JSON data,shared_client,2,22.8;22.9
+rtx4080,qwen3.8-27b,alphallama,exact,,A,chat: write a Python class,shared_client,2,22.9;22.9
+rtx4080,qwen3.8-27b,alphallama,exact,,R,edit a C++ source file,shared_client,2,22.8;22.7
+rtx4080,qwen3.8-27b,alphallama,exact,,R,edit a CUDA source file,shared_client,2,22.6;22.7
+rtx4080,qwen3.8-27b,alphallama,exact,,R,rename across a C header,shared_client,2,22.9;22.7
+rtx4080,qwen3.8-27b,alphallama,exact,,R,rename across a Python file,shared_client,2,22.9;22.7
+rtx4080,qwen3.8-27b,alphallama,exact,,R,rewrite a C++ file,shared_client,2,22.9;22.7
+rtx4080,qwen3.8-27b,alphallama,exact,,R,rewrite a Python file,shared_client,2,22.8;22.9
+rtx4080,qwen3.8-27b,alphallama,exact,,R,triage a log,shared_client,2,23.0;22.8
+rtx4080,qwen3.8-27b,alphallama,exact,,V,add Doxygen docs to a C++ file,shared_client,2,22.8;22.8
+rtx4080,qwen3.8-27b,alphallama,exact,,V,add docstrings to a file,shared_client,2,23.0;22.9
+rtx4080,qwen3.8-27b,alphallama,exact,,V,answer a question from a document,shared_client,2,23.2;22.9
+rtx4080,qwen3.8-27b,alphallama,exact,,V,edit a flag across code,shared_client,2,22.7;23.0
+rtx4080,qwen3.8-27b,alphallama,exact,,V,explain a piece of code,shared_client,2,22.7;22.9
+rtx4080,qwen3.8-27b,alphallama,exact,,V,find bugs in code,shared_client,2,22.9;22.9
+rtx4080,qwen3.8-27b,alphallama,exact,,V,list a file's functions,shared_client,2,22.9;22.7
+rtx4080,qwen3.8-27b,alphallama,exact,,V,port code to C++,shared_client,2,23.0;22.8
+rtx4080,qwen3.8-27b,alphallama,exact,,V,quote passages from a document,shared_client,2,23.1;22.9
+rtx4080,qwen3.8-27b,alphallama,exact,,V,rename across a file,shared_client,2,23.0;22.8
+rtx4080,qwen3.8-27b,alphallama,exact,,V,summarise a document,shared_client,2,22.9;22.8
+rtx4080,qwen3.8-27b,alphallama,exact,,V,turn a policy into a table,shared_client,2,23.3;22.8
+rtx4080,qwen3.8-27b,alphallama,exact,,V,work through a CSV table,shared_client,2,22.9;22.9
+rtx4080,qwen3.8-27b,alphallama,exact,,V,write unit tests,shared_client,2,22.9;22.8
+rtx4080,qwen3.8-27b,alphallama,fast,,A,chat: explain a networking topic,shared_client,2,39.9;39.9
+rtx4080,qwen3.8-27b,alphallama,fast,,A,chat: explain an algorithm,shared_client,2,51.8;48.3
+rtx4080,qwen3.8-27b,alphallama,fast,,A,chat: generate JSON data,shared_client,2,65.1;64.1
+rtx4080,qwen3.8-27b,alphallama,fast,,A,chat: write a Python class,shared_client,2,55.7;55.5
+rtx4080,qwen3.8-27b,alphallama,fast,,R,edit a C++ source file,shared_client,2,125.0;116.8
+rtx4080,qwen3.8-27b,alphallama,fast,,R,edit a CUDA source file,shared_client,2,134.5;128.4
+rtx4080,qwen3.8-27b,alphallama,fast,,R,rename across a C header,shared_client,2,112.5;107.7
+rtx4080,qwen3.8-27b,alphallama,fast,,R,rename across a Python file,shared_client,2,121.8;131.4
+rtx4080,qwen3.8-27b,alphallama,fast,,R,rewrite a C++ file,shared_client,2,108.7;109.7
+rtx4080,qwen3.8-27b,alphallama,fast,,R,rewrite a Python file,shared_client,2,131.1;145.9
+rtx4080,qwen3.8-27b,alphallama,fast,,R,triage a log,shared_client,2,87.5;84.9
+rtx4080,qwen3.8-27b,alphallama,fast,,V,add Doxygen docs to a C++ file,shared_client,2,100.1;75.1
+rtx4080,qwen3.8-27b,alphallama,fast,,V,add docstrings to a file,shared_client,2,89.5;93.7
+rtx4080,qwen3.8-27b,alphallama,fast,,V,answer a question from a document,shared_client,2,76.1;80.3
+rtx4080,qwen3.8-27b,alphallama,fast,,V,edit a flag across code,shared_client,2,80.7;81.1
+rtx4080,qwen3.8-27b,alphallama,fast,,V,explain a piece of code,shared_client,2,59.0;59.0
+rtx4080,qwen3.8-27b,alphallama,fast,,V,find bugs in code,shared_client,2,57.4;58.7
+rtx4080,qwen3.8-27b,alphallama,fast,,V,list a file's functions,shared_client,2,60.3;59.2
+rtx4080,qwen3.8-27b,alphallama,fast,,V,port code to C++,shared_client,2,65.6;67.1
+rtx4080,qwen3.8-27b,alphallama,fast,,V,quote passages from a document,shared_client,2,79.5;82.4
+rtx4080,qwen3.8-27b,alphallama,fast,,V,rename across a file,shared_client,2,109.3;109.3
+rtx4080,qwen3.8-27b,alphallama,fast,,V,summarise a document,shared_client,2,47.1;46.0
+rtx4080,qwen3.8-27b,alphallama,fast,,V,turn a policy into a table,shared_client,2,57.1;56.6
+rtx4080,qwen3.8-27b,alphallama,fast,,V,work through a CSV table,shared_client,2,48.7;52.1
+rtx4080,qwen3.8-27b,alphallama,fast,,V,write unit tests,shared_client,2,45.5;45.5
+rtx4080,qwen3.8-27b,alphallama,fast,verified MTP,A,chat: explain a networking topic,shared_client,2,55.6;53.3
+rtx4080,qwen3.8-27b,alphallama,fast,verified MTP,A,chat: explain an algorithm,shared_client,2,59.3;57.2
+rtx4080,qwen3.8-27b,alphallama,fast,verified MTP,A,chat: generate JSON data,shared_client,2,70.8;70.3
+rtx4080,qwen3.8-27b,alphallama,fast,verified MTP,A,chat: write a Python class,shared_client,2,61.4;58.1
+rtx4080,qwen3.8-27b,alphallama,fast,verified MTP,R,edit a C++ source file,shared_client,2,75.9;72.0
+rtx4080,qwen3.8-27b,alphallama,fast,verified MTP,R,edit a CUDA source file,shared_client,2,73.7;73.3
+rtx4080,qwen3.8-27b,alphallama,fast,verified MTP,R,rename across a C header,shared_client,2,74.3;72.8
+rtx4080,qwen3.8-27b,alphallama,fast,verified MTP,R,rename across a Python file,shared_client,2,75.7;71.8
+rtx4080,qwen3.8-27b,alphallama,fast,verified MTP,R,rewrite a C++ file,shared_client,2,73.9;70.7
+rtx4080,qwen3.8-27b,alphallama,fast,verified MTP,R,rewrite a Python file,shared_client,2,76.9;76.0
+rtx4080,qwen3.8-27b,alphallama,fast,verified MTP,R,triage a log,shared_client,2,70.1;67.7
+rtx4080,qwen3.8-27b,alphallama,fast,verified MTP,V,add Doxygen docs to a C++ file,shared_client,2,71.2;70.5
+rtx4080,qwen3.8-27b,alphallama,fast,verified MTP,V,add docstrings to a file,shared_client,2,72.8;72.1
+rtx4080,qwen3.8-27b,alphallama,fast,verified MTP,V,answer a question from a document,shared_client,2,75.4;72.5
+rtx4080,qwen3.8-27b,alphallama,fast,verified MTP,V,edit a flag across code,shared_client,2,73.0;73.0
+rtx4080,qwen3.8-27b,alphallama,fast,verified MTP,V,explain a piece of code,shared_client,2,62.0;62.3
+rtx4080,qwen3.8-27b,alphallama,fast,verified MTP,V,find bugs in code,shared_client,2,62.6;62.5
+rtx4080,qwen3.8-27b,alphallama,fast,verified MTP,V,list a file's functions,shared_client,2,69.0;68.4
+rtx4080,qwen3.8-27b,alphallama,fast,verified MTP,V,port code to C++,shared_client,2,65.5;65.5
+rtx4080,qwen3.8-27b,alphallama,fast,verified MTP,V,quote passages from a document,shared_client,2,72.9;76.0
+rtx4080,qwen3.8-27b,alphallama,fast,verified MTP,V,rename across a file,shared_client,2,76.2;76.5
+rtx4080,qwen3.8-27b,alphallama,fast,verified MTP,V,summarise a document,shared_client,2,53.3;53.9
+rtx4080,qwen3.8-27b,alphallama,fast,verified MTP,V,turn a policy into a table,shared_client,2,64.2;61.8
+rtx4080,qwen3.8-27b,alphallama,fast,verified MTP,V,work through a CSV table,shared_client,2,61.0;60.6
+rtx4080,qwen3.8-27b,alphallama,fast,verified MTP,V,write unit tests,shared_client,2,51.8;49.9
+rtx4080,qwen3.8-27b,ollama,exact,,A,chat: explain a networking topic,shared_client,2,20.2;20.1
+rtx4080,qwen3.8-27b,ollama,exact,,A,chat: explain an algorithm,shared_client,2,20.1;20.1
+rtx4080,qwen3.8-27b,ollama,exact,,A,chat: generate JSON data,shared_client,2,20.0;19.8
+rtx4080,qwen3.8-27b,ollama,exact,,A,chat: write a Python class,shared_client,2,20.2;20.0
+rtx4080,qwen3.8-27b,ollama,exact,,R,edit a C++ source file,shared_client,2,19.4;19.7
+rtx4080,qwen3.8-27b,ollama,exact,,R,edit a CUDA source file,shared_client,2,19.2;19.2
+rtx4080,qwen3.8-27b,ollama,exact,,R,rename across a C header,shared_client,2,19.8;19.7
+rtx4080,qwen3.8-27b,ollama,exact,,R,rename across a Python file,shared_client,2,19.6;19.7
+rtx4080,qwen3.8-27b,ollama,exact,,R,rewrite a C++ file,shared_client,2,19.8;19.8
+rtx4080,qwen3.8-27b,ollama,exact,,R,rewrite a Python file,shared_client,2,19.8;20.0
+rtx4080,qwen3.8-27b,ollama,exact,,R,triage a log,shared_client,2,20.0;19.8
+rtx4080,qwen3.8-27b,ollama,exact,,V,add Doxygen docs to a C++ file,shared_client,2,19.7;19.7
+rtx4080,qwen3.8-27b,ollama,exact,,V,add docstrings to a file,shared_client,2,19.8;19.6
+rtx4080,qwen3.8-27b,ollama,exact,,V,answer a question from a document,shared_client,2,19.7;19.7
+rtx4080,qwen3.8-27b,ollama,exact,,V,edit a flag across code,shared_client,2,19.9;20.0
+rtx4080,qwen3.8-27b,ollama,exact,,V,explain a piece of code,shared_client,2,19.7;20.0
+rtx4080,qwen3.8-27b,ollama,exact,,V,find bugs in code,shared_client,2,19.7;19.7
+rtx4080,qwen3.8-27b,ollama,exact,,V,list a file's functions,shared_client,2,19.7;19.5
+rtx4080,qwen3.8-27b,ollama,exact,,V,port code to C++,shared_client,2,19.8;19.9
+rtx4080,qwen3.8-27b,ollama,exact,,V,quote passages from a document,shared_client,2,19.9;19.8
+rtx4080,qwen3.8-27b,ollama,exact,,V,rename across a file,shared_client,2,19.8;19.9
+rtx4080,qwen3.8-27b,ollama,exact,,V,summarise a document,shared_client,2,19.6;19.8
+rtx4080,qwen3.8-27b,ollama,exact,,V,turn a policy into a table,shared_client,2,20.1;20.0
+rtx4080,qwen3.8-27b,ollama,exact,,V,work through a CSV table,shared_client,2,20.0;20.0
+rtx4080,qwen3.8-27b,ollama,exact,,V,write unit tests,shared_client,2,20.0;19.9
+rtx4080,qwen3.8-27b,vllm,exact,,A,chat: explain a networking topic,shared_client,2,1.1;1.1
+rtx4080,qwen3.8-27b,vllm,exact,,A,chat: explain an algorithm,shared_client,2,1.1;1.1
+rtx4080,qwen3.8-27b,vllm,exact,,A,chat: generate JSON data,shared_client,2,1.1;1.1
+rtx4080,qwen3.8-27b,vllm,exact,,A,chat: write a Python class,shared_client,2,1.1;1.1
+rtx4080,qwen3.8-27b,vllm,exact,,R,edit a C++ source file,shared_client,2,1.1;1.1
+rtx4080,qwen3.8-27b,vllm,exact,,R,edit a CUDA source file,shared_client,2,1.1;1.1
+rtx4080,qwen3.8-27b,vllm,exact,,R,rename across a C header,shared_client,2,1.1;1.1
+rtx4080,qwen3.8-27b,vllm,exact,,R,rename across a Python file,shared_client,2,1.1;1.1
+rtx4080,qwen3.8-27b,vllm,exact,,R,rewrite a C++ file,shared_client,2,1.1;1.1
+rtx4080,qwen3.8-27b,vllm,exact,,R,rewrite a Python file,shared_client,2,1.1;1.1
+rtx4080,qwen3.8-27b,vllm,exact,,R,triage a log,shared_client,2,1.1;1.1
+rtx4080,qwen3.8-27b,vllm,exact,,V,add Doxygen docs to a C++ file,shared_client,1,1.1
+rtx4080,qwen3.8-27b,vllm,exact,,V,add docstrings to a file,shared_client,1,1.1
+rtx4080,qwen3.8-27b,vllm,exact,,V,answer a question from a document,shared_client,1,1.1
+rtx4080,qwen3.8-27b,vllm,exact,,V,edit a flag across code,shared_client,1,1.1
+rtx4080,qwen3.8-27b,vllm,exact,,V,explain a piece of code,shared_client,1,1.1
+rtx4080,qwen3.8-27b,vllm,exact,,V,find bugs in code,shared_client,1,1.1
+rtx4080,qwen3.8-27b,vllm,exact,,V,list a file's functions,shared_client,1,1.1
+rtx4080,qwen3.8-27b,vllm,exact,,V,port code to C++,shared_client,1,1.1
+rtx4080,qwen3.8-27b,vllm,exact,,V,quote passages from a document,shared_client,1,1.1
+rtx4080,qwen3.8-27b,vllm,exact,,V,rename across a file,shared_client,1,1.1
+rtx4080,qwen3.8-27b,vllm,exact,,V,summarise a document,shared_client,1,1.1
+rtx4080,qwen3.8-27b,vllm,exact,,V,turn a policy into a table,shared_client,1,1.1
+rtx4080,qwen3.8-27b,vllm,exact,,V,work through a CSV table,shared_client,1,1.1
+rtx4080,qwen3.8-27b,vllm,exact,,V,write unit tests,shared_client,1,1.1
+rtx4080,qwen3.8-flash-next,alphallama,exact,,A,chat: explain a networking topic,shared_client,2,70.4;70.2
+rtx4080,qwen3.8-flash-next,alphallama,exact,,A,chat: explain an algorithm,shared_client,2,71.1;69.6
+rtx4080,qwen3.8-flash-next,alphallama,exact,,A,chat: generate JSON data,shared_client,2,71.2;73.0
+rtx4080,qwen3.8-flash-next,alphallama,exact,,A,chat: write a Python class,shared_client,2,74.0;72.9
+rtx4080,qwen3.8-flash-next,alphallama,exact,,R,edit a C++ source file,shared_client,2,72.6;72.2
+rtx4080,qwen3.8-flash-next,alphallama,exact,,R,edit a CUDA source file,shared_client,2,67.4;67.6
+rtx4080,qwen3.8-flash-next,alphallama,exact,,R,rename across a C header,shared_client,2,69.8;69.8
+rtx4080,qwen3.8-flash-next,alphallama,exact,,R,rename across a Python file,shared_client,2,69.9;70.0
+rtx4080,qwen3.8-flash-next,alphallama,exact,,R,rewrite a C++ file,shared_client,2,69.7;69.3
+rtx4080,qwen3.8-flash-next,alphallama,exact,,R,rewrite a Python file,shared_client,2,69.8;69.4
+rtx4080,qwen3.8-flash-next,alphallama,exact,,R,triage a log,shared_client,2,70.5;71.9
+rtx4080,qwen3.8-flash-next,alphallama,exact,,V,add Doxygen docs to a C++ file,shared_client,2,68.7;69.2
+rtx4080,qwen3.8-flash-next,alphallama,exact,,V,add docstrings to a file,shared_client,2,68.5;68.4
+rtx4080,qwen3.8-flash-next,alphallama,exact,,V,answer a question from a document,shared_client,2,64.5;69.3
+rtx4080,qwen3.8-flash-next,alphallama,exact,,V,edit a flag across code,shared_client,2,69.8;71.4
+rtx4080,qwen3.8-flash-next,alphallama,exact,,V,explain a piece of code,shared_client,2,68.0;70.0
+rtx4080,qwen3.8-flash-next,alphallama,exact,,V,find bugs in code,shared_client,2,71.3;69.8
+rtx4080,qwen3.8-flash-next,alphallama,exact,,V,list a file's functions,shared_client,2,72.6;73.1
+rtx4080,qwen3.8-flash-next,alphallama,exact,,V,port code to C++,shared_client,2,75.6;73.8
+rtx4080,qwen3.8-flash-next,alphallama,exact,,V,quote passages from a document,shared_client,2,76.1;63.8
+rtx4080,qwen3.8-flash-next,alphallama,exact,,V,rename across a file,shared_client,2,70.5;70.2
+rtx4080,qwen3.8-flash-next,alphallama,exact,,V,summarise a document,shared_client,2,68.9;70.4
+rtx4080,qwen3.8-flash-next,alphallama,exact,,V,turn a policy into a table,shared_client,2,64.7;71.9
+rtx4080,qwen3.8-flash-next,alphallama,exact,,V,work through a CSV table,shared_client,2,73.9;73.5
+rtx4080,qwen3.8-flash-next,alphallama,exact,,V,write unit tests,shared_client,2,71.1;71.0
+rtx4080,qwen3.8-flash-next,alphallama,fast,,A,chat: explain a networking topic,shared_client,2,101.7;111.4
+rtx4080,qwen3.8-flash-next,alphallama,fast,,A,chat: explain an algorithm,shared_client,2,122.6;107.4
+rtx4080,qwen3.8-flash-next,alphallama,fast,,A,chat: generate JSON data,shared_client,2,110.3;115.0
+rtx4080,qwen3.8-flash-next,alphallama,fast,,A,chat: write a Python class,shared_client,2,123.3;120.4
+rtx4080,qwen3.8-flash-next,alphallama,fast,,R,edit a C++ source file,shared_client,2,240.4;233.5
+rtx4080,qwen3.8-flash-next,alphallama,fast,,R,edit a CUDA source file,shared_client,2,181.2;214.8
+rtx4080,qwen3.8-flash-next,alphallama,fast,,R,rename across a C header,shared_client,2,220.2;230.1
+rtx4080,qwen3.8-flash-next,alphallama,fast,,R,rename across a Python file,shared_client,2,212.4;214.9
+rtx4080,qwen3.8-flash-next,alphallama,fast,,R,rewrite a C++ file,shared_client,2,230.7;213.9
+rtx4080,qwen3.8-flash-next,alphallama,fast,,R,rewrite a Python file,shared_client,2,221.7;187.0
+rtx4080,qwen3.8-flash-next,alphallama,fast,,R,triage a log,shared_client,2,166.8;165.7
+rtx4080,qwen3.8-flash-next,alphallama,fast,,V,add Doxygen docs to a C++ file,shared_client,2,162.6;150.3
+rtx4080,qwen3.8-flash-next,alphallama,fast,,V,add docstrings to a file,shared_client,2,143.3;129.7
+rtx4080,qwen3.8-flash-next,alphallama,fast,,V,answer a question from a document,shared_client,2,92.3;90.4
+rtx4080,qwen3.8-flash-next,alphallama,fast,,V,edit a flag across code,shared_client,2,149.0;151.3
+rtx4080,qwen3.8-flash-next,alphallama,fast,,V,explain a piece of code,shared_client,2,117.5;121.7
+rtx4080,qwen3.8-flash-next,alphallama,fast,,V,find bugs in code,shared_client,2,97.4;105.5
+rtx4080,qwen3.8-flash-next,alphallama,fast,,V,list a file's functions,shared_client,2,111.0;106.4
+rtx4080,qwen3.8-flash-next,alphallama,fast,,V,port code to C++,shared_client,2,138.7;128.2
+rtx4080,qwen3.8-flash-next,alphallama,fast,,V,quote passages from a document,shared_client,2,218.6;146.2
+rtx4080,qwen3.8-flash-next,alphallama,fast,,V,rename across a file,shared_client,2,201.4;194.2
+rtx4080,qwen3.8-flash-next,alphallama,fast,,V,summarise a document,shared_client,2,97.5;102.9
+rtx4080,qwen3.8-flash-next,alphallama,fast,,V,turn a policy into a table,shared_client,2,106.7;101.9
+rtx4080,qwen3.8-flash-next,alphallama,fast,,V,work through a CSV table,shared_client,2,135.3;118.0
+rtx4080,qwen3.8-flash-next,alphallama,fast,,V,write unit tests,shared_client,2,111.2;137.3
+rtx4080,qwen3.8-flash-next,strata,fast,,A,chat: explain a networking topic,shared_client,2,113.2;123.8
+rtx4080,qwen3.8-flash-next,strata,fast,,A,chat: explain an algorithm,shared_client,2,144.9;115.2
+rtx4080,qwen3.8-flash-next,strata,fast,,R,edit a C++ source file,shared_client,2,179.2;172.8
+rtx4080,qwen3.8-flash-next,strata,fast,,R,edit a CUDA source file,shared_client,2,147.4;169.4
+rtx4080,qwen3.8-flash-next,strata,fast,,R,rename across a C header,shared_client,2,173.8;186.2
+rtx4080,qwen3.8-flash-next,strata,fast,,R,rename across a Python file,shared_client,2,184.8;185.3
+rtx4080,qwen3.8-flash-next,strata,fast,,R,rewrite a C++ file,shared_client,2,183.6;174.8
+rtx4080,qwen3.8-flash-next,strata,fast,,R,rewrite a Python file,shared_client,2,187.0;151.1
+rtx4080,qwen3.8-flash-next,strata,fast,,R,triage a log,shared_client,2,140.6;154.4
+rtx4080,qwen3.8-flash-next,strata,fast,,V,add Doxygen docs to a C++ file,shared_client,2,160.3;155.8
+rtx4080,qwen3.8-flash-next,strata,fast,,V,add docstrings to a file,shared_client,2,138.1;139.5
+rtx4080,qwen3.8-flash-next,strata,fast,,V,answer a question from a document,shared_client,2,92.1;119.8
+rtx4080,qwen3.8-flash-next,strata,fast,,V,edit a flag across code,shared_client,2,159.1;151.8
+rtx4080,qwen3.8-flash-next,strata,fast,,V,explain a piece of code,shared_client,2,125.2;140.9
+rtx4080,qwen3.8-flash-next,strata,fast,,V,find bugs in code,shared_client,2,113.7;118.2
+rtx4080,qwen3.8-flash-next,strata,fast,,V,list a file's functions,shared_client,2,140.2;125.6
+rtx4080,qwen3.8-flash-next,strata,fast,,V,port code to C++,shared_client,2,170.4;164.4
+rtx4080,qwen3.8-flash-next,strata,fast,,V,quote passages from a document,shared_client,2,153.5;149.0
+rtx4080,qwen3.8-flash-next,strata,fast,,V,rename across a file,shared_client,2,166.9;150.0
+rtx4080,qwen3.8-flash-next,strata,fast,,V,summarise a document,shared_client,2,102.7;109.9
+rtx4080,qwen3.8-flash-next,strata,fast,,V,turn a policy into a table,shared_client,2,129.8;126.7
+rtx4080,qwen3.8-flash-next,strata,fast,,V,work through a CSV table,shared_client,2,126.2;149.5
+rtx4080,qwen3.8-flash-next,strata,fast,,V,write unit tests,shared_client,2,108.0;114.8
+rtx5090,qwen3.6-35b-a3b,alphallama,exact,,A,chat: explain a networking topic,engine,2,614.0;612.7
+rtx5090,qwen3.6-35b-a3b,alphallama,exact,,A,chat: explain an algorithm,engine,2,690.5;688.9
+rtx5090,qwen3.6-35b-a3b,alphallama,exact,,A,chat: generate JSON data,engine,2,823.7;821.4
+rtx5090,qwen3.6-35b-a3b,alphallama,exact,,A,chat: write a Python class,engine,2,772.6;772.6
+rtx5090,qwen3.6-35b-a3b,alphallama,exact,,R,edit a C++ source file,engine,3,844.6;844.6;846.0
+rtx5090,qwen3.6-35b-a3b,alphallama,exact,,R,edit a CUDA source file,engine,3,820.2;818.9;820.2
+rtx5090,qwen3.6-35b-a3b,alphallama,exact,,R,rename across a C header,engine,3,835.0;833.6;835.0
+rtx5090,qwen3.6-35b-a3b,alphallama,exact,,R,rename across a Python file,engine,3,828.2;828.2;828.2
+rtx5090,qwen3.6-35b-a3b,alphallama,exact,,R,rewrite a C++ file,engine,3,847.4;847.4;847.4
+rtx5090,qwen3.6-35b-a3b,alphallama,exact,,R,rewrite a Python file,engine,3,840.5;839.1;840.5
+rtx5090,qwen3.6-35b-a3b,alphallama,exact,,R,triage a log,engine,3,833.6;833.6;833.6
+rtx5090,qwen3.6-35b-a3b,alphallama,exact,,V,add Doxygen docs to a C++ file,engine,2,811.1;809.8
+rtx5090,qwen3.6-35b-a3b,alphallama,exact,,V,add docstrings to a file,engine,2,773.1;773.1
+rtx5090,qwen3.6-35b-a3b,alphallama,exact,,V,answer a question from a document,engine,2,647.3;647.3
+rtx5090,qwen3.6-35b-a3b,alphallama,exact,,V,edit a flag across code,engine,2,816.0;814.7
+rtx5090,qwen3.6-35b-a3b,alphallama,exact,,V,explain a piece of code,engine,2,680.4;679.5
+rtx5090,qwen3.6-35b-a3b,alphallama,exact,,V,find bugs in code,engine,2,629.3;629.3
+rtx5090,qwen3.6-35b-a3b,alphallama,exact,,V,list a file's functions,engine,2,658.5;658.5
+rtx5090,qwen3.6-35b-a3b,alphallama,exact,,V,port code to C++,engine,2,746.0;746.0
+rtx5090,qwen3.6-35b-a3b,alphallama,exact,,V,quote passages from a document,engine,2,822.1;822.1
+rtx5090,qwen3.6-35b-a3b,alphallama,exact,,V,rename across a file,engine,2,830.9;830.9
+rtx5090,qwen3.6-35b-a3b,alphallama,exact,,V,summarise a document,engine,2,606.9;606.1
+rtx5090,qwen3.6-35b-a3b,alphallama,exact,,V,turn a policy into a table,engine,2,733.8;733.8
+rtx5090,qwen3.6-35b-a3b,alphallama,exact,,V,work through a CSV table,engine,2,820.5;817.0
+rtx5090,qwen3.6-35b-a3b,alphallama,exact,,V,write unit tests,engine,2,611.2;611.2
+rtx5090,qwen3.6-35b-a3b,alphallama,fast,,A,chat: explain a networking topic,engine,2,660.0;660.0
+rtx5090,qwen3.6-35b-a3b,alphallama,fast,,A,chat: explain an algorithm,engine,2,727.5;727.5
+rtx5090,qwen3.6-35b-a3b,alphallama,fast,,A,chat: generate JSON data,engine,2,835.2;835.2
+rtx5090,qwen3.6-35b-a3b,alphallama,fast,,A,chat: write a Python class,engine,2,808.1;808.1
+rtx5090,qwen3.6-35b-a3b,alphallama,fast,,R,edit a C++ source file,engine,3,3234.2;3234.2;3234.2
+rtx5090,qwen3.6-35b-a3b,alphallama,fast,,R,edit a CUDA source file,engine,3,3318.2;3296.8;3318.2
+rtx5090,qwen3.6-35b-a3b,alphallama,fast,,R,rename across a C header,engine,3,3452.7;3429.5;3452.7
+rtx5090,qwen3.6-35b-a3b,alphallama,fast,,R,rename across a Python file,engine,3,1799.3;1799.3;1805.7
+rtx5090,qwen3.6-35b-a3b,alphallama,fast,,R,rewrite a C++ file,engine,3,3097.0;3097.0;3097.0
+rtx5090,qwen3.6-35b-a3b,alphallama,fast,,R,rewrite a Python file,engine,3,3429.5;3429.5;3429.5
+rtx5090,qwen3.6-35b-a3b,alphallama,fast,,R,triage a log,engine,3,1069.0;1066.8;1069.0
+rtx5090,qwen3.6-35b-a3b,alphallama,fast,,V,add Doxygen docs to a C++ file,engine,2,825.5;825.5
+rtx5090,qwen3.6-35b-a3b,alphallama,fast,,V,add docstrings to a file,engine,2,1091.9;1089.6
+rtx5090,qwen3.6-35b-a3b,alphallama,fast,,V,answer a question from a document,engine,2,616.7;616.7
+rtx5090,qwen3.6-35b-a3b,alphallama,fast,,V,edit a flag across code,engine,2,894.9;896.5
+rtx5090,qwen3.6-35b-a3b,alphallama,fast,,V,explain a piece of code,engine,2,769.6;769.6
+rtx5090,qwen3.6-35b-a3b,alphallama,fast,,V,find bugs in code,engine,2,627.8;627.8
+rtx5090,qwen3.6-35b-a3b,alphallama,fast,,V,list a file's functions,engine,2,650.1;651.0
+rtx5090,qwen3.6-35b-a3b,alphallama,fast,,V,port code to C++,engine,2,737.4;737.4
+rtx5090,qwen3.6-35b-a3b,alphallama,fast,,V,quote passages from a document,engine,2,988.4;988.4
+rtx5090,qwen3.6-35b-a3b,alphallama,fast,,V,rename across a file,engine,2,1921.1;1913.9
+rtx5090,qwen3.6-35b-a3b,alphallama,fast,,V,summarise a document,engine,2,613.9;613.9
+rtx5090,qwen3.6-35b-a3b,alphallama,fast,,V,turn a policy into a table,engine,2,779.3;774.0
+rtx5090,qwen3.6-35b-a3b,alphallama,fast,,V,work through a CSV table,engine,2,831.2;827.6
+rtx5090,qwen3.6-35b-a3b,alphallama,fast,,V,write unit tests,engine,2,638.0;638.0
+rtx5090,qwen3.6-35b-a3b,freetoken,exact,,A,chat: explain a networking topic,shared_client,2,224.4;224.3
+rtx5090,qwen3.6-35b-a3b,freetoken,exact,,A,chat: explain an algorithm,shared_client,2,239.9;239.8
+rtx5090,qwen3.6-35b-a3b,freetoken,exact,,A,chat: generate JSON data,shared_client,2,231.0;231.1
+rtx5090,qwen3.6-35b-a3b,freetoken,exact,,A,chat: write a Python class,shared_client,2,176.8;176.7
+rtx5090,qwen3.6-35b-a3b,freetoken,exact,,R,edit a C++ source file,shared_client,3,234.6;234.5;234.6
+rtx5090,qwen3.6-35b-a3b,freetoken,exact,,R,edit a CUDA source file,shared_client,3,188.8;188.7;188.8
+rtx5090,qwen3.6-35b-a3b,freetoken,exact,,R,rename across a C header,shared_client,3,241.7;241.6;241.7
+rtx5090,qwen3.6-35b-a3b,freetoken,exact,,R,rename across a Python file,shared_client,3,241.7;241.5;241.8
+rtx5090,qwen3.6-35b-a3b,freetoken,exact,,R,rewrite a C++ file,shared_client,3,243.0;242.9;243.1
+rtx5090,qwen3.6-35b-a3b,freetoken,exact,,R,rewrite a Python file,shared_client,3,242.7;242.5;242.7
+rtx5090,qwen3.6-35b-a3b,freetoken,exact,,R,triage a log,shared_client,3,242.6;242.4;242.6
+rtx5090,qwen3.6-35b-a3b,freetoken,exact,,V,add Doxygen docs to a C++ file,shared_client,2,242.3;242.2
+rtx5090,qwen3.6-35b-a3b,freetoken,exact,,V,add docstrings to a file,shared_client,2,240.6;240.5
+rtx5090,qwen3.6-35b-a3b,freetoken,exact,,V,answer a question from a document,shared_client,2,237.6;237.6
+rtx5090,qwen3.6-35b-a3b,freetoken,exact,,V,edit a flag across code,shared_client,2,242.8;242.8
+rtx5090,qwen3.6-35b-a3b,freetoken,exact,,V,explain a piece of code,shared_client,2,243.6;243.7
+rtx5090,qwen3.6-35b-a3b,freetoken,exact,,V,find bugs in code,shared_client,2,239.5;239.6
+rtx5090,qwen3.6-35b-a3b,freetoken,exact,,V,list a file's functions,shared_client,2,242.9;242.8
+rtx5090,qwen3.6-35b-a3b,freetoken,exact,,V,port code to C++,shared_client,2,243.3;243.3
+rtx5090,qwen3.6-35b-a3b,freetoken,exact,,V,quote passages from a document,shared_client,2,239.9;240.0
+rtx5090,qwen3.6-35b-a3b,freetoken,exact,,V,rename across a file,shared_client,2,243.1;243.2
+rtx5090,qwen3.6-35b-a3b,freetoken,exact,,V,summarise a document,shared_client,2,241.8;241.7
+rtx5090,qwen3.6-35b-a3b,freetoken,exact,,V,turn a policy into a table,shared_client,2,234.4;234.6
+rtx5090,qwen3.6-35b-a3b,freetoken,exact,,V,work through a CSV table,shared_client,2,239.1;239.3
+rtx5090,qwen3.6-35b-a3b,freetoken,exact,,V,write unit tests,shared_client,2,243.9;243.7
+rtx5090,qwen3.6-35b-a3b,ninfer,exact,,A,chat: explain a networking topic,engine,2,401.9;401.9
+rtx5090,qwen3.6-35b-a3b,ninfer,exact,,A,chat: explain an algorithm,engine,2,401.7;401.8
+rtx5090,qwen3.6-35b-a3b,ninfer,exact,,A,chat: generate JSON data,engine,2,401.6;401.9
+rtx5090,qwen3.6-35b-a3b,ninfer,exact,,A,chat: write a Python class,engine,2,401.9;402.1
+rtx5090,qwen3.6-35b-a3b,ninfer,exact,,R,edit a C++ source file,engine,3,397.4;397.3;397.4
+rtx5090,qwen3.6-35b-a3b,ninfer,exact,,R,edit a CUDA source file,engine,3,394.6;394.5;394.7
+rtx5090,qwen3.6-35b-a3b,ninfer,exact,,R,rename across a C header,engine,3,401.7;401.7;401.7
+rtx5090,qwen3.6-35b-a3b,ninfer,exact,,R,rename across a Python file,engine,3,398.7;398.9;398.5
+rtx5090,qwen3.6-35b-a3b,ninfer,exact,,R,rewrite a C++ file,engine,3,399.8;399.7;399.5
+rtx5090,qwen3.6-35b-a3b,ninfer,exact,,R,rewrite a Python file,engine,3,401.1;401.2;401.1
+rtx5090,qwen3.6-35b-a3b,ninfer,exact,,R,triage a log,engine,3,401.6;401.7;401.7
+rtx5090,qwen3.6-35b-a3b,ninfer,exact,,V,add Doxygen docs to a C++ file,engine,2,400.5;400.7
+rtx5090,qwen3.6-35b-a3b,ninfer,exact,,V,add docstrings to a file,engine,2,401.5;401.6
+rtx5090,qwen3.6-35b-a3b,ninfer,exact,,V,answer a question from a document,engine,2,398.7;398.8
+rtx5090,qwen3.6-35b-a3b,ninfer,exact,,V,edit a flag across code,engine,2,402.1;402.3
+rtx5090,qwen3.6-35b-a3b,ninfer,exact,,V,explain a piece of code,engine,2,402.1;402.2
+rtx5090,qwen3.6-35b-a3b,ninfer,exact,,V,find bugs in code,engine,2,398.9;399.2
+rtx5090,qwen3.6-35b-a3b,ninfer,exact,,V,list a file's functions,engine,2,398.1;398.1
+rtx5090,qwen3.6-35b-a3b,ninfer,exact,,V,port code to C++,engine,2,401.1;401.0
+rtx5090,qwen3.6-35b-a3b,ninfer,exact,,V,quote passages from a document,engine,2,401.3;401.6
+rtx5090,qwen3.6-35b-a3b,ninfer,exact,,V,rename across a file,engine,2,401.9;401.8
+rtx5090,qwen3.6-35b-a3b,ninfer,exact,,V,summarise a document,engine,2,397.8;397.7
+rtx5090,qwen3.6-35b-a3b,ninfer,exact,,V,turn a policy into a table,engine,2,402.6;402.3
+rtx5090,qwen3.6-35b-a3b,ninfer,exact,,V,work through a CSV table,engine,2,400.9;401.0
+rtx5090,qwen3.6-35b-a3b,ninfer,exact,,V,write unit tests,engine,2,402.5;402.6
+rtx5090,qwen3.6-35b-a3b,ninfer,fast,MTP,A,chat: explain a networking topic,engine,2,592.8;592.6
+rtx5090,qwen3.6-35b-a3b,ninfer,fast,MTP,A,chat: explain an algorithm,engine,2,781.8;782.6
+rtx5090,qwen3.6-35b-a3b,ninfer,fast,MTP,A,chat: generate JSON data,engine,2,865.2;864.5
+rtx5090,qwen3.6-35b-a3b,ninfer,fast,MTP,A,chat: write a Python class,engine,2,837.9;838.4
+rtx5090,qwen3.6-35b-a3b,ninfer,fast,MTP,R,edit a C++ source file,engine,3,903.3;903.8;903.0
+rtx5090,qwen3.6-35b-a3b,ninfer,fast,MTP,R,edit a CUDA source file,engine,3,889.1;889.3;888.0
+rtx5090,qwen3.6-35b-a3b,ninfer,fast,MTP,R,rename across a C header,engine,3,888.7;888.9;889.1
+rtx5090,qwen3.6-35b-a3b,ninfer,fast,MTP,R,rename across a Python file,engine,3,896.1;896.5;895.8
+rtx5090,qwen3.6-35b-a3b,ninfer,fast,MTP,R,rewrite a C++ file,engine,3,884.2;884.9;885.0
+rtx5090,qwen3.6-35b-a3b,ninfer,fast,MTP,R,rewrite a Python file,engine,3,917.1;917.5;917.4
+rtx5090,qwen3.6-35b-a3b,ninfer,fast,MTP,R,triage a log,engine,3,886.8;887.0;887.1
+rtx5090,qwen3.6-35b-a3b,ninfer,fast,MTP,V,add Doxygen docs to a C++ file,engine,2,849.0;849.3
+rtx5090,qwen3.6-35b-a3b,ninfer,fast,MTP,V,add docstrings to a file,engine,2,758.3;758.5
+rtx5090,qwen3.6-35b-a3b,ninfer,fast,MTP,V,answer a question from a document,engine,2,824.2;824.5
+rtx5090,qwen3.6-35b-a3b,ninfer,fast,MTP,V,edit a flag across code,engine,2,883.1;883.4
+rtx5090,qwen3.6-35b-a3b,ninfer,fast,MTP,V,explain a piece of code,engine,2,715.1;714.7
+rtx5090,qwen3.6-35b-a3b,ninfer,fast,MTP,V,find bugs in code,engine,2,687.7;687.5
+rtx5090,qwen3.6-35b-a3b,ninfer,fast,MTP,V,list a file's functions,engine,2,640.6;640.7
+rtx5090,qwen3.6-35b-a3b,ninfer,fast,MTP,V,port code to C++,engine,2,795.9;795.8
+rtx5090,qwen3.6-35b-a3b,ninfer,fast,MTP,V,quote passages from a document,engine,2,867.2;866.9
+rtx5090,qwen3.6-35b-a3b,ninfer,fast,MTP,V,rename across a file,engine,2,905.4;905.4
+rtx5090,qwen3.6-35b-a3b,ninfer,fast,MTP,V,summarise a document,engine,2,617.0;617.5
+rtx5090,qwen3.6-35b-a3b,ninfer,fast,MTP,V,turn a policy into a table,engine,2,831.3;832.8
+rtx5090,qwen3.6-35b-a3b,ninfer,fast,MTP,V,work through a CSV table,engine,2,893.1;891.9
+rtx5090,qwen3.6-35b-a3b,ninfer,fast,MTP,V,write unit tests,engine,2,571.9;571.7
+rtx5090,qwen3.6-35b-a3b,ollama,exact,,A,chat: explain a networking topic,shared_client,2,221.3;222.0
+rtx5090,qwen3.6-35b-a3b,ollama,exact,,A,chat: explain an algorithm,shared_client,2,211.1;214.9
+rtx5090,qwen3.6-35b-a3b,ollama,exact,,A,chat: generate JSON data,shared_client,2,191.9;192.1
+rtx5090,qwen3.6-35b-a3b,ollama,exact,,A,chat: write a Python class,shared_client,2,184.0;182.6
+rtx5090,qwen3.6-35b-a3b,ollama,exact,,R,edit a C++ source file,shared_client,3,207.0;208.1;206.4
+rtx5090,qwen3.6-35b-a3b,ollama,exact,,R,edit a CUDA source file,shared_client,3,228.9;229.5;228.7
+rtx5090,qwen3.6-35b-a3b,ollama,exact,,R,rename across a C header,shared_client,3,212.4;212.5;211.0
+rtx5090,qwen3.6-35b-a3b,ollama,exact,,R,rename across a Python file,shared_client,3,230.7;233.9;233.9
+rtx5090,qwen3.6-35b-a3b,ollama,exact,,R,rewrite a C++ file,shared_client,3,221.9;222.2;221.8
+rtx5090,qwen3.6-35b-a3b,ollama,exact,,R,rewrite a Python file,shared_client,3,206.1;206.8;206.3
+rtx5090,qwen3.6-35b-a3b,ollama,exact,,R,triage a log,shared_client,3,231.8;232.3;231.8
+rtx5090,qwen3.6-35b-a3b,ollama,exact,,V,add Doxygen docs to a C++ file,shared_client,2,221.1;223.7
+rtx5090,qwen3.6-35b-a3b,ollama,exact,,V,add docstrings to a file,shared_client,2,205.0;205.9
+rtx5090,qwen3.6-35b-a3b,ollama,exact,,V,answer a question from a document,shared_client,2,226.7;236.3
+rtx5090,qwen3.6-35b-a3b,ollama,exact,,V,edit a flag across code,shared_client,2,208.0;210.2
+rtx5090,qwen3.6-35b-a3b,ollama,exact,,V,explain a piece of code,shared_client,2,224.1;225.6
+rtx5090,qwen3.6-35b-a3b,ollama,exact,,V,find bugs in code,shared_client,2,227.0;228.5
+rtx5090,qwen3.6-35b-a3b,ollama,exact,,V,list a file's functions,shared_client,2,237.9;240.5
+rtx5090,qwen3.6-35b-a3b,ollama,exact,,V,port code to C++,shared_client,2,195.6;198.6
+rtx5090,qwen3.6-35b-a3b,ollama,exact,,V,quote passages from a document,shared_client,2,227.4;223.8
+rtx5090,qwen3.6-35b-a3b,ollama,exact,,V,rename across a file,shared_client,2,204.4;203.3
+rtx5090,qwen3.6-35b-a3b,ollama,exact,,V,summarise a document,shared_client,2,225.2;229.9
+rtx5090,qwen3.6-35b-a3b,ollama,exact,,V,turn a policy into a table,shared_client,2,241.6;243.5
+rtx5090,qwen3.6-35b-a3b,ollama,exact,,V,work through a CSV table,shared_client,2,246.8;247.1
+rtx5090,qwen3.6-35b-a3b,ollama,exact,,V,write unit tests,shared_client,2,227.6;228.6
+rtx5090,qwen3.6-35b-a3b,ollama,fast,MTP,A,chat: explain a networking topic,shared_client,2,267.1;267.3
+rtx5090,qwen3.6-35b-a3b,ollama,fast,MTP,A,chat: explain an algorithm,shared_client,2,275.4;272.1
+rtx5090,qwen3.6-35b-a3b,ollama,fast,MTP,A,chat: generate JSON data,shared_client,2,241.4;241.7
+rtx5090,qwen3.6-35b-a3b,ollama,fast,MTP,A,chat: write a Python class,shared_client,2,249.0;247.9
+rtx5090,qwen3.6-35b-a3b,ollama,fast,MTP,R,edit a C++ source file,shared_client,3,289.5;288.0;289.0
+rtx5090,qwen3.6-35b-a3b,ollama,fast,MTP,R,edit a CUDA source file,shared_client,3,316.6;319.7;310.5
+rtx5090,qwen3.6-35b-a3b,ollama,fast,MTP,R,rename across a C header,shared_client,3,294.4;291.5;292.8
+rtx5090,qwen3.6-35b-a3b,ollama,fast,MTP,R,rename across a Python file,shared_client,3,322.6;329.9;326.7
+rtx5090,qwen3.6-35b-a3b,ollama,fast,MTP,R,rewrite a C++ file,shared_client,3,309.5;313.3;313.8
+rtx5090,qwen3.6-35b-a3b,ollama,fast,MTP,R,rewrite a Python file,shared_client,3,283.5;269.8;285.2
+rtx5090,qwen3.6-35b-a3b,ollama,fast,MTP,R,triage a log,shared_client,3,300.5;300.3;301.1
+rtx5090,qwen3.6-35b-a3b,ollama,fast,MTP,V,add Doxygen docs to a C++ file,shared_client,2,313.7;313.4
+rtx5090,qwen3.6-35b-a3b,ollama,fast,MTP,V,add docstrings to a file,shared_client,2,271.7;269.7
+rtx5090,qwen3.6-35b-a3b,ollama,fast,MTP,V,answer a question from a document,shared_client,2,303.1;310.3
+rtx5090,qwen3.6-35b-a3b,ollama,fast,MTP,V,edit a flag across code,shared_client,2,301.2;301.2
+rtx5090,qwen3.6-35b-a3b,ollama,fast,MTP,V,explain a piece of code,shared_client,2,290.7;290.4
+rtx5090,qwen3.6-35b-a3b,ollama,fast,MTP,V,find bugs in code,shared_client,2,274.2;274.6
+rtx5090,qwen3.6-35b-a3b,ollama,fast,MTP,V,list a file's functions,shared_client,2,294.2;293.6
+rtx5090,qwen3.6-35b-a3b,ollama,fast,MTP,V,port code to C++,shared_client,2,256.3;256.1
+rtx5090,qwen3.6-35b-a3b,ollama,fast,MTP,V,quote passages from a document,shared_client,2,321.2;321.5
+rtx5090,qwen3.6-35b-a3b,ollama,fast,MTP,V,rename across a file,shared_client,2,282.2;283.2
+rtx5090,qwen3.6-35b-a3b,ollama,fast,MTP,V,summarise a document,shared_client,2,282.8;283.1
+rtx5090,qwen3.6-35b-a3b,ollama,fast,MTP,V,turn a policy into a table,shared_client,2,308.6;325.5
+rtx5090,qwen3.6-35b-a3b,ollama,fast,MTP,V,work through a CSV table,shared_client,2,349.9;349.7
+rtx5090,qwen3.6-35b-a3b,ollama,fast,MTP,V,write unit tests,shared_client,2,242.0;249.3
+rtx5090,qwen3.6-35b-a3b,vllm,exact,,A,chat: explain a networking topic,shared_client,2,279.0;277.6
+rtx5090,qwen3.6-35b-a3b,vllm,exact,,A,chat: explain an algorithm,shared_client,2,279.1;277.5
+rtx5090,qwen3.6-35b-a3b,vllm,exact,,A,chat: generate JSON data,shared_client,2,278.6;277.4
+rtx5090,qwen3.6-35b-a3b,vllm,exact,,A,chat: write a Python class,shared_client,2,279.1;277.7
+rtx5090,qwen3.6-35b-a3b,vllm,exact,,R,edit a C++ source file,shared_client,3,275.5;275.4;275.8
+rtx5090,qwen3.6-35b-a3b,vllm,exact,,R,edit a CUDA source file,shared_client,3,273.9;274.0;274.2
+rtx5090,qwen3.6-35b-a3b,vllm,exact,,R,rename across a C header,shared_client,3,276.8;276.7;277.2
+rtx5090,qwen3.6-35b-a3b,vllm,exact,,R,rename across a Python file,shared_client,3,275.9;275.7;276.3
+rtx5090,qwen3.6-35b-a3b,vllm,exact,,R,rewrite a C++ file,shared_client,3,276.2;276.3;276.8
+rtx5090,qwen3.6-35b-a3b,vllm,exact,,R,rewrite a Python file,shared_client,3,276.7;276.6;277.1
+rtx5090,qwen3.6-35b-a3b,vllm,exact,,R,triage a log,shared_client,3,276.7;276.7;277.1
+rtx5090,qwen3.6-35b-a3b,vllm,exact,,V,add Doxygen docs to a C++ file,shared_client,2,277.8;276.9
+rtx5090,qwen3.6-35b-a3b,vllm,exact,,V,add docstrings to a file,shared_client,2,277.9;277.1
+rtx5090,qwen3.6-35b-a3b,vllm,exact,,V,answer a question from a document,shared_client,2,276.4;275.5
+rtx5090,qwen3.6-35b-a3b,vllm,exact,,V,edit a flag across code,shared_client,2,277.5;277.2
+rtx5090,qwen3.6-35b-a3b,vllm,exact,,V,explain a piece of code,shared_client,2,278.0;277.2
+rtx5090,qwen3.6-35b-a3b,vllm,exact,,V,find bugs in code,shared_client,2,277.4;276.4
+rtx5090,qwen3.6-35b-a3b,vllm,exact,,V,list a file's functions,shared_client,2,276.9;276.2
+rtx5090,qwen3.6-35b-a3b,vllm,exact,,V,port code to C++,shared_client,2,277.7;277.0
+rtx5090,qwen3.6-35b-a3b,vllm,exact,,V,quote passages from a document,shared_client,2,275.2;275.7
+rtx5090,qwen3.6-35b-a3b,vllm,exact,,V,rename across a file,shared_client,2,278.0;277.1
+rtx5090,qwen3.6-35b-a3b,vllm,exact,,V,summarise a document,shared_client,2,276.0;275.1
+rtx5090,qwen3.6-35b-a3b,vllm,exact,,V,turn a policy into a table,shared_client,2,276.1;275.0
+rtx5090,qwen3.6-35b-a3b,vllm,exact,,V,work through a CSV table,shared_client,2,276.8;275.9
+rtx5090,qwen3.6-35b-a3b,vllm,exact,,V,write unit tests,shared_client,2,278.0;277.0
+rtx5090,qwen3.8-27b,alphallama,exact,,A,chat: explain a networking topic,engine,2,154.2;154.5
+rtx5090,qwen3.8-27b,alphallama,exact,,A,chat: explain an algorithm,engine,2,177.8;178.0
+rtx5090,qwen3.8-27b,alphallama,exact,,A,chat: generate JSON data,engine,2,263.7;264.3
+rtx5090,qwen3.8-27b,alphallama,exact,,A,chat: write a Python class,engine,2,211.8;212.2
+rtx5090,qwen3.8-27b,alphallama,exact,,R,edit a C++ source file,engine,3,326.1;326.7;326.1
+rtx5090,qwen3.8-27b,alphallama,exact,,R,edit a CUDA source file,engine,3,350.0;350.5;350.0
+rtx5090,qwen3.8-27b,alphallama,exact,,R,rename across a C header,engine,3,355.6;356.1;355.6
+rtx5090,qwen3.8-27b,alphallama,exact,,R,rename across a Python file,engine,3,338.4;338.9;338.4
+rtx5090,qwen3.8-27b,alphallama,exact,,R,rewrite a C++ file,engine,3,360.4;360.6;360.4
+rtx5090,qwen3.8-27b,alphallama,exact,,R,rewrite a Python file,engine,3,366.3;366.6;366.0
+rtx5090,qwen3.8-27b,alphallama,exact,,R,triage a log,engine,3,303.6;303.8;303.3
+rtx5090,qwen3.8-27b,alphallama,exact,,V,add Doxygen docs to a C++ file,engine,2,284.0;284.4
+rtx5090,qwen3.8-27b,alphallama,exact,,V,add docstrings to a file,engine,2,276.5;277.0
+rtx5090,qwen3.8-27b,alphallama,exact,,V,answer a question from a document,engine,2,264.9;264.9
+rtx5090,qwen3.8-27b,alphallama,exact,,V,edit a flag across code,engine,2,284.0;284.0
+rtx5090,qwen3.8-27b,alphallama,exact,,V,explain a piece of code,engine,2,202.7;202.9
+rtx5090,qwen3.8-27b,alphallama,exact,,V,find bugs in code,engine,2,195.0;195.1
+rtx5090,qwen3.8-27b,alphallama,exact,,V,list a file's functions,engine,2,216.5;216.6
+rtx5090,qwen3.8-27b,alphallama,exact,,V,port code to C++,engine,2,218.7;218.6
+rtx5090,qwen3.8-27b,alphallama,exact,,V,quote passages from a document,engine,2,286.6;287.2
+rtx5090,qwen3.8-27b,alphallama,exact,,V,rename across a file,engine,2,351.7;351.9
+rtx5090,qwen3.8-27b,alphallama,exact,,V,summarise a document,engine,2,156.9;157.0
+rtx5090,qwen3.8-27b,alphallama,exact,,V,turn a policy into a table,engine,2,205.5;205.5
+rtx5090,qwen3.8-27b,alphallama,exact,,V,work through a CSV table,engine,2,228.6;228.6
+rtx5090,qwen3.8-27b,alphallama,exact,,V,write unit tests,engine,2,149.3;149.4
+rtx5090,qwen3.8-27b,alphallama,fast,,A,chat: explain a networking topic,engine,2,172.0;172.2
+rtx5090,qwen3.8-27b,alphallama,fast,,A,chat: explain a networking topic,engine,2,189.5;189.0
+rtx5090,qwen3.8-27b,alphallama,fast,,A,chat: explain an algorithm,engine,2,197.0;197.1
+rtx5090,qwen3.8-27b,alphallama,fast,,A,chat: explain an algorithm,engine,2,280.8;281.5
+rtx5090,qwen3.8-27b,alphallama,fast,,A,chat: generate JSON data,engine,2,260.5;260.8
+rtx5090,qwen3.8-27b,alphallama,fast,,A,chat: generate JSON data,engine,2,347.1;347.6
+rtx5090,qwen3.8-27b,alphallama,fast,,A,chat: write a Python class,engine,2,242.9;242.9
+rtx5090,qwen3.8-27b,alphallama,fast,,A,chat: write a Python class,engine,2,366.9;367.3
+rtx5090,qwen3.8-27b,alphallama,fast,,R,edit a C++ source file,engine,3,1320.4;1320.4;1320.4
+rtx5090,qwen3.8-27b,alphallama,fast,,R,edit a C++ source file,engine,3,1055.8;1055.8;1053.6
+rtx5090,qwen3.8-27b,alphallama,fast,,R,edit a CUDA source file,engine,3,1359.0;1362.7;1359.0
+rtx5090,qwen3.8-27b,alphallama,fast,,R,edit a CUDA source file,engine,3,969.6;971.5;971.5
+rtx5090,qwen3.8-27b,alphallama,fast,,R,rename across a C header,engine,3,1400.0;1403.8;1400.0
+rtx5090,qwen3.8-27b,alphallama,fast,,R,rename across a C header,engine,3,1300.3;1290.4;1297.0
+rtx5090,qwen3.8-27b,alphallama,fast,,R,rename across a Python file,engine,3,818.9;818.9;818.9
+rtx5090,qwen3.8-27b,alphallama,fast,,R,rename across a Python file,engine,3,586.7;588.7;593.5
+rtx5090,qwen3.8-27b,alphallama,fast,,R,rewrite a C++ file,engine,3,1169.3;1169.3;1169.3
+rtx5090,qwen3.8-27b,alphallama,fast,,R,rewrite a C++ file,engine,3,1182.9;1174.7;1177.4
+rtx5090,qwen3.8-27b,alphallama,fast,,R,rewrite a Python file,engine,3,1334.2;1334.2;1334.2
+rtx5090,qwen3.8-27b,alphallama,fast,,R,rewrite a Python file,engine,3,1287.2;1290.4;1271.1
+rtx5090,qwen3.8-27b,alphallama,fast,,R,triage a log,engine,3,459.9;460.4;459.9
+rtx5090,qwen3.8-27b,alphallama,fast,,R,triage a log,engine,3,522.5;530.5;526.4
+rtx5090,qwen3.8-27b,alphallama,fast,,V,add Doxygen docs to a C++ file,engine,2,360.9;360.9
+rtx5090,qwen3.8-27b,alphallama,fast,,V,add Doxygen docs to a C++ file,engine,2,406.2;406.5
+rtx5090,qwen3.8-27b,alphallama,fast,,V,add docstrings to a file,engine,2,398.6;398.9
+rtx5090,qwen3.8-27b,alphallama,fast,,V,add docstrings to a file,engine,2,450.6;451.8
+rtx5090,qwen3.8-27b,alphallama,fast,,V,answer a question from a document,engine,2,322.0;322.0
+rtx5090,qwen3.8-27b,alphallama,fast,,V,answer a question from a document,engine,2,289.1;291.0
+rtx5090,qwen3.8-27b,alphallama,fast,,V,edit a flag across code,engine,2,447.8;447.8
+rtx5090,qwen3.8-27b,alphallama,fast,,V,edit a flag across code,engine,2,402.0;404.7
+rtx5090,qwen3.8-27b,alphallama,fast,,V,explain a piece of code,engine,2,236.0;236.0
+rtx5090,qwen3.8-27b,alphallama,fast,,V,explain a piece of code,engine,2,298.1;298.5
+rtx5090,qwen3.8-27b,alphallama,fast,,V,find bugs in code,engine,2,233.0;233.0
+rtx5090,qwen3.8-27b,alphallama,fast,,V,find bugs in code,engine,2,258.2;258.7
+rtx5090,qwen3.8-27b,alphallama,fast,,V,list a file's functions,engine,2,243.8;243.7
+rtx5090,qwen3.8-27b,alphallama,fast,,V,list a file's functions,engine,2,320.4;320.2
+rtx5090,qwen3.8-27b,alphallama,fast,,V,port code to C++,engine,2,248.1;248.2
+rtx5090,qwen3.8-27b,alphallama,fast,,V,port code to C++,engine,2,308.8;309.5
+rtx5090,qwen3.8-27b,alphallama,fast,,V,quote passages from a document,engine,2,351.6;351.6
+rtx5090,qwen3.8-27b,alphallama,fast,,V,quote passages from a document,engine,2,357.9;358.8
+rtx5090,qwen3.8-27b,alphallama,fast,,V,rename across a file,engine,2,798.4;798.4
+rtx5090,qwen3.8-27b,alphallama,fast,,V,rename across a file,engine,2,749.3;747.1
+rtx5090,qwen3.8-27b,alphallama,fast,,V,summarise a document,engine,2,173.0;173.0
+rtx5090,qwen3.8-27b,alphallama,fast,,V,summarise a document,engine,2,185.5;185.7
+rtx5090,qwen3.8-27b,alphallama,fast,,V,turn a policy into a table,engine,2,237.9;237.9
+rtx5090,qwen3.8-27b,alphallama,fast,,V,turn a policy into a table,engine,2,307.9;307.9
+rtx5090,qwen3.8-27b,alphallama,fast,,V,work through a CSV table,engine,2,279.9;279.9
+rtx5090,qwen3.8-27b,alphallama,fast,,V,work through a CSV table,engine,2,441.4;441.4
+rtx5090,qwen3.8-27b,alphallama,fast,,V,write unit tests,engine,2,185.0;185.0
+rtx5090,qwen3.8-27b,alphallama,fast,,V,write unit tests,engine,2,204.3;204.3
+rtx5090,qwen3.8-27b,freetoken,exact,,A,chat: explain a networking topic,shared_client,2,74.2;74.2
+rtx5090,qwen3.8-27b,freetoken,exact,,A,chat: explain an algorithm,shared_client,2,74.2;74.2
+rtx5090,qwen3.8-27b,freetoken,exact,,A,chat: generate JSON data,shared_client,2,74.2;74.2
+rtx5090,qwen3.8-27b,freetoken,exact,,A,chat: write a Python class,shared_client,2,74.2;74.2
+rtx5090,qwen3.8-27b,freetoken,exact,,R,edit a C++ source file,shared_client,3,73.5;73.5;73.5
+rtx5090,qwen3.8-27b,freetoken,exact,,R,edit a CUDA source file,shared_client,3,72.9;73.0;73.0
+rtx5090,qwen3.8-27b,freetoken,exact,,R,rename across a C header,shared_client,3,73.8;73.8;73.8
+rtx5090,qwen3.8-27b,freetoken,exact,,R,rename across a Python file,shared_client,3,73.6;73.6;73.6
+rtx5090,qwen3.8-27b,freetoken,exact,,R,rewrite a C++ file,shared_client,3,73.7;73.7;73.7
+rtx5090,qwen3.8-27b,freetoken,exact,,R,rewrite a Python file,shared_client,3,73.8;73.8;73.8
+rtx5090,qwen3.8-27b,freetoken,exact,,R,triage a log,shared_client,3,73.6;73.6;73.6
+rtx5090,qwen3.8-27b,freetoken,exact,,V,add Doxygen docs to a C++ file,shared_client,2,73.7;73.7
+rtx5090,qwen3.8-27b,freetoken,exact,,V,add docstrings to a file,shared_client,2,73.8;73.8
+rtx5090,qwen3.8-27b,freetoken,exact,,V,answer a question from a document,shared_client,2,73.2;73.2
+rtx5090,qwen3.8-27b,freetoken,exact,,V,edit a flag across code,shared_client,2,73.9;73.9
+rtx5090,qwen3.8-27b,freetoken,exact,,V,explain a piece of code,shared_client,2,73.9;73.9
+rtx5090,qwen3.8-27b,freetoken,exact,,V,find bugs in code,shared_client,2,73.6;73.6
+rtx5090,qwen3.8-27b,freetoken,exact,,V,list a file's functions,shared_client,2,73.6;73.6
+rtx5090,qwen3.8-27b,freetoken,exact,,V,port code to C++,shared_client,2,73.7;73.8
+rtx5090,qwen3.8-27b,freetoken,exact,,V,quote passages from a document,shared_client,2,73.2;73.3
+rtx5090,qwen3.8-27b,freetoken,exact,,V,rename across a file,shared_client,2,73.8;73.8
+rtx5090,qwen3.8-27b,freetoken,exact,,V,summarise a document,shared_client,2,73.3;73.3
+rtx5090,qwen3.8-27b,freetoken,exact,,V,turn a policy into a table,shared_client,2,73.3;73.3
+rtx5090,qwen3.8-27b,freetoken,exact,,V,work through a CSV table,shared_client,2,73.4;73.4
+rtx5090,qwen3.8-27b,freetoken,exact,,V,write unit tests,shared_client,2,74.0;74.0
+rtx5090,qwen3.8-27b,ninfer,exact,,A,chat: explain a networking topic,engine,2,89.8;89.8
+rtx5090,qwen3.8-27b,ninfer,exact,,A,chat: explain an algorithm,engine,2,89.8;89.8
+rtx5090,qwen3.8-27b,ninfer,exact,,A,chat: generate JSON data,engine,2,89.7;89.7
+rtx5090,qwen3.8-27b,ninfer,exact,,A,chat: write a Python class,engine,2,89.8;89.8
+rtx5090,qwen3.8-27b,ninfer,exact,,R,edit a C++ source file,engine,3,89.2;89.1;89.2
+rtx5090,qwen3.8-27b,ninfer,exact,,R,edit a CUDA source file,engine,3,89.1;88.9;89.1
+rtx5090,qwen3.8-27b,ninfer,exact,,R,rename across a C header,engine,3,89.5;89.5;89.5
+rtx5090,qwen3.8-27b,ninfer,exact,,R,rename across a Python file,engine,3,89.2;89.2;89.2
+rtx5090,qwen3.8-27b,ninfer,exact,,R,rewrite a C++ file,engine,3,89.3;89.3;89.3
+rtx5090,qwen3.8-27b,ninfer,exact,,R,rewrite a Python file,engine,3,89.4;89.4;89.4
+rtx5090,qwen3.8-27b,ninfer,exact,,R,triage a log,engine,3,89.4;89.4;89.4
+rtx5090,qwen3.8-27b,ninfer,exact,,V,add Doxygen docs to a C++ file,engine,2,89.4;89.4
+rtx5090,qwen3.8-27b,ninfer,exact,,V,add docstrings to a file,engine,2,89.5;89.5
+rtx5090,qwen3.8-27b,ninfer,exact,,V,answer a question from a document,engine,2,89.2;89.1
+rtx5090,qwen3.8-27b,ninfer,exact,,V,edit a flag across code,engine,2,89.5;89.4
+rtx5090,qwen3.8-27b,ninfer,exact,,V,explain a piece of code,engine,2,89.5;89.4
+rtx5090,qwen3.8-27b,ninfer,exact,,V,find bugs in code,engine,2,89.3;89.3
+rtx5090,qwen3.8-27b,ninfer,exact,,V,list a file's functions,engine,2,89.2;89.2
+rtx5090,qwen3.8-27b,ninfer,exact,,V,port code to C++,engine,2,89.4;89.4
+rtx5090,qwen3.8-27b,ninfer,exact,,V,quote passages from a document,engine,2,89.4;89.4
+rtx5090,qwen3.8-27b,ninfer,exact,,V,rename across a file,engine,2,89.5;89.5
+rtx5090,qwen3.8-27b,ninfer,exact,,V,summarise a document,engine,2,89.1;89.1
+rtx5090,qwen3.8-27b,ninfer,exact,,V,turn a policy into a table,engine,2,89.5;89.5
+rtx5090,qwen3.8-27b,ninfer,exact,,V,work through a CSV table,engine,2,89.5;89.4
+rtx5090,qwen3.8-27b,ninfer,exact,,V,write unit tests,engine,2,89.5;89.5
+rtx5090,qwen3.8-27b,ninfer,fast,MTP,A,chat: explain a networking topic,engine,2,164.4;163.4
+rtx5090,qwen3.8-27b,ninfer,fast,MTP,A,chat: explain an algorithm,engine,2,193.7;193.0
+rtx5090,qwen3.8-27b,ninfer,fast,MTP,A,chat: generate JSON data,engine,2,236.0;234.3
+rtx5090,qwen3.8-27b,ninfer,fast,MTP,A,chat: write a Python class,engine,2,223.8;221.9
+rtx5090,qwen3.8-27b,ninfer,fast,MTP,R,edit a C++ source file,engine,3,244.4;240.2;244.0
+rtx5090,qwen3.8-27b,ninfer,fast,MTP,R,edit a CUDA source file,engine,3,240.5;236.4;239.9
+rtx5090,qwen3.8-27b,ninfer,fast,MTP,R,rename across a C header,engine,3,239.6;236.3;239.1
+rtx5090,qwen3.8-27b,ninfer,fast,MTP,R,rename across a Python file,engine,3,240.6;237.3;240.0
+rtx5090,qwen3.8-27b,ninfer,fast,MTP,R,rewrite a C++ file,engine,3,236.6;234.7;236.2
+rtx5090,qwen3.8-27b,ninfer,fast,MTP,R,rewrite a Python file,engine,3,246.1;243.8;245.7
+rtx5090,qwen3.8-27b,ninfer,fast,MTP,R,triage a log,engine,3,240.6;238.6;240.3
+rtx5090,qwen3.8-27b,ninfer,fast,MTP,V,add Doxygen docs to a C++ file,engine,2,228.9;227.9
+rtx5090,qwen3.8-27b,ninfer,fast,MTP,V,add docstrings to a file,engine,2,227.4;226.3
+rtx5090,qwen3.8-27b,ninfer,fast,MTP,V,answer a question from a document,engine,2,220.0;220.1
+rtx5090,qwen3.8-27b,ninfer,fast,MTP,V,edit a flag across code,engine,2,228.9;228.0
+rtx5090,qwen3.8-27b,ninfer,fast,MTP,V,explain a piece of code,engine,2,222.4;221.9
+rtx5090,qwen3.8-27b,ninfer,fast,MTP,V,find bugs in code,engine,2,177.0;176.2
+rtx5090,qwen3.8-27b,ninfer,fast,MTP,V,list a file's functions,engine,2,180.8;180.5
+rtx5090,qwen3.8-27b,ninfer,fast,MTP,V,port code to C++,engine,2,217.6;217.3
+rtx5090,qwen3.8-27b,ninfer,fast,MTP,V,quote passages from a document,engine,2,242.8;242.4
+rtx5090,qwen3.8-27b,ninfer,fast,MTP,V,rename across a file,engine,2,243.6;242.7
+rtx5090,qwen3.8-27b,ninfer,fast,MTP,V,summarise a document,engine,2,169.4;169.1
+rtx5090,qwen3.8-27b,ninfer,fast,MTP,V,turn a policy into a table,engine,2,210.4;209.9
+rtx5090,qwen3.8-27b,ninfer,fast,MTP,V,work through a CSV table,engine,2,242.5;241.7
+rtx5090,qwen3.8-27b,ninfer,fast,MTP,V,write unit tests,engine,2,190.6;190.5
+rtx5090,qwen3.8-27b,ollama,exact,,A,chat: explain a networking topic,shared_client,2,74.9;74.9
+rtx5090,qwen3.8-27b,ollama,exact,,A,chat: explain an algorithm,shared_client,2,72.7;72.7
+rtx5090,qwen3.8-27b,ollama,exact,,A,chat: generate JSON data,shared_client,2,61.9;61.9
+rtx5090,qwen3.8-27b,ollama,exact,,A,chat: write a Python class,shared_client,2,59.7;59.6
+rtx5090,qwen3.8-27b,ollama,exact,,R,edit a C++ source file,shared_client,3,67.9;67.8;67.8
+rtx5090,qwen3.8-27b,ollama,exact,,R,edit a CUDA source file,shared_client,3,73.6;73.6;73.6
+rtx5090,qwen3.8-27b,ollama,exact,,R,rename across a C header,shared_client,3,70.2;70.2;70.2
+rtx5090,qwen3.8-27b,ollama,exact,,R,rename across a Python file,shared_client,3,74.3;74.3;74.3
+rtx5090,qwen3.8-27b,ollama,exact,,R,rewrite a C++ file,shared_client,3,70.1;70.3;70.3
+rtx5090,qwen3.8-27b,ollama,exact,,R,rewrite a Python file,shared_client,3,68.6;68.6;68.7
+rtx5090,qwen3.8-27b,ollama,exact,,R,triage a log,shared_client,3,75.5;75.4;75.5
+rtx5090,qwen3.8-27b,ollama,exact,,V,add Doxygen docs to a C++ file,shared_client,2,70.9;70.9
+rtx5090,qwen3.8-27b,ollama,exact,,V,add docstrings to a file,shared_client,2,67.9;67.9
+rtx5090,qwen3.8-27b,ollama,exact,,V,answer a question from a document,shared_client,2,77.0;77.0
+rtx5090,qwen3.8-27b,ollama,exact,,V,edit a flag across code,shared_client,2,68.1;68.2
+rtx5090,qwen3.8-27b,ollama,exact,,V,explain a piece of code,shared_client,2,72.6;72.7
+rtx5090,qwen3.8-27b,ollama,exact,,V,find bugs in code,shared_client,2,74.6;74.5
+rtx5090,qwen3.8-27b,ollama,exact,,V,list a file's functions,shared_client,2,76.0;76.0
+rtx5090,qwen3.8-27b,ollama,exact,,V,port code to C++,shared_client,2,63.1;63.1
+rtx5090,qwen3.8-27b,ollama,exact,,V,quote passages from a document,shared_client,2,75.7;75.8
+rtx5090,qwen3.8-27b,ollama,exact,,V,rename across a file,shared_client,2,67.3;67.4
+rtx5090,qwen3.8-27b,ollama,exact,,V,summarise a document,shared_client,2,76.4;76.4
+rtx5090,qwen3.8-27b,ollama,exact,,V,turn a policy into a table,shared_client,2,77.5;77.4
+rtx5090,qwen3.8-27b,ollama,exact,,V,work through a CSV table,shared_client,2,77.4;77.4
+rtx5090,qwen3.8-27b,ollama,exact,,V,write unit tests,shared_client,2,76.5;76.5
+rtx5090,qwen3.8-27b,ollama,fast,MTP,A,chat: explain a networking topic,shared_client,2,135.9;136.3
+rtx5090,qwen3.8-27b,ollama,fast,MTP,A,chat: explain an algorithm,shared_client,2,155.8;156.3
+rtx5090,qwen3.8-27b,ollama,fast,MTP,A,chat: generate JSON data,shared_client,2,160.8;161.9
+rtx5090,qwen3.8-27b,ollama,fast,MTP,A,chat: write a Python class,shared_client,2,139.7;140.0
+rtx5090,qwen3.8-27b,ollama,fast,MTP,R,edit a C++ source file,shared_client,3,194.1;192.1;194.1
+rtx5090,qwen3.8-27b,ollama,fast,MTP,R,edit a CUDA source file,shared_client,3,208.9;205.6;208.9
+rtx5090,qwen3.8-27b,ollama,fast,MTP,R,rename across a C header,shared_client,3,200.0;199.8;199.9
+rtx5090,qwen3.8-27b,ollama,fast,MTP,R,rename across a Python file,shared_client,3,212.4;212.4;210.8
+rtx5090,qwen3.8-27b,ollama,fast,MTP,R,rewrite a C++ file,shared_client,3,199.5;196.2;199.4
+rtx5090,qwen3.8-27b,ollama,fast,MTP,R,rewrite a Python file,shared_client,3,195.4;195.5;195.5
+rtx5090,qwen3.8-27b,ollama,fast,MTP,R,triage a log,shared_client,3,213.1;209.6;212.6
+rtx5090,qwen3.8-27b,ollama,fast,MTP,V,add Doxygen docs to a C++ file,shared_client,2,189.7;190.0
+rtx5090,qwen3.8-27b,ollama,fast,MTP,V,add docstrings to a file,shared_client,2,179.6;180.0
+rtx5090,qwen3.8-27b,ollama,fast,MTP,V,answer a question from a document,shared_client,2,205.7;206.3
+rtx5090,qwen3.8-27b,ollama,fast,MTP,V,edit a flag across code,shared_client,2,188.9;189.3
+rtx5090,qwen3.8-27b,ollama,fast,MTP,V,explain a piece of code,shared_client,2,160.9;161.6
+rtx5090,qwen3.8-27b,ollama,fast,MTP,V,find bugs in code,shared_client,2,151.2;151.6
+rtx5090,qwen3.8-27b,ollama,fast,MTP,V,list a file's functions,shared_client,2,154.5;154.9
+rtx5090,qwen3.8-27b,ollama,fast,MTP,V,port code to C++,shared_client,2,152.4;152.6
+rtx5090,qwen3.8-27b,ollama,fast,MTP,V,quote passages from a document,shared_client,2,211.1;211.4
+rtx5090,qwen3.8-27b,ollama,fast,MTP,V,rename across a file,shared_client,2,189.3;189.8
+rtx5090,qwen3.8-27b,ollama,fast,MTP,V,summarise a document,shared_client,2,141.4;142.2
+rtx5090,qwen3.8-27b,ollama,fast,MTP,V,turn a policy into a table,shared_client,2,183.8;184.3
+rtx5090,qwen3.8-27b,ollama,fast,MTP,V,work through a CSV table,shared_client,2,213.6;214.4
+rtx5090,qwen3.8-27b,ollama,fast,MTP,V,write unit tests,shared_client,2,135.2;135.6
+rtx5090,qwen3.8-27b,sglang,exact,,A,chat: explain a networking topic,shared_client,2,76.0;75.9
+rtx5090,qwen3.8-27b,sglang,exact,,A,chat: explain an algorithm,shared_client,2,76.0;75.9
+rtx5090,qwen3.8-27b,sglang,exact,,A,chat: generate JSON data,shared_client,2,76.0;75.9
+rtx5090,qwen3.8-27b,sglang,exact,,A,chat: write a Python class,shared_client,2,76.0;76.1
+rtx5090,qwen3.8-27b,sglang,exact,,R,edit a C++ source file,shared_client,3,75.5;75.6;75.5
+rtx5090,qwen3.8-27b,sglang,exact,,R,edit a CUDA source file,shared_client,3,75.5;75.5;75.4
+rtx5090,qwen3.8-27b,sglang,exact,,R,rename across a C header,shared_client,3,75.8;75.8;75.8
+rtx5090,qwen3.8-27b,sglang,exact,,R,rename across a Python file,shared_client,3,75.6;75.6;75.6
+rtx5090,qwen3.8-27b,sglang,exact,,R,rewrite a C++ file,shared_client,3,75.6;75.7;75.6
+rtx5090,qwen3.8-27b,sglang,exact,,R,rewrite a Python file,shared_client,3,75.7;75.7;75.7
+rtx5090,qwen3.8-27b,sglang,exact,,R,triage a log,shared_client,3,75.6;75.6;75.6
+rtx5090,qwen3.8-27b,sglang,exact,,V,add Doxygen docs to a C++ file,shared_client,2,75.7;75.7
+rtx5090,qwen3.8-27b,sglang,exact,,V,add docstrings to a file,shared_client,2,75.8;75.8
+rtx5090,qwen3.8-27b,sglang,exact,,V,answer a question from a document,shared_client,2,75.3;75.2
+rtx5090,qwen3.8-27b,sglang,exact,,V,edit a flag across code,shared_client,2,75.9;75.8
+rtx5090,qwen3.8-27b,sglang,exact,,V,explain a piece of code,shared_client,2,75.8;75.8
+rtx5090,qwen3.8-27b,sglang,exact,,V,find bugs in code,shared_client,2,75.7;75.6
+rtx5090,qwen3.8-27b,sglang,exact,,V,list a file's functions,shared_client,2,75.6;75.6
+rtx5090,qwen3.8-27b,sglang,exact,,V,port code to C++,shared_client,2,75.8;75.7
+rtx5090,qwen3.8-27b,sglang,exact,,V,quote passages from a document,shared_client,2,74.8;74.8
+rtx5090,qwen3.8-27b,sglang,exact,,V,rename across a file,shared_client,2,75.8;75.8
+rtx5090,qwen3.8-27b,sglang,exact,,V,summarise a document,shared_client,2,75.4;75.4
+rtx5090,qwen3.8-27b,sglang,exact,,V,turn a policy into a table,shared_client,2,75.2;75.1
+rtx5090,qwen3.8-27b,sglang,exact,,V,work through a CSV table,shared_client,2,75.4;75.4
+rtx5090,qwen3.8-27b,sglang,exact,,V,write unit tests,shared_client,2,75.8;75.8
+rtx5090,qwen3.8-27b,vllm,exact,,A,chat: explain a networking topic,shared_client,2,68.2;69.5
+rtx5090,qwen3.8-27b,vllm,exact,,A,chat: explain an algorithm,shared_client,2,68.3;69.7
+rtx5090,qwen3.8-27b,vllm,exact,,A,chat: generate JSON data,shared_client,2,68.2;69.4
+rtx5090,qwen3.8-27b,vllm,exact,,A,chat: write a Python class,shared_client,2,68.3;69.7
+rtx5090,qwen3.8-27b,vllm,exact,,R,edit a C++ source file,shared_client,3,69.2;69.3;69.2
+rtx5090,qwen3.8-27b,vllm,exact,,R,edit a CUDA source file,shared_client,3,69.8;69.8;69.7
+rtx5090,qwen3.8-27b,vllm,exact,,R,rename across a C header,shared_client,3,69.3;69.3;69.3
+rtx5090,qwen3.8-27b,vllm,exact,,R,rename across a Python file,shared_client,3,69.3;69.3;69.2
+rtx5090,qwen3.8-27b,vllm,exact,,R,rewrite a C++ file,shared_client,3,69.3;69.3;69.2
+rtx5090,qwen3.8-27b,vllm,exact,,R,rewrite a Python file,shared_client,3,69.5;69.5;69.4
+rtx5090,qwen3.8-27b,vllm,exact,,R,triage a log,shared_client,3,69.1;69.1;69.1
+rtx5090,qwen3.8-27b,vllm,exact,,V,add Doxygen docs to a C++ file,shared_client,2,67.9;69.3
+rtx5090,qwen3.8-27b,vllm,exact,,V,add docstrings to a file,shared_client,2,67.9;69.3
+rtx5090,qwen3.8-27b,vllm,exact,,V,answer a question from a document,shared_client,2,67.3;68.7
+rtx5090,qwen3.8-27b,vllm,exact,,V,edit a flag across code,shared_client,2,67.9;69.1
+rtx5090,qwen3.8-27b,vllm,exact,,V,explain a piece of code,shared_client,2,67.9;69.3
+rtx5090,qwen3.8-27b,vllm,exact,,V,find bugs in code,shared_client,2,67.8;69.2
+rtx5090,qwen3.8-27b,vllm,exact,,V,list a file's functions,shared_client,2,67.9;69.2
+rtx5090,qwen3.8-27b,vllm,exact,,V,port code to C++,shared_client,2,68.1;69.4
+rtx5090,qwen3.8-27b,vllm,exact,,V,quote passages from a document,shared_client,2,67.5;68.8
+rtx5090,qwen3.8-27b,vllm,exact,,V,rename across a file,shared_client,2,67.9;69.3
+rtx5090,qwen3.8-27b,vllm,exact,,V,summarise a document,shared_client,2,67.7;69.1
+rtx5090,qwen3.8-27b,vllm,exact,,V,turn a policy into a table,shared_client,2,67.3;68.7
+rtx5090,qwen3.8-27b,vllm,exact,,V,work through a CSV table,shared_client,2,67.7;69.1
+rtx5090,qwen3.8-27b,vllm,exact,,V,write unit tests,shared_client,2,67.9;69.3
+rtx5090,qwen3.8-27b,vllm,fast,MTP,A,chat: explain a networking topic,shared_client,2,51.8;51.8
+rtx5090,qwen3.8-27b,vllm,fast,MTP,A,chat: explain an algorithm,shared_client,2,51.8;51.8
+rtx5090,qwen3.8-27b,vllm,fast,MTP,A,chat: generate JSON data,shared_client,2,51.8;51.8
+rtx5090,qwen3.8-27b,vllm,fast,MTP,A,chat: write a Python class,shared_client,2,52.4;52.4
+rtx5090,qwen3.8-27b,vllm,fast,MTP,R,edit a C++ source file,shared_client,3,51.4;51.3;51.3
+rtx5090,qwen3.8-27b,vllm,fast,MTP,R,edit a CUDA source file,shared_client,3,51.9;51.9;51.8
+rtx5090,qwen3.8-27b,vllm,fast,MTP,R,rename across a C header,shared_client,3,51.6;51.5;51.4
+rtx5090,qwen3.8-27b,vllm,fast,MTP,R,rename across a Python file,shared_client,3,51.5;51.5;51.4
+rtx5090,qwen3.8-27b,vllm,fast,MTP,R,rewrite a C++ file,shared_client,3,51.4;51.3;51.3
+rtx5090,qwen3.8-27b,vllm,fast,MTP,R,rewrite a Python file,shared_client,3,51.5;51.5;51.4
+rtx5090,qwen3.8-27b,vllm,fast,MTP,R,triage a log,shared_client,3,51.6;51.5;51.4
+rtx5090,qwen3.8-27b,vllm,fast,MTP,V,add Doxygen docs to a C++ file,shared_client,2,51.4;51.6
+rtx5090,qwen3.8-27b,vllm,fast,MTP,V,add docstrings to a file,shared_client,2,51.5;51.6
+rtx5090,qwen3.8-27b,vllm,fast,MTP,V,answer a question from a document,shared_client,2,51.5;51.7
+rtx5090,qwen3.8-27b,vllm,fast,MTP,V,edit a flag across code,shared_client,2,51.6;51.6
+rtx5090,qwen3.8-27b,vllm,fast,MTP,V,explain a piece of code,shared_client,2,51.5;51.6
+rtx5090,qwen3.8-27b,vllm,fast,MTP,V,find bugs in code,shared_client,2,51.5;51.6
+rtx5090,qwen3.8-27b,vllm,fast,MTP,V,list a file's functions,shared_client,2,51.5;51.6
+rtx5090,qwen3.8-27b,vllm,fast,MTP,V,port code to C++,shared_client,2,51.5;51.6
+rtx5090,qwen3.8-27b,vllm,fast,MTP,V,quote passages from a document,shared_client,2,51.6;51.7
+rtx5090,qwen3.8-27b,vllm,fast,MTP,V,rename across a file,shared_client,2,51.5;51.6
+rtx5090,qwen3.8-27b,vllm,fast,MTP,V,summarise a document,shared_client,2,51.1;51.2
+rtx5090,qwen3.8-27b,vllm,fast,MTP,V,turn a policy into a table,shared_client,2,51.8;51.8
+rtx5090,qwen3.8-27b,vllm,fast,MTP,V,work through a CSV table,shared_client,2,50.4;50.5
+rtx5090,qwen3.8-27b,vllm,fast,MTP,V,write unit tests,shared_client,2,51.5;51.6
