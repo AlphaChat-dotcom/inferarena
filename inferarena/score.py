@@ -185,15 +185,21 @@ def board(runs: list[dict], klass: str, sets: dict, reference: str, min_cells: i
 
 
 def withhold(ed: dict) -> dict:
-    """Drop the models listed in ed["withheld"]["models"] from everything published: cells, runs, the model list,
-    records and peaks, and any category left with no model. The rows stay in the edition file, so a model comes back
-    by removing it from the list."""
-    held = set((ed.get("withheld") or {}).get("models") or [])
-    if not held:
+    """Drop what ed["withheld"] lists from everything published. "models": a model's cells, runs, records and peaks, its
+    entry in the model list, and any category left with no model. "cells" ("gpu/model"): one GPU's results for one
+    model, the same way. The rows stay in the edition file, so they come back by removing them from the list."""
+    w = ed.get("withheld") or {}
+    held = set(w.get("models") or [])
+    held_cells = set(w.get("cells") or [])           # "gpu/model": one GPU's results for one model
+    if not held and not held_cells:
         return ed
+
+    def gone(x: dict) -> bool:
+        return x.get("model") in held or f"{x.get('gpu')}/{x.get('model')}" in held_cells
+
     out = dict(ed)
-    out["cells"] = [c for c in ed["cells"] if c["model"] not in held]
-    out["runs"] = [r for r in ed["runs"] if r.get("model") not in held]
+    out["cells"] = [c for c in ed["cells"] if not gone(c)]
+    out["runs"] = [r for r in ed["runs"] if not gone(r)]
     left = {r["engine"] for r in out["runs"]}
     scope = ed.get("engine_scope") or {}
     if scope.get("engines"):                     # an engine whose only rows were withheld isn't published either
@@ -212,7 +218,7 @@ def withhold(ed: dict) -> dict:
     rec = dict(ed.get("records") or {})
     for k in ("rows", "peaks", "peak_notes"):
         if rec.get(k):
-            rec[k] = [x for x in rec[k] if x.get("model") not in held]
+            rec[k] = [x for x in rec[k] if not gone(x)]
     out["records"] = rec
     return out
 

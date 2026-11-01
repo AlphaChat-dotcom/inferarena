@@ -1,6 +1,9 @@
 # Changelog
 
 ## 2026-11-02
+- **Held:** the RTX 3090 Flash-Next results, while that run is repeated. AlphaLlama's automatic start loaded a routing
+  profile found next to the model, and it isn't known which prompts the profile was recorded on. The rows stay in the
+  edition file under `withheld.cells`. RTX 4080 and RTX 5090 loaded no profile.
 - RTX 5090 Flash-Next: the same AlphaLlama release candidate against Strata 0.2.8 at its fastest setup on that card
   (32K, one request slot, STRATA_SPEC_DEPTH=1, a tuned setting; labelled on the board).
 - **Flash-Next published again.** RTX 3090 and RTX 4080: AlphaLlama release candidate 3e82a70ea and Strata 0.2.8

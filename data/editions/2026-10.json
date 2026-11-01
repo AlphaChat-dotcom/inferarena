@@ -1097,7 +1097,7 @@
     "Ollama versions differ by GPU: 0.40.11 on the RTX 3090 and 4080 (re-run 2026-10-27/28), older on the 5090 and the 4070 laptop. 0.40.11 is much faster than the older builds: about 1.6x on the 3090 and 3.6x on the 4080, where it splits the 35B model between GPU and system memory far better.",
     "AlphaLlama on the RTX 3090 (newer engine backend): 35B ran at a 32,768-token context, where its exact output matches its plain decode (at the default 98,304 it doesn't yet; being fixed). 27B ran on a batch-invariant build, which isn't the standard release, at a 131,072-token context with q4_0 KV; its speed there is within 2.4% of the default 262,144-token context. Speed and identity come from the same configuration for each model.",
     "AlphaLlama on Qwen3.8-27B, RTX 4080 (newer engine backend): the model only fits in 16 GB with some layers and the token embeddings on the CPU side, and there its verified-MTP mode matched plain decoding only 1 of 4 times, so it's on the fast board. Its plain decoding is on the board as exact output; all three modes ran in the same configuration.",
-    "Flash-Next (RTX 3090, RTX 4080 and RTX 5090): AlphaLlama's release candidate 3e82a70ea and Strata 0.2.8 ran in one window per machine (on the RTX 5090 Strata used its fastest, tuned setup), 2 passes with the second reversed, a fresh server per engine. Flash-Next has no exact mode with drafting on AlphaLlama, so its exact row is plain decoding. Earlier AlphaLlama builds had a Flash-Next bug that could emit stray tokens in long outputs; this build has the fix and no output had any."
+    "Flash-Next (RTX 4080 and RTX 5090): AlphaLlama's release candidate 3e82a70ea and Strata 0.2.8 ran in one window per machine (on the RTX 5090 Strata used its fastest, tuned setup), 2 passes with the second reversed, a fresh server per engine. Flash-Next has no exact mode with drafting on AlphaLlama, so its exact row is plain decoding. Earlier AlphaLlama builds had a Flash-Next bug that could emit stray tokens in long outputs; this build has the fix and no output had any. The RTX 3090 Flash-Next results are being re-run and will be added when they're ready."
   ],
   "engine_scope": {
     "criterion": "general = loads any supported model architecture from a standard format (GGUF or Hugging Face weights); specific = built for particular models or model families",
@@ -4077,5 +4077,12 @@
   "cutoff": {
     "date": "2026-10-22",
     "about": "Competitor engines were tested at their latest public release up to this date; newer releases are measured when they're submitted or re-run. Exception: the Flash-Next boards were re-run on 2026-11-01 with Strata 0.2.8 (released 2026-10-29)."
+  },
+  "withheld": {
+    "cells": [
+      "rtx3090/qwen3.8-flash-next"
+    ],
+    "since": "2026-11-02",
+    "reason": "Held while the RTX 3090 Flash-Next run is repeated: AlphaLlama's automatic start loaded a routing profile found next to the model, and it isn't known which prompts that profile was recorded on. Rows stay here; remove the cell from this list to publish them again."
   }
 }
