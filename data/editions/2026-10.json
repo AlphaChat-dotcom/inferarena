@@ -90,7 +90,7 @@
     "4080_flashnext_0271": "RTX 4080 Flash-Next run, 2026-10-29 16:26-16:49 UTC: AlphaLlama v2 release build (bare -m), Strata 0.2.7.1 and Strata 0.1.47 in one window, 2 passes in reversed order (per-prompt token file; 10 Strata rows whose streamed token count was under 90% of the reported count left out).",
     "4080_35b_8e9e192": "RTX 4080 Qwen3.6-35B-A3B re-run on AlphaLlama 8e9e192, 2026-11-01: fast (auto) and plain, 2 passes with the second reversed, a fresh server per arm after one warm-up start (per-prompt token file; every row streamed its full token count)",
     "4070_35b_8e9e192": "RTX 4070 laptop Qwen3.6-35B-A3B re-run on AlphaLlama 8e9e192, 2026-11-01: fast (auto), 2 passes with the second reversed, a fresh server per arm after one warm-up start (per-prompt token file; every row streamed its full token count). Plain decoding in the same window (37.8 / 36.2 / 35.1) matched the published exact row within about 2%, so that row is unchanged.",
-    "flashnext_rc_3e82a70ea": "RTX 4080 and RTX 3090 Flash-Next runs, 2026-11-01: AlphaLlama release candidate 3e82a70ea (fast and plain) and Strata 0.2.8 (870aedd9) in one window per machine, 2 passes with the second reversed, a fresh server per arm (per-prompt token files and all output texts; Strata rows streamed under 90% of their reported tokens left out)",
+    "flashnext_rc_3e82a70ea": "RTX 4080 and RTX 3090 Flash-Next runs, 2026-11-01: AlphaLlama release candidate 3e82a70ea (fast and plain) and Strata 0.2.8 (870aedd9) in one window per machine, 2 passes with the second reversed, a fresh server per arm (per-prompt token files and all output texts; Strata rows streamed under 90% of their reported tokens left out); the RTX 3090 fast and Strata rows are from a repeat run on 2026-11-02 with no routing profile loaded and the default expert tail skip",
     "flashnext_rc_5090": "RTX 5090 Flash-Next run, 2026-11-02: AlphaLlama release candidate 3e82a70ea (fast and plain, the same binary as the RTX 3090 / 4080 runs) and Strata 0.2.8 in one window, 2 passes with the second reversed, a fresh server per arm on an empty GPU (per-prompt token file; Strata rows streamed under 90% of their reported tokens left out)"
   },
   "cells": [
@@ -940,14 +940,9 @@
       "model": "qwen3.8-flash-next",
       "engine": "alphallama",
       "class": "exact",
-      "status": "ran",
-      "A": 78.7,
-      "V": 75.7,
-      "R": 74.1,
-      "reproducible": true,
+      "status": "env_broken",
       "version": "AlphaLlama v2 (2.0.0), release candidate 3e82a70ea (built from source; packaged release follows)",
-      "format": "IQ3_XXS GGUF (same file as Strata)",
-      "note": "plain decoding (no drafting), which is this engine's exact mode on Flash-Next; output repeated 25/25 across two fresh starts; started with only a model file (automatic configuration for this card's memory class); by default it skips a missed expert (one not in GPU memory) when every token of a draft window ranks it 7th or lower, or when any token ranks it 6th to 9th of its top 10 (this card's memory-class profile sets the stricter rank 6)"
+      "reason": "plain decoding not yet re-run without the routing profile; to be added"
     },
     {
       "gpu": "rtx3090",
@@ -955,13 +950,12 @@
       "engine": "alphallama",
       "class": "fast",
       "status": "ran",
-      "A": 146.4,
-      "V": 156.0,
-      "R": 259.1,
-      "identity": "1/4",
+      "A": 143.5,
+      "V": 153.9,
+      "R": 251.5,
       "version": "AlphaLlama v2 (2.0.0), release candidate 3e82a70ea (built from source; packaged release follows)",
       "format": "IQ3_XXS GGUF (same file as Strata) + MTP head",
-      "note": "its default: started with only a model file (automatic configuration for this card's memory class: MTP drafts plus n-gram drafts, experts offloaded); by default it skips a missed expert (one not in GPU memory) when every token of a draft window ranks it 7th or lower, or when any token ranks it 6th to 9th of its top 10 (this card's memory-class profile sets the stricter rank 6)"
+      "note": "its default: started with only a model file (automatic configuration for this card's memory class: MTP drafts plus n-gram drafts, experts offloaded), with no routing profile loaded; by default it skips a missed expert (one not in GPU memory) when every token of a draft window ranks it 7th or lower, or when any token ranks it 8th or 9th of its top 10"
     },
     {
       "gpu": "rtx3090",
@@ -969,9 +963,9 @@
       "engine": "strata",
       "class": "fast",
       "status": "ran",
-      "A": 146.3,
-      "V": 151.2,
-      "R": 174.6,
+      "A": 145.5,
+      "V": 151.5,
+      "R": 173.0,
       "version": "0.2.8 (870aedd9)",
       "format": "IQ3_XXS GGUF",
       "note": "its own 32K launch configuration (speculative decoding, int8 KV, its expert profile and MTP head), in the same window as AlphaLlama; set A over 2 of 4 prompts and set V over 13 of 14 (replies streamed under 90% of the tokens reported); by default it skips a missed expert when every token of a draft window ranks it 7th or lower, and preloads its own shipped expert profile"
@@ -1097,7 +1091,7 @@
     "Ollama versions differ by GPU: 0.40.11 on the RTX 3090 and 4080 (re-run 2026-10-27/28), older on the 5090 and the 4070 laptop. 0.40.11 is much faster than the older builds: about 1.6x on the 3090 and 3.6x on the 4080, where it splits the 35B model between GPU and system memory far better.",
     "AlphaLlama on the RTX 3090 (newer engine backend): 35B ran at a 32,768-token context, where its exact output matches its plain decode (at the default 98,304 it doesn't yet; being fixed). 27B ran on a batch-invariant build, which isn't the standard release, at a 131,072-token context with q4_0 KV; its speed there is within 2.4% of the default 262,144-token context. Speed and identity come from the same configuration for each model.",
     "AlphaLlama on Qwen3.8-27B, RTX 4080 (newer engine backend): the model only fits in 16 GB with some layers and the token embeddings on the CPU side, and there its verified-MTP mode matched plain decoding only 1 of 4 times, so it's on the fast board. Its plain decoding is on the board as exact output; all three modes ran in the same configuration.",
-    "Flash-Next (RTX 4080 and RTX 5090): AlphaLlama's release candidate 3e82a70ea and Strata 0.2.8 ran in one window per machine (on the RTX 5090 Strata used its fastest, tuned setup), 2 passes with the second reversed, a fresh server per engine. Flash-Next has no exact mode with drafting on AlphaLlama, so its exact row is plain decoding. Earlier AlphaLlama builds had a Flash-Next bug that could emit stray tokens in long outputs; this build has the fix and no output had any. The RTX 3090 Flash-Next results are being re-run and will be added when they're ready."
+    "Flash-Next (RTX 3090, RTX 4080 and RTX 5090): AlphaLlama's release candidate 3e82a70ea and Strata 0.2.8 ran in one window per machine (on the RTX 5090 Strata used its fastest, tuned setup), 2 passes with the second reversed, a fresh server per engine. Flash-Next has no exact mode with drafting on AlphaLlama, so its exact row is plain decoding. Earlier AlphaLlama builds had a Flash-Next bug that could emit stray tokens in long outputs; this build has the fix and no output had any. No AlphaLlama run loaded a routing profile: the first RTX 3090 run had auto-loaded one of unknown origin, so it was repeated without it, and its plain-decoding row will be added later."
   ],
   "engine_scope": {
     "criterion": "general = loads any supported model architecture from a standard format (GGUF or Hugging Face weights); specific = built for particular models or model families",
@@ -1240,10 +1234,10 @@
         "gpu": "rtx3090",
         "model": "qwen3.8-flash-next",
         "set": "R",
-        "task": "rewrite a C++ file",
-        "tok_s": 308.1,
+        "task": "edit a C++ source file",
+        "tok_s": 288.5,
         "passes": 2,
-        "spread_pct": 3.9
+        "spread_pct": 0.5
       },
       {
         "engine": "vllm",
@@ -1323,11 +1317,11 @@
         "variant": null,
         "gpu": "rtx3090",
         "model": "qwen3.8-flash-next",
-        "set": "R",
-        "task": "rename across a C header",
-        "tok_s": 198.2,
+        "set": "V",
+        "task": "add Doxygen docs to a C++ file",
+        "tok_s": 181.0,
         "passes": 2,
-        "spread_pct": 1.2
+        "spread_pct": 0.1
       },
       {
         "engine": "strata",
@@ -1472,18 +1466,6 @@
         "tok_s": 84.7,
         "passes": 2,
         "spread_pct": 1.8
-      },
-      {
-        "engine": "alphallama",
-        "class": "exact",
-        "variant": null,
-        "gpu": "rtx3090",
-        "model": "qwen3.8-flash-next",
-        "set": "A",
-        "task": "chat: explain an algorithm",
-        "tok_s": 79.3,
-        "passes": 2,
-        "spread_pct": 0.5
       },
       {
         "engine": "ollama",
@@ -2079,9 +2061,9 @@
         "model": "qwen3.8-flash-next",
         "set": "A",
         "task": "chat: write a Python class",
-        "tok_s": 158.4,
+        "tok_s": 159.9,
         "passes": 2,
-        "spread_pct": 1.9,
+        "spread_pct": 3.0,
         "task_type": "chat"
       },
       {
@@ -2091,10 +2073,10 @@
         "gpu": "rtx3090",
         "model": "qwen3.8-flash-next",
         "set": "A",
-        "task": "chat: explain an algorithm",
-        "tok_s": 151.8,
+        "task": "chat: explain a networking topic",
+        "tok_s": 136.3,
         "passes": 2,
-        "spread_pct": 4.3,
+        "spread_pct": 1.2,
         "task_type": "chat"
       },
       {
@@ -2104,10 +2086,10 @@
         "gpu": "rtx3090",
         "model": "qwen3.8-flash-next",
         "set": "R",
-        "task": "rewrite a C++ file",
-        "tok_s": 308.1,
+        "task": "edit a C++ source file",
+        "tok_s": 288.5,
         "passes": 2,
-        "spread_pct": 3.9,
+        "spread_pct": 0.5,
         "task_type": "code_edit"
       },
       {
@@ -2116,12 +2098,25 @@
         "variant": null,
         "gpu": "rtx3090",
         "model": "qwen3.8-flash-next",
-        "set": "R",
-        "task": "rename across a C header",
-        "tok_s": 198.2,
+        "set": "V",
+        "task": "add Doxygen docs to a C++ file",
+        "tok_s": 181.0,
         "passes": 2,
-        "spread_pct": 1.2,
+        "spread_pct": 0.1,
         "task_type": "code_edit"
+      },
+      {
+        "engine": "strata",
+        "class": "fast",
+        "variant": null,
+        "gpu": "rtx3090",
+        "model": "qwen3.8-flash-next",
+        "set": "V",
+        "task": "list a file's functions",
+        "tok_s": 144.4,
+        "passes": 2,
+        "spread_pct": 7.2,
+        "task_type": "code_read"
       },
       {
         "engine": "alphallama",
@@ -2131,22 +2126,9 @@
         "model": "qwen3.8-flash-next",
         "set": "V",
         "task": "explain a piece of code",
-        "tok_s": 146.3,
+        "tok_s": 138.8,
         "passes": 2,
-        "spread_pct": 4.0,
-        "task_type": "code_read"
-      },
-      {
-        "engine": "strata",
-        "class": "fast",
-        "variant": null,
-        "gpu": "rtx3090",
-        "model": "qwen3.8-flash-next",
-        "set": "V",
-        "task": "find bugs in code",
-        "tok_s": 133.6,
-        "passes": 2,
-        "spread_pct": 3.2,
+        "spread_pct": 7.7,
         "task_type": "code_read"
       },
       {
@@ -2157,23 +2139,10 @@
         "model": "qwen3.8-flash-next",
         "set": "V",
         "task": "port code to C++",
-        "tok_s": 142.9,
+        "tok_s": 145.4,
         "passes": 2,
-        "spread_pct": 1.6,
+        "spread_pct": 7.0,
         "task_type": "code_write"
-      },
-      {
-        "engine": "strata",
-        "class": "fast",
-        "variant": null,
-        "gpu": "rtx3090",
-        "model": "qwen3.8-flash-next",
-        "set": "R",
-        "task": "triage a log",
-        "tok_s": 161.4,
-        "passes": 2,
-        "spread_pct": 3.3,
-        "task_type": "data_logs"
       },
       {
         "engine": "alphallama",
@@ -2181,11 +2150,24 @@
         "variant": null,
         "gpu": "rtx3090",
         "model": "qwen3.8-flash-next",
+        "set": "R",
+        "task": "triage a log",
+        "tok_s": 202.2,
+        "passes": 2,
+        "spread_pct": 2.9,
+        "task_type": "data_logs"
+      },
+      {
+        "engine": "strata",
+        "class": "fast",
+        "variant": null,
+        "gpu": "rtx3090",
+        "model": "qwen3.8-flash-next",
         "set": "V",
         "task": "work through a CSV table",
-        "tok_s": 156.8,
+        "tok_s": 169.6,
         "passes": 2,
-        "spread_pct": 9.6,
+        "spread_pct": 4.3,
         "task_type": "data_logs"
       },
       {
@@ -2196,9 +2178,9 @@
         "model": "qwen3.8-flash-next",
         "set": "V",
         "task": "quote passages from a document",
-        "tok_s": 215.4,
+        "tok_s": 207.1,
         "passes": 2,
-        "spread_pct": 7.9,
+        "spread_pct": 4.2,
         "task_type": "documents"
       },
       {
@@ -2208,10 +2190,10 @@
         "gpu": "rtx3090",
         "model": "qwen3.8-flash-next",
         "set": "V",
-        "task": "quote passages from a document",
-        "tok_s": 161.1,
+        "task": "turn a policy into a table",
+        "tok_s": 140.4,
         "passes": 2,
-        "spread_pct": 3.6,
+        "spread_pct": 0.1,
         "task_type": "documents"
       },
       {
@@ -4077,12 +4059,5 @@
   "cutoff": {
     "date": "2026-10-22",
     "about": "Competitor engines were tested at their latest public release up to this date; newer releases are measured when they're submitted or re-run. Exception: the Flash-Next boards were re-run on 2026-11-01 with Strata 0.2.8 (released 2026-10-29)."
-  },
-  "withheld": {
-    "cells": [
-      "rtx3090/qwen3.8-flash-next"
-    ],
-    "since": "2026-11-02",
-    "reason": "Held while the RTX 3090 Flash-Next run is repeated: AlphaLlama's automatic start loaded a routing profile found next to the model, and it isn't known which prompts that profile was recorded on. Rows stay here; remove the cell from this list to publish them again."
   }
 }
