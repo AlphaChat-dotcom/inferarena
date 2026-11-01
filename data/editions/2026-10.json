@@ -947,7 +947,7 @@
       "reproducible": true,
       "version": "AlphaLlama v2 (2.0.0), release candidate 3e82a70ea (built from source; packaged release follows)",
       "format": "IQ3_XXS GGUF (same file as Strata)",
-      "note": "plain decoding (no drafting), which is this engine's exact mode on Flash-Next; output repeated 25/25 across two fresh starts; started with only a model file (automatic configuration for this card's memory class); by default it skips a missed expert (one not in GPU memory) when every token of a draft window ranks it 7th or lower, or when any token ranks it 8th or 9th of its top 10"
+      "note": "plain decoding (no drafting), which is this engine's exact mode on Flash-Next; output repeated 25/25 across two fresh starts; started with only a model file (automatic configuration for this card's memory class); by default it skips a missed expert (one not in GPU memory) when every token of a draft window ranks it 7th or lower, or when any token ranks it 6th to 9th of its top 10 (this card's memory-class profile sets the stricter rank 6)"
     },
     {
       "gpu": "rtx3090",
@@ -961,7 +961,7 @@
       "identity": "1/4",
       "version": "AlphaLlama v2 (2.0.0), release candidate 3e82a70ea (built from source; packaged release follows)",
       "format": "IQ3_XXS GGUF (same file as Strata) + MTP head",
-      "note": "its default: started with only a model file (automatic configuration for this card's memory class: MTP drafts plus n-gram drafts, experts offloaded); by default it skips a missed expert (one not in GPU memory) when every token of a draft window ranks it 7th or lower, or when any token ranks it 8th or 9th of its top 10"
+      "note": "its default: started with only a model file (automatic configuration for this card's memory class: MTP drafts plus n-gram drafts, experts offloaded); by default it skips a missed expert (one not in GPU memory) when every token of a draft window ranks it 7th or lower, or when any token ranks it 6th to 9th of its top 10 (this card's memory-class profile sets the stricter rank 6)"
     },
     {
       "gpu": "rtx3090",
