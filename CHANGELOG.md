@@ -1,6 +1,8 @@
 # Changelog
 
 ## 2026-11-02
+- RTX 5090 Flash-Next: the same AlphaLlama release candidate against Strata 0.2.8 at its fastest setup on that card
+  (32K, one request slot, STRATA_SPEC_DEPTH=1, a tuned setting; labelled on the board).
 - **Flash-Next published again.** RTX 3090 and RTX 4080: AlphaLlama release candidate 3e82a70ea and Strata 0.2.8
   (870aedd9) in one window per machine. Every earlier Flash-Next row is replaced. AlphaLlama has no exact mode with
   drafting on Flash-Next, so its exact row is plain decoding (repeated 25/25 across starts). Earlier AlphaLlama builds

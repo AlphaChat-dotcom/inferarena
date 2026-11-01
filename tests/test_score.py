@@ -82,19 +82,23 @@ check("R is scored as a general rule: every category scores A + V + R",
       all(c["scored_sets"] == ["A", "V", "R"] for c in out["categories"]), [c["scored_sets"] for c in out["categories"]])
 fnp = {x["engine"]: x for x in fn["plain"]["ranking"]}
 fnf = {x["engine"]: x for x in fn["fast"]["ranking"]}
-# Flash-Next: the RTX 5090 run is outdated and removed (2026-10-28); RTX 3090 and RTX 4080 only.
-check("Flash-Next: RTX 3090 and 4080 only, no 5090 rows or cell", not any(r["gpu"] == "rtx5090" for r in fn["runs"])
-      and sorted(c["gpu"] for c in fn["cells"]) == ["rtx3090", "rtx4080"], [c["gpu"] for c in fn["cells"]])
+# Flash-Next: the old RTX 5090 run was removed (2026-10-28); the 2026-11-02 run on the same release candidate brings it back.
+check("Flash-Next: RTX 3090, 4080 and 5090, all on release candidate 3e82a70ea",
+      sorted(c["gpu"] for c in fn["cells"]) == ["rtx3090", "rtx4080", "rtx5090"]
+      and all("3e82a70ea" in r["version"] for r in fn["runs"] if r["engine"] == "alphallama"), [c["gpu"] for c in fn["cells"]])
 check("Flash-Next plain: no comparison yet (AlphaLlama is the only engine with exact decoding there)",
       fn["plain"]["reference"] is None and not fn["plain"]["ranking"], fn["plain"])
 check("Flash-Next fast (2026-11-01, release candidate 3e82a70ea vs Strata 0.2.8 on both GPUs): AlphaLlama 1st at 1.10, Strata 2nd",
       fnf["alphallama"]["rank"] == 1 and fnf["strata"]["rank"] == 2 and abs(fnf["alphallama"]["index"] - 1.10) < 0.01
       and abs(fnf["strata"]["index"] - 1.00) < 0.01, fnf)
-check("Flash-Next coverage: Strata runs on both cells, 3090 and 4080 (fast mode only)",
-      fn["coverage"]["strata"] == {"ran": 2, "tried": 2}, fn["coverage"].get("strata"))
+check("Flash-Next coverage: Strata runs on all three cells (fast mode only)",
+      fn["coverage"]["strata"] == {"ran": 3, "tried": 3}, fn["coverage"].get("strata"))
 check("Flash-Next: FreeToken not supported (126 GB file); AlphaLlama's exact row is plain decoding, repeated 25/25 (reproducible)",
       any(r["gpu"] == "rtx3090" and r["engine"] == "freetoken" and r["status"] == "not_supported" for r in fn["runs"])
-      and all(r["reproducible"] is True for r in fn["runs"] if r["engine"] == "alphallama" and r["class"] == "exact"))
+      and all(r["reproducible"] is True for r in fn["runs"]
+              if r["engine"] == "alphallama" and r["class"] == "exact" and r["gpu"] in ("rtx3090", "rtx4080"))
+      and "not checked" in next(r for r in fn["runs"] if r["gpu"] == "rtx5090" and r["engine"] == "alphallama"
+                                and r["class"] == "exact")["note"])
 check("categories never mix regimes",
       all(all(r["regime"] == c["regime"] for r in c["runs"]) for c in out["categories"] if c.get("regime")))
 check("every ran row carries all three scored sets", all(
