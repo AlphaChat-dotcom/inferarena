@@ -947,7 +947,7 @@
       "reproducible": true,
       "version": "AlphaLlama v2 (2.0.0), release candidate 3e82a70ea (built from source; packaged release follows)",
       "format": "IQ3_XXS GGUF (same file as Strata)",
-      "note": "plain decoding (no drafting), which is this engine's exact mode on Flash-Next; output repeated 25/25 across two fresh starts; started with only a model file (automatic configuration for this card's memory class)"
+      "note": "plain decoding (no drafting), which is this engine's exact mode on Flash-Next; output repeated 25/25 across two fresh starts; started with only a model file (automatic configuration for this card's memory class); by default it skips a missed expert (one not in GPU memory) when every token of a draft window ranks it 7th or lower, or when any token ranks it 8th or 9th of its top 10"
     },
     {
       "gpu": "rtx3090",
@@ -961,7 +961,7 @@
       "identity": "1/4",
       "version": "AlphaLlama v2 (2.0.0), release candidate 3e82a70ea (built from source; packaged release follows)",
       "format": "IQ3_XXS GGUF (same file as Strata) + MTP head",
-      "note": "its default: started with only a model file (automatic configuration for this card's memory class: MTP drafts plus n-gram drafts, experts offloaded)"
+      "note": "its default: started with only a model file (automatic configuration for this card's memory class: MTP drafts plus n-gram drafts, experts offloaded); by default it skips a missed expert (one not in GPU memory) when every token of a draft window ranks it 7th or lower, or when any token ranks it 8th or 9th of its top 10"
     },
     {
       "gpu": "rtx3090",
@@ -974,7 +974,7 @@
       "R": 174.6,
       "version": "0.2.8 (870aedd9)",
       "format": "IQ3_XXS GGUF",
-      "note": "its own 32K launch configuration (speculative decoding, int8 KV, its expert profile and MTP head), in the same window as AlphaLlama; set A over 2 of 4 prompts and set V over 13 of 14 (replies streamed under 90% of the tokens reported)"
+      "note": "its own 32K launch configuration (speculative decoding, int8 KV, its expert profile and MTP head), in the same window as AlphaLlama; set A over 2 of 4 prompts and set V over 13 of 14 (replies streamed under 90% of the tokens reported); by default it skips a missed expert when every token of a draft window ranks it 7th or lower, and preloads its own shipped expert profile"
     },
     {
       "gpu": "rtx3090",
@@ -997,7 +997,7 @@
       "reproducible": true,
       "version": "AlphaLlama v2 (2.0.0), release candidate 3e82a70ea (built from source; packaged release follows)",
       "format": "IQ3_XXS GGUF (same file as Strata)",
-      "note": "plain decoding (no drafting), which is this engine's exact mode on Flash-Next; output repeated 25/25 across two fresh starts; started with only a model file (automatic configuration for this card's memory class)"
+      "note": "plain decoding (no drafting), which is this engine's exact mode on Flash-Next; output repeated 25/25 across two fresh starts; started with only a model file (automatic configuration for this card's memory class); by default it skips a missed expert (one not in GPU memory) when every token of a draft window ranks it 7th or lower, or when any token ranks it 8th or 9th of its top 10"
     },
     {
       "gpu": "rtx4080",
@@ -1011,7 +1011,7 @@
       "identity": "0/4",
       "version": "AlphaLlama v2 (2.0.0), release candidate 3e82a70ea (built from source; packaged release follows)",
       "format": "IQ3_XXS GGUF (same file as Strata) + MTP head",
-      "note": "its default: started with only a model file (automatic configuration for this card's memory class: MTP drafts plus n-gram drafts, experts offloaded)"
+      "note": "its default: started with only a model file (automatic configuration for this card's memory class: MTP drafts plus n-gram drafts, experts offloaded); by default it skips a missed expert (one not in GPU memory) when every token of a draft window ranks it 7th or lower, or when any token ranks it 8th or 9th of its top 10"
     },
     {
       "gpu": "rtx4080",
@@ -1024,7 +1024,7 @@
       "R": 164.4,
       "version": "0.2.8 (870aedd9)",
       "format": "IQ3_XXS GGUF",
-      "note": "its own 32K launch configuration (speculative decoding, int8 KV, its expert profile and MTP head), in the same window as AlphaLlama; set A over 2 of 4 prompts and set V over 13 of 14 (replies streamed under 90% of the tokens reported)"
+      "note": "its own 32K launch configuration (speculative decoding, int8 KV, its expert profile and MTP head), in the same window as AlphaLlama; set A over 2 of 4 prompts and set V over 13 of 14 (replies streamed under 90% of the tokens reported); by default it skips a missed expert when every token of a draft window ranks it 7th or lower, and preloads its own shipped expert profile"
     },
     {
       "gpu": "rtx4080",
@@ -1046,7 +1046,7 @@
       "R": 129.2,
       "version": "AlphaLlama v2 (2.0.0), release candidate 3e82a70ea (built from source; packaged release follows)",
       "format": "IQ3_XXS GGUF (same file as Strata)",
-      "note": "plain decoding (no drafting), this engine's exact mode on Flash-Next; this build has no warm-up of the 27 GB embedding table, so a cold first pass slowed some held-out prompts; repeatability across starts not checked in this run"
+      "note": "plain decoding (no drafting), this engine's exact mode on Flash-Next; this build has no warm-up of the 27 GB embedding table, so a cold first pass slowed some held-out prompts; repeatability across starts not checked in this run; by default it skips a missed expert (one not in GPU memory) when every token of a draft window ranks it 7th or lower, or when any token ranks it 8th or 9th of its top 10"
     },
     {
       "gpu": "rtx5090",
@@ -1060,7 +1060,7 @@
       "identity": "0/4",
       "version": "AlphaLlama v2 (2.0.0), release candidate 3e82a70ea (built from source; packaged release follows)",
       "format": "IQ3_XXS GGUF (same file as Strata) + MTP head",
-      "note": "its default: started with only a model file (automatic configuration for a 32 GB card: MTP drafts plus n-gram drafts, experts offloaded)"
+      "note": "its default: started with only a model file (automatic configuration for a 32 GB card: MTP drafts plus n-gram drafts, experts offloaded); by default it skips a missed expert (one not in GPU memory) when every token of a draft window ranks it 7th or lower, or when any token ranks it 8th or 9th of its top 10"
     },
     {
       "gpu": "rtx5090",
@@ -1073,7 +1073,7 @@
       "R": 390.0,
       "version": "0.2.8 (870aedd9)",
       "format": "IQ3_XXS GGUF",
-      "note": "its fastest setup on this card: the 32K launch configuration with one request slot and STRATA_SPEC_DEPTH=1 (a tuned setting, not its default; its 128K default was about 3.5% slower), in the same window as AlphaLlama; set A over 2 of 4 prompts and set V over 13 of 14 (replies streamed under 90% of the tokens reported)"
+      "note": "its fastest setup on this card: the 32K launch configuration with one request slot and STRATA_SPEC_DEPTH=1 (a tuned setting, not its default; its 128K default was about 3.5% slower), in the same window as AlphaLlama; set A over 2 of 4 prompts and set V over 13 of 14 (replies streamed under 90% of the tokens reported); by default it skips a missed expert when every token of a draft window ranks it 7th or lower, and preloads its own shipped expert profile"
     },
     {
       "gpu": "rtx5090",
