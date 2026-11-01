@@ -88,7 +88,8 @@
     "4080_27b_ai2": "RTX 4080 AlphaLlama 27B on its newer engine backend, 2026-10-29: plain, verified-MTP and speed modes in one configuration (per-prompt token file, both passes, token check clean)",
     "4070_ai2": "RTX 4070 laptop AlphaLlama 35B on its newer engine backend, 2026-10-29 (per-prompt token file, both passes; identical across 2 fresh starts 4/4)",
     "4080_flashnext_0271": "RTX 4080 Flash-Next run, 2026-10-29 16:26-16:49 UTC: AlphaLlama v2 release build (bare -m), Strata 0.2.7.1 and Strata 0.1.47 in one window, 2 passes in reversed order (per-prompt token file; 10 Strata rows whose streamed token count was under 90% of the reported count left out).",
-    "4080_35b_8e9e192": "RTX 4080 Qwen3.6-35B-A3B re-run on AlphaLlama 8e9e192, 2026-11-01: fast (auto) and plain, 2 passes with the second reversed, a fresh server per arm after one warm-up start (per-prompt token file; every row streamed its full token count)"
+    "4080_35b_8e9e192": "RTX 4080 Qwen3.6-35B-A3B re-run on AlphaLlama 8e9e192, 2026-11-01: fast (auto) and plain, 2 passes with the second reversed, a fresh server per arm after one warm-up start (per-prompt token file; every row streamed its full token count)",
+    "4070_35b_8e9e192": "RTX 4070 laptop Qwen3.6-35B-A3B re-run on AlphaLlama 8e9e192, 2026-11-01: fast (auto), 2 passes with the second reversed, a fresh server per arm after one warm-up start (per-prompt token file; every row streamed its full token count). Plain decoding in the same window (37.8 / 36.2 / 35.1) matched the published exact row within about 2%, so that row is unchanged."
   },
   "cells": [
     {
@@ -563,11 +564,12 @@
       "engine": "alphallama",
       "class": "fast",
       "status": "ran",
-      "A": 44.3,
-      "V": 39.2,
-      "version": "build aec5efd",
+      "A": 58.9,
+      "V": 54.9,
+      "version": "AlphaLlama v2 (2.0.0), commit 8e9e192 (built from source; not yet packaged)",
       "format": "UD-Q4_K_M GGUF",
-      "R": 46.2
+      "R": 82.5,
+      "note": "its default (auto) configuration: MTP drafts plus n-gram drafts, expert offload with 31 slots in VRAM; 2026-11-01 run"
     },
     {
       "gpu": "rtx4070l",
@@ -1354,6 +1356,18 @@
         "spread_pct": 1.6
       },
       {
+        "engine": "alphallama",
+        "class": "fast",
+        "variant": null,
+        "gpu": "rtx4070l",
+        "model": "qwen3.6-35b-a3b",
+        "set": "R",
+        "task": "rewrite a C++ file",
+        "tok_s": 103.4,
+        "passes": 2,
+        "spread_pct": 5.6
+      },
+      {
         "engine": "ollama",
         "class": "exact",
         "variant": null,
@@ -1436,18 +1450,6 @@
         "tok_s": 69.8,
         "passes": 3,
         "spread_pct": 0.1
-      },
-      {
-        "engine": "alphallama",
-        "class": "fast",
-        "variant": null,
-        "gpu": "rtx4070l",
-        "model": "qwen3.6-35b-a3b",
-        "set": "A",
-        "task": "chat: write a Python class",
-        "tok_s": 53.9,
-        "passes": 2,
-        "spread_pct": 7.3
       },
       {
         "engine": "vllm",
@@ -2125,10 +2127,10 @@
         "gpu": "rtx4070l",
         "model": "qwen3.6-35b-a3b",
         "set": "A",
-        "task": "chat: write a Python class",
-        "tok_s": 53.9,
+        "task": "chat: generate JSON data",
+        "tok_s": 63.6,
         "passes": 2,
-        "spread_pct": 7.3,
+        "spread_pct": 7.7,
         "task_type": "chat"
       },
       {
@@ -2165,9 +2167,9 @@
         "model": "qwen3.6-35b-a3b",
         "set": "R",
         "task": "rewrite a C++ file",
-        "tok_s": 51.8,
-        "passes": 3,
-        "spread_pct": 6.4,
+        "tok_s": 103.4,
+        "passes": 2,
+        "spread_pct": 5.6,
         "task_type": "code_edit"
       },
       {
@@ -2191,9 +2193,9 @@
         "model": "qwen3.6-35b-a3b",
         "set": "V",
         "task": "list a file's functions",
-        "tok_s": 44.8,
+        "tok_s": 54.6,
         "passes": 2,
-        "spread_pct": 4.3,
+        "spread_pct": 0.9,
         "task_type": "code_read"
       },
       {
@@ -2217,9 +2219,9 @@
         "model": "qwen3.6-35b-a3b",
         "set": "V",
         "task": "port code to C++",
-        "tok_s": 46.9,
+        "tok_s": 60.0,
         "passes": 2,
-        "spread_pct": 2.2,
+        "spread_pct": 1.9,
         "task_type": "code_write"
       },
       {
@@ -2237,15 +2239,15 @@
       },
       {
         "engine": "alphallama",
-        "class": "exact",
+        "class": "fast",
         "variant": null,
         "gpu": "rtx4070l",
         "model": "qwen3.6-35b-a3b",
-        "set": "R",
-        "task": "triage a log",
-        "tok_s": 36.0,
+        "set": "V",
+        "task": "work through a CSV table",
+        "tok_s": 54.0,
         "passes": 2,
-        "spread_pct": 2.5,
+        "spread_pct": 7.9,
         "task_type": "data_logs"
       },
       {
@@ -2263,15 +2265,15 @@
       },
       {
         "engine": "alphallama",
-        "class": "exact",
+        "class": "fast",
         "variant": null,
         "gpu": "rtx4070l",
         "model": "qwen3.6-35b-a3b",
         "set": "V",
-        "task": "summarise a document",
-        "tok_s": 36.5,
+        "task": "quote passages from a document",
+        "tok_s": 55.1,
         "passes": 2,
-        "spread_pct": 1.9,
+        "spread_pct": 4.6,
         "task_type": "documents"
       },
       {

@@ -1,6 +1,8 @@
 # Changelog
 
 ## 2026-11-01
+- RTX 4070 laptop Qwen3.6-35B-A3B: AlphaLlama fast mode re-run on commit 8e9e192. Plain decoding in the same
+  window matched the published exact row within about 2%, so that row is unchanged.
 - RTX 4080 Qwen3.6-35B-A3B: AlphaLlama re-run on commit 8e9e192 (built from source, not yet packaged), fast and
   plain. Restart reproducibility of the plain row was not re-checked on this build and is not claimed.
 
