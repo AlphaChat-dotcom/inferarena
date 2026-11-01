@@ -1,5 +1,11 @@
 # Changelog
 
+## 2026-11-02
+- **Flash-Next published again.** RTX 3090 and RTX 4080: AlphaLlama release candidate 3e82a70ea and Strata 0.2.8
+  (870aedd9) in one window per machine. Every earlier Flash-Next row is replaced. AlphaLlama has no exact mode with
+  drafting on Flash-Next, so its exact row is plain decoding (repeated 25/25 across starts). Earlier AlphaLlama builds
+  had a Flash-Next bug that could emit stray tokens in long outputs; this build has the fix.
+
 ## 2026-11-01
 - RTX 4070 laptop Qwen3.6-35B-A3B: AlphaLlama fast mode re-run on commit 8e9e192. Plain decoding in the same
   window matched the published exact row within about 2%, so that row is unchanged.

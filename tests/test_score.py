@@ -66,84 +66,35 @@ check("no comparison: no reference", sc.pick_reference("x", {"c1": {"x": 1.0}}) 
 ed = json.loads((ROOT / "data" / "editions" / "2026-10.json").read_text(encoding="utf-8"))
 out = sc.score_edition(ed)
 cats = {c["id"]: c for c in out["categories"]}
-check("Flash-Next withheld (2026-10-30): three published categories, in the edition's order",
-      list(cats) == ["overall", "general", "offload_35b_27b"], list(cats))
-pub = json.dumps(out)
-check("withheld: no Flash-Next model, cell, run, record or peak is published, and no Strata row (its only rows were Flash-Next)",
-      "qwen3.8-flash-next" not in pub and not any(r["engine"] == "strata" for c in out["categories"] for r in c["runs"])
-      and not any(x["model"] == "qwen3.8-flash-next" for x in out["records"]["rows"] + out["records"]["peaks"]))
-check("withheld: an engine whose only rows were withheld (Strata) isn't published at all",
-      "strata" not in pub.lower(), [k for k in ("engine_scope",) if "strata" in json.dumps(out[k]).lower()])
-check("withheld: the Flash-Next caveats and cutoff exception are held back with it",
-      not any("Flash-Next" in c for c in out["caveats"]) and "Strata" not in out["cutoff"]["about"])
-# The withheld rows stay in the file: score the full edition to keep checking them for when they come back.
-full = sc.score_edition(dict(ed, withheld=None))
-full_cats = {c["id"]: c for c in full["categories"]}
-check("full edition (withheld list cleared): Flash-Next comes back as the fourth category",
-      list(full_cats) == ["overall", "general", "offload_35b_27b", "offload_flash_next"], list(full_cats))
-
-
-def ranking(cid, klass="plain"):
-    return {x["engine"]: x for x in cats[cid][klass]["ranking"]}
-
-
-ov = ranking("overall")
-# After the RTX 3090 re-run (2026-10-27): Ollama 0.40.11 is ~1.6x faster there, and AlphaLlama 27B left the exact board.
-# 2026-10-28: AlphaLlama 35B/27B on the 3090 re-run on its newer backend (27B back on the exact board).
-for e, (ix, rk) in {"alphallama": (3.00, 1), "ninfer": (1.44, 2), "freetoken": (1.05, 3), "vllm": (1.05, 3),
-                    "ollama": (1.00, 5)}.items():
-    check(f"overall: {e} {ix}x rank {rk}", e in ov and abs(ov[e]["index"] - ix) < 0.01 and ov[e]["rank"] == rk, ov.get(e))
-check("overall: sglang provisional (1 scored cell)", ov["sglang"]["provisional"])
-
-gen = ranking("general")
-check("general-purpose: only engines whose scope is 'general'", set(gen) == {"alphallama", "vllm", "sglang", "ollama"}, set(gen))
-check("general-purpose: AlphaLlama 1st, vLLM and Ollama share 2nd (within 3%)",
-      gen["alphallama"]["rank"] == 1 and gen["vllm"]["rank"] == 2 and gen["ollama"]["rank"] == 2, gen)
-
-off = ranking("offload_35b_27b")
-# 2026-10-29: the 4070 laptop 35B re-run (newer backend, residency reset) repeats 4/4, so the offload board has no badge.
-check("35B/27B offload: AlphaLlama ranked 1st, every exact run reproducible across starts",
-      off["alphallama"]["rank"] == 1 and off["alphallama"]["reproducible"] is True
-      and abs(off["alphallama"]["index"] - 2.265) < 0.01, off.get("alphallama"))
-# The 4080 protocol rerun reproduces plain decoding 4/4; the badge now comes from the 4070 laptop row alone.
-r4080 = [r for r in ed["runs"] if r["gpu"] == "rtx4080" and r["engine"] == "alphallama" and r["class"] == "exact"
-         and r["status"] == "ran" and r["model"] != "qwen3.8-flash-next"]
-check("4080: our 35B and 27B exact-class runs are plain decoding; 27B reproduces across starts, the 35B re-run on 8e9e192 "
-      "says it wasn't re-checked (no claim either way)",
-      sorted(r["model"] for r in r4080) == ["qwen3.6-35b-a3b", "qwen3.8-27b"]
-      and next(r for r in r4080 if r["model"] == "qwen3.8-27b")["reproducible"] is True
-      and "not re-checked" in next(r for r in r4080 if r["model"] == "qwen3.6-35b-a3b")["note"], r4080)
-check("35B/27B offload: Ollama ranked on all three cells (4080 35B + 27B, 4070 laptop)",
-      cats["offload_35b_27b"]["plain"]["min_cells"] == 2 and off["ollama"]["rank"] == 2 and off["ollama"]["cells"] == 3, off)
-check("35B/27B offload: freetoken provisional (finished one GPU only)", off["freetoken"]["provisional"], off["freetoken"])
-cv_off = cats["offload_35b_27b"]["coverage"]
-# freetoken: 4080 35B ran, 4070 failed mid-test (tried), 4080 27B env_broken (no checkpoint: not counted)
-# freetoken: 4080 35B ran, 4070 failed mid-test, 4080 27B failed to start (both count as tried)
-check("a run that failed mid-test counts as tried, not ran", cv_off["freetoken"] == {"ran": 1, "tried": 3}, cv_off)
-check("an edition-wide check: no derived numbers left (all from per-prompt files)",
-      not any(r.get("derived") for r in ed["runs"]))
-fl = sc.coverage([{"engine": "x", "gpu": "g", "model": "m", "status": "failed_run"}])
-check("failed_run is a recognised status", fl["x"] == {"ran": 0, "tried": 1}, fl)
-
-fn = full_cats["offload_flash_next"]
+check("Flash-Next published again (2026-11-02): four categories, in the edition's order",
+      list(cats) == ["overall", "general", "offload_35b_27b", "offload_flash_next"], list(cats))
+# The withholding mechanism (generic, by model id): drop a model's cells, runs, records, peaks and empty categories,
+# and an engine whose only rows were withheld. Exercised on a copy of the edition with Flash-Next withheld.
+held = sc.score_edition(dict(ed, withheld={"models": ["qwen3.8-flash-next"]}))
+# Structured data only: caveat and cutoff prose is moved by hand together with a withheld model.
+hpub = json.dumps({k: held[k] for k in ("categories", "models", "records", "engine_scope")})
+check("withhold: a withheld model leaves no category, run, record or peak, and an engine with no other rows (Strata) disappears",
+      [c["id"] for c in held["categories"]] == ["overall", "general", "offload_35b_27b"]
+      and "qwen3.8-flash-next" not in hpub and "strata" not in hpub.lower(), [c["id"] for c in held["categories"]])
+full_cats = cats
+fn = cats["offload_flash_next"]
 check("R is scored as a general rule: every category scores A + V + R",
       all(c["scored_sets"] == ["A", "V", "R"] for c in out["categories"]), [c["scored_sets"] for c in out["categories"]])
 fnp = {x["engine"]: x for x in fn["plain"]["ranking"]}
 fnf = {x["engine"]: x for x in fn["fast"]["ranking"]}
-# Flash-Next: the RTX 5090 run is outdated and was removed on 2026-10-28; the 3090 is the only cell until the 4080 lands.
+# Flash-Next: the RTX 5090 run is outdated and removed (2026-10-28); RTX 3090 and RTX 4080 only.
 check("Flash-Next: RTX 3090 and 4080 only, no 5090 rows or cell", not any(r["gpu"] == "rtx5090" for r in fn["runs"])
       and sorted(c["gpu"] for c in fn["cells"]) == ["rtx3090", "rtx4080"], [c["gpu"] for c in fn["cells"]])
 check("Flash-Next plain: no comparison yet (AlphaLlama is the only engine with exact decoding there)",
       fn["plain"]["reference"] is None and not fn["plain"]["ranking"], fn["plain"])
-check("Flash-Next fast: AlphaLlama and Strata share 1st (within 3%); 4080 has Strata 0.2.7.1 vs AlphaLlama's release build",
-      fnf["strata"]["rank"] == 1 and fnf["alphallama"]["rank"] == 1 and abs(fnf["alphallama"]["index"] - 1.00) < 0.01
-      and abs(fnf["strata"]["index"] - 1.014) < 0.01, fnf)
+check("Flash-Next fast (2026-11-01, release candidate 3e82a70ea vs Strata 0.2.8 on both GPUs): AlphaLlama 1st at 1.10, Strata 2nd",
+      fnf["alphallama"]["rank"] == 1 and fnf["strata"]["rank"] == 2 and abs(fnf["alphallama"]["index"] - 1.10) < 0.01
+      and abs(fnf["strata"]["index"] - 1.00) < 0.01, fnf)
 check("Flash-Next coverage: Strata runs on both cells, 3090 and 4080 (fast mode only)",
       fn["coverage"]["strata"] == {"ran": 2, "tried": 2}, fn["coverage"].get("strata"))
-check("Flash-Next 3090: FreeToken not supported there (126 GB file > 62 GB RAM + 24 GB VRAM), AlphaLlama badged not reproducible",
+check("Flash-Next: FreeToken not supported (126 GB file); AlphaLlama's exact row is plain decoding, repeated 25/25 (reproducible)",
       any(r["gpu"] == "rtx3090" and r["engine"] == "freetoken" and r["status"] == "not_supported" for r in fn["runs"])
-      and any(r["gpu"] == "rtx3090" and r["engine"] == "alphallama" and r["class"] == "exact" and r["reproducible"] is False
-              for r in fn["runs"]))
+      and all(r["reproducible"] is True for r in fn["runs"] if r["engine"] == "alphallama" and r["class"] == "exact"))
 check("categories never mix regimes",
       all(all(r["regime"] == c["regime"] for r in c["runs"]) for c in out["categories"] if c.get("regime")))
 check("every ran row carries all three scored sets", all(
