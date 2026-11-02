@@ -88,11 +88,14 @@ check("Flash-Next published on RTX 3090, 4080 and 5090, all on release candidate
       sorted(c["gpu"] for c in fn["cells"]) == ["rtx3090", "rtx4080", "rtx5090"]
       and all("3e82a70ea" in r["version"] for r in fn["runs"] if r["engine"] == "alphallama" and r.get("version")),
       [c["gpu"] for c in fn["cells"]])
-check("RTX 3090 Flash-Next: the repeat run loaded no routing profile; its plain row is pending (not yet measured)",
-      "no routing profile" in next(r for r in fn["runs"] if r["gpu"] == "rtx3090" and r["engine"] == "alphallama"
-                                   and r["class"] == "fast")["note"]
-      and next(r for r in fn["runs"] if r["gpu"] == "rtx3090" and r["engine"] == "alphallama"
-               and r["class"] == "exact")["status"] == "env_broken")
+fn3090 = {r["class"]: r for r in fn["runs"] if r["gpu"] == "rtx3090" and r["engine"] == "alphallama"}
+check("RTX 3090 Flash-Next: both rows ran with no routing profile; plain decoding repeated across starts",
+      all("no routing profile" in fn3090[k]["note"] for k in ("fast", "exact"))
+      and fn3090["exact"]["status"] == "ran" and fn3090["exact"]["reproducible"] is True
+      and (fn3090["exact"]["A"], fn3090["exact"]["V"], fn3090["exact"]["R"]) == (77.3, 73.9, 73.6), fn3090)
+check("Flash-Next AlphaLlama rows carry the release label",
+      all(r["version"] == "AlphaLlama v2 (2.0.0) RC 3e82a70ea / public ffa934c"
+          for r in fn["runs"] if r["engine"] == "alphallama"))
 check("Flash-Next plain: no comparison yet (AlphaLlama is the only engine with exact decoding there)",
       fn["plain"]["reference"] is None and not fn["plain"]["ranking"], fn["plain"])
 check("Flash-Next fast (release candidate 3e82a70ea vs Strata 0.2.8, three GPUs): AlphaLlama 1st at 1.09, Strata 2nd",
@@ -106,11 +109,32 @@ check("Flash-Next: FreeToken not supported (126 GB file); AlphaLlama's exact row
               if r["engine"] == "alphallama" and r["class"] == "exact" and r["gpu"] == "rtx4080")
       and "not checked" in next(r for r in fn["runs"] if r["gpu"] == "rtx5090" and r["engine"] == "alphallama"
                                 and r["class"] == "exact")["note"])
-check("categories never mix regimes",
-      all(all(r["regime"] == c["regime"] for r in c["runs"]) for c in out["categories"] if c.get("regime")))
+check("categories never mix regimes (scored runs)",
+      all(all(r["regime"] == c["regime"] for r in c["runs"] if not r.get("display_only"))
+          for c in out["categories"] if c.get("regime")))
+ov = next(c for c in out["categories"] if c["id"] == "overall")
+shown = [r for r in ov["runs"] if r.get("display_only")]
+check("Overall draws Flash-Next as reference cells only",
+      {c["gpu"] for c in ov["cells"] if c.get("display_only")} == {"rtx3090", "rtx4080", "rtx5090"}
+      and shown and all(r["model"] == "qwen3.8-flash-next" and r["regime"] == "offload" for r in shown))
+plain_ed = json.loads(json.dumps(ed))
+for c in plain_ed["categories"]:
+    c.pop("also_show", None)
+ov0 = next(c for c in sc.score_edition(plain_ed)["categories"] if c["id"] == "overall")
+check("reference cells change no Overall index, head-to-head or coverage",
+      all(ov[k] == ov0[k] for k in ("plain", "fast", "coverage")))
 check("every ran row carries all three scored sets", all(
     all(k in r for k in ("A", "V", "R")) for r in ed["runs"] if r.get("status") == "ran"))
 rec = out["records"]
+tm = {(m["gpu"], m["model"], m["task_type"], m["engine"]): m for m in rec["task_means"]}
+check("category averages: every engine on a chart is averaged over the same prompts",
+      all(len({(m["prompts"], m["of"]) for m in rec["task_means"]
+               if (m["gpu"], m["model"], m["task_type"]) == k[:3]}) == 1 for k in tm))
+check("category averages: RTX 4080 Flash-Next, AlphaLlama fast vs Strata over all prompts",
+      [(tm[("rtx4080", "qwen3.8-flash-next", t, "alphallama")]["tok_s"], tm[("rtx4080", "qwen3.8-flash-next", t, "strata")]["tok_s"],
+        tm[("rtx4080", "qwen3.8-flash-next", t, "strata")]["prompts"] == tm[("rtx4080", "qwen3.8-flash-next", t, "strata")]["of"])
+       for t in ("code_edit", "code_read")] == [(197.1, 162.9, True), (115.9, 128.3, True)])
+check("competitor cutoff is 2026-10-29 (covers Strata 0.2.8)", out["cutoff"]["date"] == "2026-10-29")
 best = {r["engine"]: r for r in rec["best_per_engine"]}
 check("records: one best per engine, sorted fastest first",
       [r["tok_s"] for r in rec["best_per_engine"]] == sorted((r["tok_s"] for r in rec["best_per_engine"]), reverse=True)

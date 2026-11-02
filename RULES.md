@@ -14,7 +14,9 @@ These rules apply to every engine, including AlphaLlama. Changes are recorded in
 5. Decode speed is the speed you see while an answer streams: tokens after the first, divided by the time after the
    first token. A set's score is the geometric mean over its prompts, so no single prompt dominates.
 6. Every prompt runs twice, the second pass in reversed order. A row whose streamed token count is under 90% of the
-   count the engine reports is left out.
+   count the engine reports is left out, unless the engine sends several tokens per streamed chunk: such a row counts
+   when it streamed no thinking tokens and its visible text is as long as the reported count implies (at least 90% of
+   the median text per token of the other replies to the same prompt).
 7. Each engine runs its own best public configuration and model format for the GPU. Formats are labelled on every
    result, not equalised.
 

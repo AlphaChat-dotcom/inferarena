@@ -213,10 +213,12 @@ def withhold(ed: dict) -> dict:
                 if not kept:
                     continue
                 c = dict(c, models=kept)
+            if (c.get("also_show") or {}).get("models"):
+                c = dict(c, also_show=dict(c["also_show"], models=[m for m in c["also_show"]["models"] if m not in held]))
             cats.append(c)
         out["categories"] = cats
     rec = dict(ed.get("records") or {})
-    for k in ("rows", "peaks", "peak_notes"):
+    for k in ("rows", "peaks", "peak_notes", "task_means"):
         if rec.get(k):
             rec[k] = [x for x in rec[k] if not gone(x)]
     out["records"] = rec
@@ -243,14 +245,23 @@ def score_edition(ed: dict) -> dict:
     for cat in categories:
         cat_sets = {k: dict(v, scored=k in cat["scored_sets"]) for k, v in sets.items()}             if cat.get("scored_sets") else sets
         keep = _category_filter(cat, scope, regimes)
-        cruns = [dict(r, value=(round(cell_value(r, cat_sets), 2) if r.get("status") == "ran"
-                                and cell_value(r, cat_sets) else None)) for r in runs if keep(r)]
+        # "also_show": a filter like the category's own (models, regime), for cells drawn in its grouped charts as
+        # reference only. They never enter its Speed Index, head-to-head or coverage, so regimes stay unmixed.
+        also = _category_filter(dict(cat.get("also_show") or {}, engine_scope=cat.get("engine_scope")), scope, regimes)             if cat.get("also_show") else (lambda r: False)
+
+        def valued(r: dict, **extra) -> dict:
+            v = cell_value(r, cat_sets) if r.get("status") == "ran" else None
+            return dict(r, value=round(v, 2) if v else None, **extra)
+        cruns = [valued(r) for r in runs if keep(r)]
+        shown = [valued(r, display_only=True) for r in runs if not keep(r) and also(r)]
         cells = [c for c in ed["cells"] if any(r["cell"] == f"{c['gpu']}/{c['model']}" for r in cruns)]
+        cells += [dict(c, display_only=True) for c in ed["cells"]
+                  if any(r["cell"] == f"{c['gpu']}/{c['model']}" for r in shown)]
         mc, tw = ed.get("min_cells_to_rank", 2), ed.get("tie_within", 0.03)
         out_cats.append({
             **{k: cat.get(k) for k in ("id", "title", "about", "regime", "models", "engine_scope", "summary")},
             "scored_sets": [k for k, v in cat_sets.items() if v.get("scored")],
-            "cells": cells, "runs": cruns,
+            "cells": cells, "runs": cruns + shown,
             "plain": board(cruns, "exact", cat_sets, ref, mc, tw),
             "fast": board(cruns, "fast", cat_sets, ref, mc, tw),
             "coverage": coverage(cruns),
@@ -272,7 +283,8 @@ def records(rec: dict) -> dict:
     top: dict[str, dict] = {}
     for r in rows:
         top.setdefault(r["engine"], r)
-    # Peak speed by task type: each engine's best on each kind of work (computed upstream, passed through).
+    # Peak speed by task type: each engine's best on each kind of work; task_means: each engine's average on each kind
+    # of work over the prompts every engine on that GPU and model ran (both computed upstream, passed through).
     return {"rule": rec.get("rule"), "best_per_engine": list(top.values()), "rows": rows,
             "task_types": rec.get("task_types") or [], "peaks": rec.get("peaks") or [],
-            "peak_notes": rec.get("peak_notes") or []}
+            "peak_notes": rec.get("peak_notes") or [], "task_means": rec.get("task_means") or []}
