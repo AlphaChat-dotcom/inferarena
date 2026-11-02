@@ -983,7 +983,7 @@
       "class": "exact",
       "status": "not_supported",
       "version": "0.2.8 (870aedd9)",
-      "reason": "no documented exact-output mode; its speculative decoding changes the output"
+      "reason": "no exact-output mode; with default settings its output is not repeatable run to run (its docs list four non-default settings that make batched output match solo output)"
     },
     {
       "gpu": "rtx4080",
@@ -1033,7 +1033,7 @@
       "class": "exact",
       "status": "not_supported",
       "version": "0.2.8 (870aedd9)",
-      "reason": "no documented exact-output mode; its speculative decoding changes the output"
+      "reason": "no exact-output mode; with default settings its output is not repeatable run to run (its docs list four non-default settings that make batched output match solo output)"
     },
     {
       "gpu": "rtx5090",
@@ -1082,7 +1082,7 @@
       "class": "exact",
       "status": "not_supported",
       "version": "0.2.8 (870aedd9)",
-      "reason": "no documented exact-output mode; its speculative decoding changes the output"
+      "reason": "no exact-output mode; with default settings its output is not repeatable run to run (its docs list four non-default settings that make batched output match solo output)"
     }
   ],
   "caveats": [
